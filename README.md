@@ -1,18 +1,18 @@
-# Nome do projeto
+# Travel Friends
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+Conectando pessoas a lugares e experiências incríveis! Com a Travel Friends você descobre os melhores rolês próximos a você e pode participar de um grupo ou criar o seu próprio. O tema você escolhe... seja balada, trilha, família...
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-
+* Ian Asenjo Dominguez Cunha
+* Jully Ketely Alves da Silva
+* Laura Lourdes Coutinho Rodrigues
+* Lorrayne Reis Silva
+* Warley Leandro dos Anjos
 ## Orientadores
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Cleiton Silva Tavares
+* Jose Laerte Pires Xavier Junior
 
 ## Instruções de utilização
 
