@@ -5,12 +5,11 @@
 **Data:** 
 
 **Integrantes:**
-
 Ian Asenjo Dominguez Cunha, email do aluno 1
 
 Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
 
-Laura Lourdes Coutinho Rodrigues, email do aluno 3
+Laura Lourdes Coutinho Rodrigues, laura.rodrigues.1199007@sga.pucminas.br
 
 Lorrayne Reis Silva, 
 
@@ -46,7 +45,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 [X] Desenvolvimento de novo produto
 [ ] Outro: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-**1.5 Objetivo do projeto:**
+**1.5 Objetivo do projeto:** 
 
 **1.6 Benefícios que justificam o projeto:**
 
@@ -58,6 +57,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 
 **2.2 O que não será feito no projeto (contra-escopo)**
+Realização de pagamentos;
 
 
 **2.3 Resultados / serviços / produtos a serem entregues**
@@ -68,7 +68,9 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 | **3.** | |
 
 **2.4 Condições para início do projeto**
-
+Refinamento dos requisitos;
+Distribuição de função e tarefa;
+Planejamento da arquitetura do software.
 
 
 
@@ -77,8 +79,8 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **3.1 Prazo previsto (horas):** 9999
 
-**3.2 Data prevista de início:  **\_\_\_\_\_ /\_\_\_\_\_ /\_\_\_\_\_ 
-**3.3 Data prevista de término: **\_\_\_\_\_ /\_\_\_\_\_ /\_\_\_\_\_ 
+**3.2 Data prevista de início:  **03 /08 / 2022 
+**3.3 Data prevista de término: **05 / 12 /2022 
 
 ## 4. ESTIMATIVA DE CUSTO
 
@@ -95,10 +97,11 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 | Nome | Papel no projeto | Assinatura |
 | --- | --- | --- |
-|     |     |     |
-|     |     |     |
-|     |     |     |
-|     |     |     |
+| Ian Asenjo Dominguez Cunha | Desenvolvedor |     |
+| Jully Ketely Alves da Silva | DevOps |     |
+| Laura Lourdes Coutinho Rodrigues | Scrum Master |     |
+| Lorrayne Reis Silva | Desenvolvedor |     |
+| Warley Leandro dos Anjos | Desenvolvedor |     |
 
 **Observações:**
 
