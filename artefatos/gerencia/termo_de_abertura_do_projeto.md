@@ -1,21 +1,28 @@
 # Termo de Abertura de Projeto (TAP) no.: 9999
 
-**Nome da empresa:**
+**Nome da empresa:** Travel Friends
 
-**Data:**
+**Data:** 
 
 **Integrantes:**
 
-Nome completo do Aluno 1, email do aluno 1
-Nome completo do Aluno 2, email do aluno 2
-Nome completo do Aluno 3, email do aluno 3
+Ian Asenjo Dominguez Cunha, email do aluno 1
+
+Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
+
+Laura Lourdes Coutinho Rodrigues, email do aluno 3
+
+Lorrayne Reis Silva, 
+
+Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br
 
 ---
 
 **Professores:**
 
-Prof. Nome do Prof 1
-Prof. Nome do Prof 2
+Cleiton Silva Tavares
+
+Jose Laerte Pires Xavier Junior
 
 ---
 
@@ -27,16 +34,16 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ## 1. IDENTIFICAÇÃO DO PROJETO
 
-**1.1 Nome do Projeto:**
+**1.1 Nome do Projeto:** Travel Friends
 
-**1.2 Gerente do Projeto:**
+**1.2 Gerente do Projeto:** Laura Lourdes Coutinho Rodrigues
 
-**1.3 Cliente do Projeto:**
+**1.3 Cliente do Projeto:** PUCMINAS
 
 **1.4 Tipo de Projeto:**
 
 [ ] Manutenção em produto existente
-[ ] Desenvolvimento de novo produto
+[X] Desenvolvimento de novo produto
 [ ] Outro: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **1.5 Objetivo do projeto:**
