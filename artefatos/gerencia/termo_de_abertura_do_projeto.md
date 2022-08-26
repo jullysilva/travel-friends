@@ -5,7 +5,7 @@
 **Data:** 
 
 **Integrantes:**
-Ian Asenjo Dominguez Cunha, email do aluno 1
+Ian Asenjo Dominguez Cunha, iadcunha@sga.pucminas.br
 
 Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
 
@@ -86,12 +86,12 @@ Planejamento da arquitetura do software.
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** **(especifique):** |  |  |  |
-| **4.2 Hardware (especifique):** |  |  |  |
-| **4.3 Rede e serviços de hospedagem:** |  |  |  |
-| **4.4 Software de terceiros:** |  |  |  |
-| **4.5 Serviços e treinamento:** |  |  |  |
-| **4.6 Total Geral:** |  |  |  |
+| **4.1 Recursos Humanos** **(especifique):** | 80 |  |  |
+| **4.2 Hardware (especifique):** | 2 |  |  |
+| **4.3 Rede e serviços de hospedagem:** | 10 |  |  |
+| **4.4 Software de terceiros:** | 2 |  |  |
+| **4.5 Serviços e treinamento:** | 6 |  |  |
+| **4.6 Total Geral:** | 100 |  |  |
 
 ## 5. PARTES INTERESSADAS
 
