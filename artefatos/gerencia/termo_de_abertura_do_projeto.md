@@ -50,15 +50,23 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 **1.6 Benefícios que justificam o projeto:**
 
 **1.7 Qualidade esperada do produto final (requisitos de qualidade):**
+Bom desempenho;
+
 
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
-
+Chat;
+Calendário;
+Geolocalização;
+Indicação de guia;
+Cadastro de roteiro;
+Termo de responsabilidade;
+Cadastro de estabelecimento.
 
 **2.2 O que não será feito no projeto (contra-escopo)**
 Realização de pagamentos;
-
+Se responsabilizar com a interação dos usuários fora do aplicativo.
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
@@ -77,7 +85,7 @@ Planejamento da arquitetura do software.
 ## 3. ESTIMATIVA DE PRAZO
 
 
-**3.1 Prazo previsto (horas):** 9999
+**3.1 Prazo previsto (horas):** 100
 
 **3.2 Data prevista de início:  **03 /08 / 2022 
 **3.3 Data prevista de término: **05 / 12 /2022 
@@ -86,12 +94,12 @@ Planejamento da arquitetura do software.
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** **(especifique):** | 80 |  |  |
-| **4.2 Hardware (especifique):** | 2 |  |  |
-| **4.3 Rede e serviços de hospedagem:** | 10 |  |  |
-| **4.4 Software de terceiros:** | 2 |  |  |
-| **4.5 Serviços e treinamento:** | 6 |  |  |
-| **4.6 Total Geral:** | 100 |  |  |
+| **4.1 Recursos Humanos** **(especifique):** | 80 | 0.0 |  |
+| **4.2 Hardware (especifique):** | 2 | 0.0 |  |
+| **4.3 Rede e serviços de hospedagem:** | 10 | 0.0 |  |
+| **4.4 Software de terceiros:** | 2 | 0.0 |  |
+| **4.5 Serviços e treinamento:** | 6 | 0.0 |  |
+| **4.6 Total Geral:** | 100 | 0.0 |  |
 
 ## 5. PARTES INTERESSADAS
 
