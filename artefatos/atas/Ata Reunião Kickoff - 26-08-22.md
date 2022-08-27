@@ -1,6 +1,7 @@
 
 
-![](Aspose.Words.e7636e6b-90f5-4f95-90fa-bc3e6d798856.001.png)
+![Aspose Words e7636e6b-90f5-4f95-90fa-bc3e6d798856 001](https://user-images.githubusercontent.com/42702863/187044838-429be56f-344f-4232-9f50-021c2858f24a.png)
+
 ### PRAÇA DA LIBERDADE
 ### Trabalho Interdisciplinar de Software V
 ## TRAVEL FRIENDS
@@ -41,5 +42,6 @@
 
 ### Evidência de reunião
 
-![](Aspose.Words.e7636e6b-90f5-4f95-90fa-bc3e6d798856.002.png)
+![WhatsApp Image 2022-08-26 at 21 12 51](https://user-images.githubusercontent.com/42702863/187044784-4e1a3ba0-e297-4649-9a82-6ed4a0a970cc.jpeg)
+
 
