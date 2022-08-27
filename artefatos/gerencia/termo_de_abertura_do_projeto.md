@@ -2,7 +2,7 @@
 
 **Nome da empresa:** Travel Friends
 
-**Data:** 
+**Data:** 31/08/2022
 
 **Integrantes:**
 Ian Asenjo Dominguez Cunha, iadcunha@sga.pucminas.br
@@ -11,7 +11,7 @@ Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
 
 Laura Lourdes Coutinho Rodrigues, laura.rodrigues.1199007@sga.pucminas.br
 
-Lorrayne Reis Silva, 
+Lorrayne Reis Silva, lorrayne.silva.1220819@sga.pucminas.br
 
 Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br
 
@@ -70,10 +70,9 @@ Se responsabilizar com a interação dos usuários fora do aplicativo.
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
-| **1.** |  |
+| **1.** | Aplicativo mobile |
 | --- | --- |
-| **2.** | |
-| **3.** | |
+| **2.** | **Sistema web** |
 
 **2.4 Condições para início do projeto**
 Refinamento dos requisitos;
