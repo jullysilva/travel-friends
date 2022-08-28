@@ -1,7 +1,7 @@
-# Declaração de Escopo - PROJETO
+# Declaração de Escopo - Travel Friends
 
 
-**Gerentes de Projeto:**
+**Gerentes de Projeto:** Laura Lourdes Coutinho Rodrigues
 
 Nome completo do Aluno 1, email do aluno 1
 Nome completo do Aluno 2, email do aluno 2
