@@ -47,6 +47,8 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 - Implementação de um serviço de geolocalização
 
 ## Entregáveis
+- Roteiros turísticos 
+- Interação entre os usuários do sistema 
 
 ## Limites
 - Realização de pagamentos.
