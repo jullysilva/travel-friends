@@ -37,9 +37,11 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 | Nome | Posição / Cargo | Papel no Projeto | Email | Telefone
 | --- | --- | --- | --- | --- |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
+| Ian Asenjo Dominguez Cunha | Desenvolvedor| 
+| Jully Ketely Alves da Silva | DevOps | 
+| Laura Lourdes Coutinho Rodrigues | Scrum Master|
+| Lorrayne Reis Silva | Desenvolvedor |   
+| Warley Leandro dos Anjos | Arquiteto de Software | 
 
 ## Avaliação
 
