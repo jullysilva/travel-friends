@@ -94,12 +94,12 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** **(desenvolvedor):** | 80 | 20,5 x 4 | 16.400|
-| **4.2 Hardware (configurações):** | 2 | 20,5 | 41 |
+| **4.1 Recursos Humanos** **(desenvolvedores):** | 80 | 20,5 | 20.500|
+| **4.2 Hardware (configurações):** | 2 | 0.0 | 0.0 |
 | **4.3 Rede e serviços de hospedagem:** | 10 | 20,5 | 200 |
-| **4.4 Software de terceiros:** | 2 | 20,5 | 41 |
-| **4.5 Serviços e treinamento:** | 6 | 20,5 | 4.100 |
-| **4.6 Total Geral:** | 100 | 20,5 |  |
+| **4.4 Software de terceiros:** | 2 | 0.0 | 0.0 |
+| **4.5 Serviços e treinamento:** | 6 | 20,5 | 123 |
+| **4.6 Total Geral:** | 100 | 20,5 | 20.823 |
 
 ## 5. PARTES INTERESSADAS
 
