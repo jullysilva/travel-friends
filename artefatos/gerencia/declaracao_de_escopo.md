@@ -39,20 +39,17 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ## Limites
 - Realização de pagamentos.
-
 - Responsabilidade com a interação dos usuários fora do aplicativo.
 
 ## Restrições
 - Curto prazo para o desenvolvimento nos impossibilita de aprofundar os requisitos a longo prazo.
-
 - Orçamento limitado.
-
 - Recurso limitado de pessoas.
 
 
 ## Premissas
 - Adesão dos usuários interessados em roteiros turísticos.
--  Excelência nos serviços 
+-  Excelência nos serviços.
 
 
 ## Marcos agendados
