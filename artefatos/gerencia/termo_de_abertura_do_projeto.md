@@ -42,7 +42,9 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 **1.4 Tipo de Projeto:**
 
 [ ] Manutenção em produto existente
+
 [X] Desenvolvimento de novo produto
+
 [ ] Outro: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **1.5 Objetivo do projeto:** 
