@@ -85,9 +85,9 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **3.1 Prazo previsto (horas):** 100
 
-**3.2 Data prevista de início:  **03 /08 / 2022 
+**3.2 Data prevista de início:** 03 /08 / 2022 
 
-**3.3 Data prevista de término: **05 / 12 /2022 
+**3.3 Data prevista de término:** 05 / 12 /2022 
 
 ## 4. ESTIMATIVA DE CUSTO
 
