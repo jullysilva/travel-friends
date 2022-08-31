@@ -48,25 +48,23 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 **1.5 Objetivo do projeto:** 
 
 **1.6 Benefícios que justificam o projeto:**
+- Nessidade de um mercado de turismo crescente
+- Pouca concorrência 
 
 **1.7 Qualidade esperada do produto final (requisitos de qualidade):**
-Bom desempenho;
-
+- Bom desempenho
+- Excelência nos serviços 
 
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
-Chat;
-Calendário;
-Geolocalização;
-Indicação de guia;
-Cadastro de roteiro;
-Termo de responsabilidade;
-Cadastro de estabelecimento.
+- Roteiros turísticos
+- Interação entre os usuários do sistema
+- Geolocalização
 
 **2.2 O que não será feito no projeto (contra-escopo)**
-Realização de pagamentos;
-Se responsabilizar com a interação dos usuários fora do aplicativo.
+- Realização de pagamentos
+- Responsabilidade com a interação dos usuários fora do aplicativo
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
@@ -75,11 +73,10 @@ Se responsabilizar com a interação dos usuários fora do aplicativo.
 | **2.** | **Sistema web** |
 
 **2.4 Condições para início do projeto**
-Refinamento dos requisitos;
-Distribuição de função e tarefa;
-Planejamento da arquitetura do software.
-
-
+- Registro da Declaração de Escopo
+- Registro Estrutura analítica do projeto
+- Especificação dos requisitos
+- Distribuição das tarefa conforme cronograma
 
 ## 3. ESTIMATIVA DE PRAZO
 
