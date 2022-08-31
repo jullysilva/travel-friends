@@ -36,6 +36,15 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 
 ## Requisitos (do produto e/ou do projeto) |
+- Autenticação do usuário (WEB e Mobile)
+- Termo de Uso e Aceite
+- Cadastro de roteiros
+- Cadastro de estabelecimentos
+- Exibição de roteiros
+- Exibição de estabelecimentos
+- Implementação de comunidade de usuários 
+- Implementação de chat
+- Implementação de um serviço de geolocalização
 
 ## Entregáveis
 
