@@ -47,10 +47,10 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 | Nome | Expectativas | Influência | Importância / Poder | Apoio | Observações |
 | --- | --- | --- | --- | --- | --- |
-|   | Aterfatos da projeção da arquitetura do software | Média | Média | Apoiador |
+| Warley Leandro dos Anjos | Arterfatos da projeção da arquitetura do software | Média | Média | Apoiador |
 | Jully Ketely Alves da Silva | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Alta | Alta | Apoiador |
 | Ian Asenjo Dominguez Cunha | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Média | Média | Apoiador |
 | Warley Leandro dos Anjos | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Alta | Alta | Apoiador |
 | Lorrayne Reis Silva | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Média | Média | Apoiador |
 | Laura Lourdes Coutinho Rodrigues | Artefatos de gerenciamento de projeto | Alta | Alta | Apoiador |
-|   | Software implantando nos computadores do estabelecimento com os requisitos solicitados implementados | Alta | Alta | Apoiador |
+| Laura Lourdes Coutinho Rodrigues | Software implantando nos computadores do estabelecimento com os requisitos solicitados implementados | Alta | Alta | Apoiador |
