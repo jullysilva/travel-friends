@@ -108,7 +108,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 | Jully Ketely Alves da Silva | DevOps |     |
 | Laura Lourdes Coutinho Rodrigues | Scrum Master |     |
 | Lorrayne Reis Silva | Desenvolvedor |     |
-| Warley Leandro dos Anjos | Desenvolvedor |     |
+| Warley Leandro dos Anjos | Arquiteto de Software |     |
 
 **Observações:**
 
