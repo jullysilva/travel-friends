@@ -56,6 +56,6 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 | Nome do Marco | Entregáveis Previstos |
 | --- | --- |
-| | |
+|Sprint 1  | |
 | | |
 | | |
