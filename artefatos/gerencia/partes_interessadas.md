@@ -37,11 +37,11 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 | Nome | Posição / Cargo | Papel no Projeto | Email | Telefone
 | --- | --- | --- | --- | --- |
-| Ian Asenjo Dominguez Cunha | Desenvolvedor| 
-| Jully Ketely Alves da Silva | DevOps | 
-| Laura Lourdes Coutinho Rodrigues | Scrum Master|
-| Lorrayne Reis Silva | Desenvolvedor |   
-| Warley Leandro dos Anjos | Arquiteto de Software | 
+| Ian Asenjo Dominguez Cunha | Desenvolvedor| | iadcunha@sga.pucminas.br
+| Jully Ketely Alves da Silva | DevOps | | jkasilva@sga.pucminas.br
+| Laura Lourdes Coutinho Rodrigues | Scrum Master| | laura.rodrigues.1199007@sga.pucminas.br
+| Lorrayne Reis Silva | Desenvolvedor | | lorrayne.silva.1220819@sga.pucminas.br
+| Warley Leandro dos Anjos | Arquiteto de Software | | warley.anjos@sga.pucminas.br
 
 ## Avaliação
 
