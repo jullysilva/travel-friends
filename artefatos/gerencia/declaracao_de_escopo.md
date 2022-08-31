@@ -33,6 +33,8 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 
 ## Descrição do Escopo
+O projeto Travel Friends será realizado no segundo semestre de 2022 na disciplina Trabalho Interdisciplinar de Software V, com o objetivo de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e conexão com pessoas.
+Para implementação serão necessários a alocação de um gerente de projetos, um designer, um arquiteto de softwares e dois desenvolvedores.
 
 
 ## Requisitos (do produto e/ou do projeto) |
