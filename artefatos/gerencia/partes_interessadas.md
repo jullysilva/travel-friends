@@ -37,7 +37,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 | Nome | Posição / Cargo | Papel no Projeto | Email | Telefone
 | --- | --- | --- | --- | --- |
-| Ian Asenjo Dominguez Cunha | Desenvolvedor| | iadcunha@sga.pucminas.br | 95153805 |
+| Ian Asenjo Dominguez Cunha | Desenvolvedor| | iadcunha@sga.pucminas.br | 995153805 |
 | Jully Ketely Alves da Silva | DevOps | | jkasilva@sga.pucminas.br | 996866196 |
 | Laura Lourdes Coutinho Rodrigues | Scrum Master| | laura.rodrigues.1199007@sga.pucminas.br | 995062899 |
 | Lorrayne Reis Silva | Desenvolvedor | | lorrayne.silva.1220819@sga.pucminas.br | 975209457 |
