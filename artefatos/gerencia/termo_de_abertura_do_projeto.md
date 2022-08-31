@@ -2,7 +2,7 @@
 
 **Nome da empresa:** Travel Friends
 
-**Data:** 31/08/2022
+**Data:** 14/09/2022
 
 **Integrantes:**
 Ian Asenjo Dominguez Cunha, iadcunha@sga.pucminas.br
@@ -83,7 +83,6 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 - Distribuição das tarefa conforme cronograma
 
 ## 3. ESTIMATIVA DE PRAZO
-
 
 **3.1 Prazo previsto (horas):** 100
 
