@@ -3,6 +3,8 @@
 
 **Gerentes de Projeto:** Laura Lourdes Coutinho Rodrigues
 
+**Membros:**
+
 Ian Asenjo Dominguez Cunha, iadcunha@sga.pucminas.br
 
 Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
