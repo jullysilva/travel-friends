@@ -1,8 +1,8 @@
-# Termo de Abertura de Projeto (TAP) no.: 9999
+# Termo de Abertura de Projeto (TAP) no.: 0001
 
 **Nome da empresa:** Travel Friends
 
-**Data:** 31/08/2022
+**Data:** 14/09/2022
 
 **Integrantes:**
 Ian Asenjo Dominguez Cunha, iadcunha@sga.pucminas.br
@@ -42,31 +42,33 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 **1.4 Tipo de Projeto:**
 
 [ ] Manutenção em produto existente
+
 [X] Desenvolvimento de novo produto
+
 [ ] Outro: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **1.5 Objetivo do projeto:** 
 
+O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
+
 **1.6 Benefícios que justificam o projeto:**
+- Nessidade de um mercado de turismo crescente
+- Pouca concorrência 
 
 **1.7 Qualidade esperada do produto final (requisitos de qualidade):**
-Bom desempenho;
-
+- Bom desempenho
+- Excelência nos serviços 
 
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
-Chat;
-Calendário;
-Geolocalização;
-Indicação de guia;
-Cadastro de roteiro;
-Termo de responsabilidade;
-Cadastro de estabelecimento.
+- Roteiros turísticos
+- Interação entre os usuários do sistema
+- Geolocalização
 
 **2.2 O que não será feito no projeto (contra-escopo)**
-Realização de pagamentos;
-Se responsabilizar com a interação dos usuários fora do aplicativo.
+- Realização de pagamentos
+- Responsabilidade com a interação dos usuários fora do aplicativo
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
@@ -75,30 +77,29 @@ Se responsabilizar com a interação dos usuários fora do aplicativo.
 | **2.** | **Sistema web** |
 
 **2.4 Condições para início do projeto**
-Refinamento dos requisitos;
-Distribuição de função e tarefa;
-Planejamento da arquitetura do software.
-
-
+- Registro da Declaração de Escopo
+- Registro Estrutura analítica do projeto
+- Especificação dos requisitos
+- Distribuição das tarefa conforme cronograma
 
 ## 3. ESTIMATIVA DE PRAZO
 
-
 **3.1 Prazo previsto (horas):** 100
 
-**3.2 Data prevista de início:  **03 /08 / 2022 
-**3.3 Data prevista de término: **05 / 12 /2022 
+**3.2 Data prevista de início:** 03/08/2022 
+
+**3.3 Data prevista de término:** 05/12/2022 
 
 ## 4. ESTIMATIVA DE CUSTO
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** **(especifique):** | 80 | 0.0 |  |
-| **4.2 Hardware (especifique):** | 2 | 0.0 |  |
-| **4.3 Rede e serviços de hospedagem:** | 10 | 0.0 |  |
-| **4.4 Software de terceiros:** | 2 | 0.0 |  |
-| **4.5 Serviços e treinamento:** | 6 | 0.0 |  |
-| **4.6 Total Geral:** | 100 | 0.0 |  |
+| **4.1 Recursos Humanos** **(desenvolvedores):** | 80 | 20,5 | 20.500|
+| **4.2 Hardware (configurações):** | 2 | 0.0 | 0.0 |
+| **4.3 Rede e serviços de hospedagem:** | 10 | 20,5 | 200 |
+| **4.4 Software de terceiros:** | 2 | 0.0 | 0.0 |
+| **4.5 Serviços e treinamento:** | 6 | 20,5 | 123 |
+| **4.6 Total Geral:** | 100 | 20,5 | 20.823 |
 
 ## 5. PARTES INTERESSADAS
 
@@ -108,7 +109,7 @@ Planejamento da arquitetura do software.
 | Jully Ketely Alves da Silva | DevOps |     |
 | Laura Lourdes Coutinho Rodrigues | Scrum Master |     |
 | Lorrayne Reis Silva | Desenvolvedor |     |
-| Warley Leandro dos Anjos | Desenvolvedor |     |
+| Warley Leandro dos Anjos | Arquiteto de Software |     |
 
 **Observações:**
 
