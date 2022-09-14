@@ -82,9 +82,6 @@ _Um dos principais problemas enfrentados por viajantes diz respeito primeirament
 
 _O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar ao usuários a criação de listas de roteiros turísticos que desejam realizar juntamente ao compartilhamento dessa a outras pessoas interessadas.Comitantemente a informatização de eventos ocorrentes na determinada localidade dos usuários e o fornecimento de uma chat para comunicação, no qual as pessoas poderão interagir para marcar encontros e compartilhar dicas._
 
-## 1.3. Definições e Abreviaturas
-
-Coloque aqui as definições, siglas e abreviaturas utilizadas no trabalho._
 
 <a name="requisitos"></a>
 # 2. Requisitos
