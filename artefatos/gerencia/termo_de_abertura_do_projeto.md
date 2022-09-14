@@ -48,8 +48,8 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 [ ] Outro: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **1.5 Objetivo do projeto:** 
-
-O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
+No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
+Nesse contexto de crescente mercado turistico, os viajantes estão em busca de particidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
 
 **1.6 Benefícios que justificam o projeto:**
 - Mercado de turismo crescente
