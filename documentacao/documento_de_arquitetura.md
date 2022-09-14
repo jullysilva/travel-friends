@@ -89,33 +89,34 @@ Coloque aqui as definições, siglas e abreviaturas utilizadas no trabalho._
 <a name="requisitos"></a>
 # 2. Requisitos
 
-_Esta seção descreve os requisitos comtemplados nesta descrição arquitetural, divididos em dois grupos: funcionais e não funcionais._
+Esta seção discorre sobre requisitos necessários para a implementação do projeto, de equivalência na contemplação da descrição arquitetural. Os mesmos foram divididos em requisitos funcionais e não funcionais, a seguir: 
 
 ## 2.1. Requisitos Funcionais
 
-_Enumere os requisitos funcionais previstos para a sua aplicação. Concentre-se nos requisitos funcionais que sejam críticos para a definição arquitetural. Lembre-se de listar todos os requisitos que são necessários para garantir cobertura arquitetural. Esta seção deve conter uma lista de requisitos ainda sem modelagem. Na coluna Prioridade utilize uma escala (do mais prioritário para o menos): Essencial, Desejável, Opcional._
 
 | **ID** | **Descrição** | **Prioridade** |
 | --- | --- | --- |
-| RF001 | | |
-| RF002 | | |
-| | | |
-| | | |
-| | | |
+| RF001 | O usuário deve autentificar-se pela web| Essencial|
+| RF002 | O usuário deve autentificar-se através de seu telefone| Essencial |
+| RF003| O utente poderá cadastrar roteiros de viagens| Essencial|
+| RF004| Deve ser apresentado uma lista de exibição de roteiros aos usuários| Essencial |
+| RF005| Deve ser apresentado  uma lista de estabelecimentos aos usuários| Essencial |
+| RF006| Devem ser emitidas notificações informacionais |Desejável |
+| RF007| O usuário poderá vizualizar sua localização| Essencial |
+
 
 Obs: acrescente mais linhas, se necessário.
 
 ## 2.2. Requisitos Não-Funcionais
 
-_Enumere os requisitos não-funcionais previstos para a sua aplicação. Entre os requisitos não funcionais, inclua todos os requisitos que julgar importante do ponto de vista arquitetural ou seja os requisitos que terão impacto na definição da arquitetura. Os requisitos devem ser descritos de forma completa e preferencialmente quantitativa._
 
 | **ID** | **Descrição** |
 | --- | --- |
 | RNF001 | |
 | RNF002 | |
-| | |
-| | |
-| | |
+| RNF003| |
+| RNF004| |
+| RNF005| |
 
 Obs: acrescente mais linhas, se necessário.
 
