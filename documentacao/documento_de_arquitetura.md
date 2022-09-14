@@ -146,7 +146,7 @@ _Esta seção discorre sobre requisitos necessários para a implementação do p
 
 _Apresente uma visão geral da solução proposta para o projeto e explique brevemente esse diagrama de visão geral, de forma textual. Esse diagrama não precisa seguir os padrões da UML, e deve ser completo e tão simples quanto possível, apresentando a macroarquitetura da solução._
 
-![Visão Geral da Solução](imagens/visao.png "Visão Geral da Solução")
+![Visão Geral da Solução](imagens/modelo_arquitetura_tis5.png "Visão Geral da Solução")
 
 **Figura 1 - Visão Geral da Solução (fonte: https://medium.com)**
 
