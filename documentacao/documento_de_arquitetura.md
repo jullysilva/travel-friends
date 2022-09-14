@@ -133,7 +133,7 @@ _Esta seção discorre sobre requisitos necessários para a implementação do p
 
 | **Análise** | **Design** | **Implementação** |
 | --- | --- | --- |
-| Persistência | Banco de dados relacional| MongoDB|
+| Persistência | Banco de dados não relacional| MongoDB|
 | Front end |Interface de comunicação com o usuário |React, Axios, ESlint |
 | Back end | Estruturação de operalização do sistema |Node, Eslint, Express Js, Mongoose|
 | Integração |Controle de recursos com web e mobile | MVC|
@@ -144,13 +144,14 @@ _Esta seção discorre sobre requisitos necessários para a implementação do p
 <a name="modelagem"></a>
 # 3. Modelagem e projeto arquitetural
 
-_Apresente uma visão geral da solução proposta para o projeto e explique brevemente esse diagrama de visão geral, de forma textual. Esse diagrama não precisa seguir os padrões da UML, e deve ser completo e tão simples quanto possível, apresentando a macroarquitetura da solução._
+
+_Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação.Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados._
 
 ![Visão Geral da Solução](imagens/modelo_arquitetura_tis5.png "Visão Geral da Solução")
 
-**Figura 1 - Visão Geral da Solução (fonte: https://medium.com)**
+**Figura 1 - Visão Geral da Solução **
 
-Obs: substitua esta imagem por outra, adequada ao seu projeto (cada arquitetura é única).
+
 
 ## 3.1. Visão de Negócio (Funcionalidades)
 
