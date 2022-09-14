@@ -52,5 +52,4 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 | Ian Asenjo Dominguez Cunha | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Média | Média | Apoiador |
 | Warley Leandro dos Anjos | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Alta | Alta | Apoiador |
 | Lorrayne Reis Silva | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Média | Média | Apoiador |
-| Laura Lourdes Coutinho Rodrigues | Artefatos de gerenciamento de projeto | Alta | Alta | Apoiador |
-| Laura Lourdes Coutinho Rodrigues | Software implantando nos computadores do estabelecimento com os requisitos solicitados implementados | Alta | Alta | Apoiador |
+| Laura Lourdes Coutinho Rodrigues | Artefatos de gerenciamento de projeto e Software implantando nos computadores do estabelecimento com os requisitos solicitados implementados | Alta | Alta | Apoiador |
