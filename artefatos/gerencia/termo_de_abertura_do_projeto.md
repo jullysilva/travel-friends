@@ -101,13 +101,13 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** : | 5 | | |
-| **4.1.1 Desenvolvimento** : | 60 | | |
-| **4.1.2 Gerenciamento** : | 15 | | |
-| **4.2 Hardware:** | 2 |  |  |
-| **4.3 Rede e serviços de hospedagem:** | 10 |  | |
-| **4.4 Software de terceiros:** | 2 | |  |
-| **4.5 Serviços e treinamento:** | 6 | |  |
+| **4.1 Recursos Humanos** : | 5 |76,87 |384,35 |
+| **4.1.1 Desenvolvimento** : | 60 | 98,20 |5.892 x 4 |
+| **4.1.2 Gerenciamento** : | 15 |120,33 |1.804,95 |
+| **4.2 Hardware:** | 2 |  | 31,09 |
+| **4.3 Rede e serviços de hospedagem:** | 10 |  | 31,09|
+| **4.4 Software de terceiros:** | 2 | |31,09|
+| **4.5 Serviços e treinamento:** | 6 ||120,33 | 721,98 |
 | **4.6 Total Geral:** | 100 |  | |
 
 ## 5. PARTES INTERESSADAS
