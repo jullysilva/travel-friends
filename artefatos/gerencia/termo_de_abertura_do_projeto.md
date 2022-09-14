@@ -50,6 +50,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 **1.5 Objetivo do projeto:** 
 
 No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
+
 Nesse contexto de crescente mercado turistico, os viajantes estão em busca de particidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
 
 **1.6 Benefícios que justificam o projeto:**
@@ -102,13 +103,13 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
 | **4.1 Recursos Humanos** : | 5 |76,87 |384,35 |
-| **4.1.1 Desenvolvimento(4 pessoas)** : | 60 | 98,20 |5.892 |
-| **4.1.2 Gerenciamento** : | 15 |120,33 |1.804,95 |
-| **4.2 Hardware:** | 2 | -- | 31,09 |
-| **4.3 Rede e serviços de hospedagem:** | 10 |--| 31,09|
-| **4.4 Software de terceiros:** | 2 |-- |31,09|
-| **4.5 Serviços e treinamento:** | 6 |120,33|721,98|
-| **4.6 Total Geral:** | 100 | -- | 80.944,65|
+| **4.1.1 Desenvolvimento (4 pessoas)** | 60 | 98,20 |5.892 |
+| **4.1.2 Gerenciamento** | 15 |120,33 |1.804,95 |
+| **4.2 Hardware** | 2 | -- | 31,09 |
+| **4.3 Rede e serviços de hospedagem** | 10 |--| 31,09|
+| **4.4 Software de terceiros** | 2 |-- |31,09|
+| **4.5 Serviços e treinamento** | 6 |120,33|721,98|
+| **4.6 Total Geral** | 100 | -- | 80.944,65|
 
 ## 5. PARTES INTERESSADAS
 
