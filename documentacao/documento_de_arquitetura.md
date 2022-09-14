@@ -89,7 +89,7 @@ Coloque aqui as definições, siglas e abreviaturas utilizadas no trabalho._
 <a name="requisitos"></a>
 # 2. Requisitos
 
-Esta seção discorre sobre requisitos necessários para a implementação do projeto, de equivalência na contemplação da descrição arquitetural. Os mesmos foram divididos em requisitos funcionais e não funcionais, a seguir: 
+_Esta seção discorre sobre requisitos necessários para a implementação do projeto, de equivalência na contemplação da descrição arquitetural. Os mesmos foram divididos em requisitos funcionais e não funcionais, a seguir:_
 
 ## 2.1. Requisitos Funcionais
 
@@ -105,29 +105,29 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 | RF007| O usuário poderá vizualizar sua localização| Essencial |
 
 
-Obs: acrescente mais linhas, se necessário.
 
 ## 2.2. Requisitos Não-Funcionais
 
 
 | **ID** | **Descrição** |
 | --- | --- |
-| RNF001 | |
-| RNF002 | |
-| RNF003| |
-| RNF004| |
-| RNF005| |
+| RNF001 | O tempo de resposta realizar buscas de roteiros deve ser de 10 segundos|
+| RNF002 | A plataforma deve armazenar os dados dos usuários de acordo com seu acesso|
+| RNF003| Deve ser de fácil utilização|
+| RNF004| Deve fornecer uma interface que vá de acordo com regras heurísticas de interação entre usuário e máquina|
+| RNF005| As notificações devem ser emitidas com no mínimo 1 para a ocorrência do evento |
+| RNF006| A plataforma deve apontar ao usuário caso a localização desse seja referente a uma distância de 5km ou mais do evento|
+| RNF007| O usuário poderá cadastrar no máximo 10 roteiros de acordo com sua localidade|
+| RNF008| Os componentes devem ser construídos de forma que possam ser reutilizados|
 
-Obs: acrescente mais linhas, se necessário.
 
 ## 2.3. Restrições Arquiteturais
 
-_Enumere as restrições arquiteturais. Lembre-se de que as restrições arquiteturais geralmente não são consideradas requisitos uma vez que limitam a solução candidata. Os requisitos não impõem restrição, mas precisam ser satisfeitos._
-
-As restrições impostas ao projeto que afetam sua arquitetura são (por exemplo):
-
-- O software deverá ser desenvolvido em Python/Django;
-- A comunicação da API deve seguir o padrão RESTful.
+- Conformidade com padrões arquiteturais de desenvolvimento MVC;
+- A aplicação deve ser construída segundo a arquitetura MVC , na qual o frontend será desenvolvido em React;
+- O aplicativo será funcional em dispositivos celulares Android e IOS os quais devem ter acesso a internet;
+- O frontend deve ser desenvolvido para consumir diferentes serviços de APIs diferentes, portanto um módulo não pode interferir no outro;
+- O serviço de autenticação de usuários será fornecido por uma API externa.
 
 ## 2.4. Mecanismos Arquiteturais
 
