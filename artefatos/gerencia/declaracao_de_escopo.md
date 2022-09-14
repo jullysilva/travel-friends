@@ -38,23 +38,26 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 
 
 ## Requisitos (do produto e/ou do projeto) |
-- Autenticação do usuário (WEB e Mobile)
+- Autenticação do usuário ( Web e Mobile)
 - Termo de Uso e Aceite
 - Cadastro de roteiros
 - Cadastro de estabelecimentos
 - Exibição de roteiros
 - Exibição de estabelecimentos
-- Implementação de comunidade de usuários 
-- Implementação de chat
+- Implementação de ambiente de interação entre os usuários
+- Implementação de um serviço de notificações
 - Implementação de um serviço de geolocalização
 
 ## Entregáveis
-- Roteiros turísticos 
-- Interação entre os usuários do sistema 
+- Criação de roteiros turísticos para os usuários
+- Ambiente de socialização para os usuários compartilharem suas experiências de viagens e passeio
+- Utilização de serviço de geolocalização no aplicativo
 
 ## Limites
-- Realização de pagamentos.
-- Responsabilidade com a interação dos usuários fora do aplicativo.
+- Realização de pagamentos
+- Parceria com empresas de turismos
+- Fornecimento de transpotres para os usuários
+- Parceria com estabelecimentos de hotelaria
 
 ## Restrições
 - Curto prazo para o desenvolvimento nos impossibilita de aprofundar os requisitos a longo prazo.
@@ -64,8 +67,8 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 
 ## Premissas
 - Adesão dos usuários interessados em roteiros turísticos.
--  Excelência nos serviços.
-
+- Excelência nos serviços, agregando valor para os usuários
+- Bom desempenho e funcionalidades em acordo com a Lei Geral de Proteção de Dados
 
 ## Marcos agendados
 
