@@ -1,4 +1,4 @@
-# TITULO DO PROJETO
+# TRAVEL FRIENDS
 
 
 **Ian Asenjo Dominguez Cunha,  iadcunha@sga.pucminas.br**
