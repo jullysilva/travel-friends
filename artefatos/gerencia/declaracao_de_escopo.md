@@ -74,7 +74,7 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 
 | Nome do Marco | Entregáveis Previstos |
 | --- | --- |
-|Sprint 1  | |
+|Sprint 1  |Planejamento geral do projeto, Definição do projeto.|
 |Sprint 2  |Declaração de Escopo, Registro das Partes Interessadas, Termo de Abertura do Projeto, Estrutura Analítica do projeto, Documento de Arquitetura. |
 |Sprint 3  |Protótipo das Interfaces, Autenticação do Usuário ( Web e Mobile), Termo de Uso e Aceite, Integração com a API do Google Maps, Atas de reunião semanais. |
 |Sprint 4  |Atas de reunião semanais, Realese das funcionalidades anteriores, Implementação de ambiente de interação entre os usuários, Aplicação de serviço de Geolocalização.|
