@@ -75,9 +75,10 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
-| **1.** | Aplicativo mobile | | Autenticação no sistema | Adesão dos termos de Uso |  | Exibição de roteiros de viagem | | Ambiente de interação dos usuários|
+| **1.** Aplicativo mobile| Autenticação no sistema | Adesão dos termos de Uso |  | Exibição de roteiros de viagem | | Ambiente de interação dos usuários|
 | --- | --- |
-| **2.** | **Sistema web** | | Criação de roteiros turisticos | | Ambiente de interação dos usuários |
+
+| **2.** **Sistema web| Criação de roteiros turisticos | | Ambiente de interação dos usuários |
 
 **2.4 Condições para início do projeto**
 - Registro da Declaração de Escopo
@@ -109,7 +110,7 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 | Nome | Papel no projeto | Assinatura |
 | --- | --- | --- |
 | Ian Asenjo Dominguez Cunha | Desenvolvedor | Ian Cunha    |
-| Jully Ketely Alves da Silva | DevOps |     | Julli Ketely
+| Jully Ketely Alves da Silva | DevOps | Jully Ketely    | 
 | Laura Lourdes Coutinho Rodrigues | Scrum Master | Laura Lourdes   |
 | Lorrayne Reis Silva | Desenvolvedor | Lorrayne Reis    |
 | Warley Leandro dos Anjos | Arquiteto de Software | Warley Leandro  |
