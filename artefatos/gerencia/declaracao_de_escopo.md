@@ -50,7 +50,7 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 
 ## Entregáveis
 - Criação de roteiros turísticos para os usuários
-- Ambiente de socialização para os usuários compartilharem suas experiências de viagens e passeio
+- Ambiente de interação para os usuários compartilharem suas experiências de viagens e passeio
 - Utilização de serviço de geolocalização no aplicativo
 
 ## Limites
@@ -77,6 +77,6 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 |Sprint 1  | |
 |Sprint 2  |Declaração de Escopo, Registro das Partes Interessadas, Termo de Abertura do Projeto, Estrutura Analítica do projeto, Documento de Arquitetura. |
 |Sprint 3  |Protótipo das Interfaces, Autenticação do Usuário ( Web e Mobile), Termo de Uso e Aceite, Integração com a API do Google Maps, Atas de reunião semanais. |
-|Sprint 4  |Atas de reunião semanais, realese das funcionalidades anteriores, Implementação de ambiente de interação entre os usuários, Aplicação de serviço de Geolocalização.|
-|Sprint 5  |Atas de reunião semanais, realese das funcionalidades anteriores, Cadastro de roteiros, Cadastro de estabelecimentos, Exibição de roteiros, Exibição de estabelecimentos.|
-|Sprint 6  |Atas de reunião semanais, realese das funcionalidades, Avaliação da Arquitetura, Relatório de Encerramento do Projeto, Vídeo de apresentação do projeto, Autoavaliação e avaliação por pares, Feedback da Autoavaliação e Avaliação por pares.|
+|Sprint 4  |Atas de reunião semanais, Realese das funcionalidades anteriores, Implementação de ambiente de interação entre os usuários, Aplicação de serviço de Geolocalização.|
+|Sprint 5  |Atas de reunião semanais, Realese das funcionalidades anteriores, Cadastro de roteiros, Cadastro de estabelecimentos, Exibição de roteiros, Exibição de estabelecimentos.|
+|Sprint 6  |Atas de reunião semanais, Realese das funcionalidades, Avaliação da Arquitetura, Relatório de Encerramento do Projeto, Vídeo de apresentação do projeto, Autoavaliação e avaliação por pares, Feedback da Autoavaliação e Avaliação por pares.|
