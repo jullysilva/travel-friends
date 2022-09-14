@@ -102,7 +102,7 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** : | 5 |76,87 |384,35 |
+| **4.1 Recursos Humanos** | 5 |76,87 |384,35 |
 | **4.1.1 Desenvolvimento (4 pessoas)** | 60 | 98,20 |5.892 |
 | **4.1.2 Gerenciamento** | 15 |120,33 |1.804,95 |
 | **4.2 Hardware** | 2 | -- | 31,09 |
