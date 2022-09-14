@@ -79,6 +79,7 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 | --- | --- |
 | Autenticação no sistema | Cadastro e Adesão dos termos de Uso|
 | Exibição de roteiros de viagem | Criação de roteiros turisticos|
+| Exibição de estabecimentos| Cadastro de estabelecimentos|
 | Ambiente de interação dos usuários| Ambiente de interação dos usuários|
 
 **2.4 Condições para início do projeto**
