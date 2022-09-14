@@ -163,8 +163,6 @@ _Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qua
 
 ### Descrição resumida dos Casos de Uso / Histórias de Usuário
 
-Exemplos de resumo de Casos de Uso:
-
 #### UC01 – REALIZAR LOGIN NA PLATAFORMA 01
 
 | **Descrição** | Efetuar login na plataforma para utilizar recursos|
