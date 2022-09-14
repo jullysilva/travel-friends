@@ -37,8 +37,8 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 | **Data** | **Autor** | **Descrição** | **Versão** |
 | --- | --- | --- | --- |
-| **[dd/mm/aaaa]** | [Nome do autor] | [Descrever as principais alterações realizadas no documento, evidenciando as seções ou capítulos alterados] | [X] |
 | 03/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções 1,1.1 e 1.2  | 1.0|
+| 14/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções  2 e 3 | 1.0|
 | | | | |
 
 ## SUMÁRIO
@@ -149,52 +149,81 @@ _Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qua
 
 ![Visão Geral da Solução](imagens/modelo_arquitetura_tis5.png "Visão Geral da Solução")
 
-** Figura 1 - Visão Geral da Solução **
+**Figura 1 - Visão Geral da Solução**
 
 ## 3.1. Visão de Negócio (Funcionalidades)
 
-1. O sistema deve...
-2. O sistema deve realizar autenticação do usuário ( Web e Mobile).
-3. O sistema deve oferecer o cadastro de roteiros.
-4. O sistema deve oferecer o cadastro de estabelecimentos.
-5. O sistema deve fazer a exibição de roteiros.
-6. O sistema deve fazer a exibição de estabelecimentos.
-7. Deve ser implementado um ambiente de interação entre os usuários.
-8. Deve ser implementado  um serviço de notificações.
-9. Deve ser implementado  um serviço de geolocalização.
+
+1. O sistema deve realizar autenticação do usuário ( Web e Mobile).
+2. O sistema deve oferecer o cadastro de roteiros.
+3. O sistema deve oferecer o cadastro de estabelecimentos.
+4. O sistema deve fazer a exibição de roteiros.
+5. O sistema deve fazer a exibição de estabelecimentos.
+6. Deve ser implementado um ambiente de interação entre os usuários.
+7. Deve ser implementado  um serviço de notificações.
+8. Deve ser implementado  um serviço de geolocalização.
 
 
 ### Descrição resumida dos Casos de Uso / Histórias de Usuário
 
-_Nesta seção, os casos de uso devem ser resumidos. Esse detalhamento pode ser na forma de um texto sintético ou, alternativamente, você pode optar por descrever estórias de usuários seguindo os métodos ágeis. Neste caso a seção deve chamar &quot;Histórias de usuários&quot;. Lembre-se das características de qualidade das estórias de usuários, ou seja, o que é preciso para descrever boas histórias de usuários._
-
 Exemplos de resumo de Casos de Uso:
 
-#### UC01 – NOME DO CASO DE USO 01
+#### UC01 – REALIZAR LOGIN NA PLATAFORMA 01
+
+| **Descrição** | Efetuar login na plataforma para utilizar recursos|
+| --- | --- |
+| **Atores** | Usuário|
+| **Prioridade** | Essencial |
+| **Requisitos associados** | RF001,RF002|
+| **Fluxo Principal** |-|
+
+#### UC02 – CADASTRAR ROTEIRO DE VIAGEM 02
+
+| **Descrição** | Realizar o cadastramento de roteiros de viagens para que outros usuários possam vizualizar |
+| --- | --- |
+| **Atores** | Usuário |
+| **Prioridade** | Essencial|
+| **Requisitos associados** | RF003|
+| **Fluxo Principal** | UC01|
+
+
+#### UC03 – VIZUALIZAR ROTEIROS 03
+
+| **Descrição** | Vizualizar roteiros referentes a localização geográfica próxima ou atráves de busca |
+| --- | --- |
+| **Atores** | Usuário|
+| **Prioridade** | Essencial |
+| **Requisitos associados** | RF004|
+| **Fluxo Principal** | UC01 |
+
+#### UC04 – LISTAR ESTABELECIMENTOS 04
 
 | **Descrição** | |
 | --- | --- |
-| **Atores** | |
-| **Prioridade** | |
-| **Requisitos associados** | |
-| **Fluxo Principal** | |
+| **Atores** | Usuário|
+| **Prioridade** | Essencial|
+| **Requisitos associados** | RF005|
+| **Fluxo Principal** | UC1|
 
-#### UC02 – NOME DO CASO DE USO 02
+#### UC05 – VIZUALIZAR LOCALIZAÇAO 05
 
-| **Descrição** | |
+| **Descrição** | Vizualizar localização atual do utente|
 | --- | --- |
-| **Atores** | |
-| **Prioridade** | |
-| **Requisitos associados** | |
-| **Fluxo Principal** | |
+| **Atores** |Usuário|
+| **Prioridade** |Essencial |
+| **Requisitos associados** | RF007|
+| **Fluxo Principal** |UC1|
+
 
 Exemplos de Histórias de Usuário:
 
-- Como Fulano eu quero poder convidar meus amigos para que a gente possa se reunir...
+- Como Camila eu quero criar roteiros para compartilhar informações de viagens com outras pessoas.
 
-- Como Cicrano eu quero poder organizar minhas tarefas diárias, para que...
+- Como João eu quero vizualizar uma lista de roteiros para escolher o que mais combina com o meu estilo de viagem.
 
-- Como gerente eu quero conseguir entender o progresso do trabalho do meu time, para que eu possa ter relatórios periódicos dos nossos acertos e falhas.
+- Como Priscila eu quero vizualizar a minha localização para me referenciar dentro das ocorrências de eventos próximas.
+
+- Como Pedro eu quero logar em uma aplicação que seja mobile e app para ampliar meu repertório de possibilidades de acesso.
 
 ## 3.2. Visão Lógica
 
