@@ -48,6 +48,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 [ ] Outro: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **1.5 Objetivo do projeto:** 
+
 No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
 Nesse contexto de crescente mercado turistico, os viajantes estão em busca de particidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
 
@@ -100,7 +101,9 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** : | 80 | | |
+| **4.1 Recursos Humanos** : | 5 | | |
+| **4.1.1 Desenvolvimento** : | 60 | | |
+| **4.1.2 Gerenciamento** : | 15 | | |
 | **4.2 Hardware:** | 2 |  |  |
 | **4.3 Rede e serviços de hospedagem:** | 10 |  | |
 | **4.4 Software de terceiros:** | 2 | |  |
