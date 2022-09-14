@@ -53,19 +53,18 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 
 **1.6 Benefícios que justificam o projeto:**
 - Mercado de turismo crescente
-- Facilitar a experiência de viagens
-- Os usários serão beneficiados com praticidade
+- Facilitar a experiência de viagens, beneficiando os usários com praticidade
 
 **1.7 Qualidade esperada do produto final (requisitos de qualidade):**
 - Bom desempenho
-- Excelência nos serviços
+- Excelência nos serviços, agregando valor para os usuários
 - Funcionalidades em acordo com a Lei Geral de Proteção de Dados
 
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
 - Criação de roteiros turísticos para os usuários
-- Ambiente de socialização para os usuários compartilharem suas experiências de viagens e passeiso. 
+- Ambiente de socialização para os usuários compartilharem suas experiências de viagens e passeio
 - Utilização de serviço de geolocalização no aplicativo
 
 **2.2 O que não será feito no projeto (contra-escopo)**
@@ -76,9 +75,9 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
-| **1.** | Aplicativo mobile |
+| **1.** | Aplicativo mobile | | Autenticação no sistema | Adesão dos termos de Uso |  | Exibição de roteiros de viagem | | Ambiente de interação dos usuários|
 | --- | --- |
-| **2.** | **Sistema web** |
+| **2.** | **Sistema web** | | Criação de roteiros turisticos | | Ambiente de interação dos usuários |
 
 **2.4 Condições para início do projeto**
 - Registro da Declaração de Escopo
