@@ -52,23 +52,27 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
 
 **1.6 Benefícios que justificam o projeto:**
-- Nessidade de um mercado de turismo crescente
-- Pouca concorrência 
+- Mercado de turismo crescente
+- Facilitar a experiência de viagens
+- Os usários serão beneficiados com praticidade
 
 **1.7 Qualidade esperada do produto final (requisitos de qualidade):**
 - Bom desempenho
-- Excelência nos serviços 
+- Excelência nos serviços
+- Funcionalidades em acordo com a Lei Geral de Proteção de Dados
 
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
-- Roteiros turísticos
-- Interação entre os usuários do sistema
-- Geolocalização
+- Criação de roteiros turísticos para os usuários
+- Ambiente de socialização para os usuários compartilharem suas experiências de viagens e passeiso. 
+- Utilização de serviço de geolocalização no aplicativo
 
 **2.2 O que não será feito no projeto (contra-escopo)**
 - Realização de pagamentos
-- Responsabilidade com a interação dos usuários fora do aplicativo
+- Parceria com empresas de turismos
+- Fornecimento de transpotres para os usuários 
+- Parceria com estabelecimentos de hotelaria
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
@@ -94,22 +98,22 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** **(desenvolvedores):** | 80 | 20,5 | 20.500|
-| **4.2 Hardware (configurações):** | 2 | 0.0 | 0.0 |
-| **4.3 Rede e serviços de hospedagem:** | 10 | 20,5 | 200 |
-| **4.4 Software de terceiros:** | 2 | 0.0 | 0.0 |
-| **4.5 Serviços e treinamento:** | 6 | 20,5 | 123 |
-| **4.6 Total Geral:** | 100 | 20,5 | 20.823 |
+| **4.1 Recursos Humanos** : | 80 | | |
+| **4.2 Hardware:** | 2 |  |  |
+| **4.3 Rede e serviços de hospedagem:** | 10 |  | |
+| **4.4 Software de terceiros:** | 2 | |  |
+| **4.5 Serviços e treinamento:** | 6 | |  |
+| **4.6 Total Geral:** | 100 |  | |
 
 ## 5. PARTES INTERESSADAS
 
 | Nome | Papel no projeto | Assinatura |
 | --- | --- | --- |
-| Ian Asenjo Dominguez Cunha | Desenvolvedor |     |
-| Jully Ketely Alves da Silva | DevOps |     |
-| Laura Lourdes Coutinho Rodrigues | Scrum Master |     |
-| Lorrayne Reis Silva | Desenvolvedor |     |
-| Warley Leandro dos Anjos | Arquiteto de Software |     |
+| Ian Asenjo Dominguez Cunha | Desenvolvedor | Ian Cunha    |
+| Jully Ketely Alves da Silva | DevOps |     | Julli Ketely
+| Laura Lourdes Coutinho Rodrigues | Scrum Master | Laura Lourdes   |
+| Lorrayne Reis Silva | Desenvolvedor | Lorrayne Reis    |
+| Warley Leandro dos Anjos | Arquiteto de Software | Warley Leandro  |
 
 **Observações:**
 
