@@ -25,3 +25,8 @@ export type FavoriteRoutesParams = {
 export type ProfileRoutesParams = {
   Profile: undefined;
 };
+
+export type TermsRoutesParams = {
+  Terms: undefined;
+  Home: undefined;
+};
