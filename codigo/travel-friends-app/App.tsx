@@ -1,9 +1,11 @@
-import { Initial } from "./src/screens/auth/Initial";
+import { NavigationContainer } from "@react-navigation/native";
+import React from "react";
+import { Routes } from "./src/routes";
 
 export default function App() {
   return (
-    <Initial />
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   );
 }
-
-
