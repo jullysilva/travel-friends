@@ -89,6 +89,8 @@ O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar ao
 
 *API*(Application Programming Interface):Conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas por meio de comunicações.
 
+## 1.4. Protótipo
+https://www.figma.com/file/2X6TUKJbtMx8gNObhrUZUs/Travel-Friends?node-id=0%3A1
 
 <a name="requisitos"></a>
 # 2. Requisitos
