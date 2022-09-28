@@ -28,10 +28,10 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+**Resumo**
 
----
+Atráves da necessidade constante de pessoas que viajam e buscam se conectar com o lugar que visam se estabelecer, seja de forma comunicacional ou no entendimento de informações importandes a despeito de uma localidade.O objetivo deste presente trabalho visa o desenvolvimento de uma aplicação utilitária a viajantes no que tange a criação de roteitos que podem ser comportilhados concomitantemente a criação de eventos e troca de informações atráves de uma comunidade estabelecida com base na distância e localização de membros.Os resultados relevantes obtidos com o trabalho se relaciona...  
+
 
 ## Histórico de Revisões
 
@@ -39,6 +39,8 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 | --- | --- | --- | --- |
 | 03/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções 1,1.1 e 1.2  | 1.0|
 | 14/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções  2 e 3 | 1.0|
+| 17/09/2022|Lorrayne Reis |Alterações | 1.1|
+| 25/09/2022|Lorrayne Reis |Alterações | 1.2|
 | | | | |
 
 ## SUMÁRIO
@@ -71,22 +73,27 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 <a name="apresentacao"></a>
 # 1. Apresentação
 
-_No atual contexto pós pandêmico é indubitável a ascensão de pessoas no que tange a realização de viagens em território nacional,a partir de tal ponto observa-se um paradigma de câmbio estrutural de escolhas por parte dos viajantes como pela priorização de viagens mais curtas e como  principal meio locomotivo veículos de aluguel.Com essa prorrogação,quando em turismo tais visitantes desejam conhecer lugares como pontos turísticos, museus, realizar atividades culturais e começam a se preocupar com o planejamento da viagem muito antes do corrimento da mesma.Um exemplo da  afimação se mostra no aumento do consumo de conteúdos de viagem,em um documento divulgado pela Comscore, denominado "Travel Report" constatou-se o aumento de tempo do turista em sites de busca sobre locomoção,turismo e locação de fins de temporada.Isso demonstra uma mudança de paradigma do turista brasileiro no intuito de maior planejamento e na opção por explorar lugares de maneiras mais efetivas e em curto prazo._
+No atual contexto pós pandêmico é indubitável a ascensão de pessoas no que tange a realização de viagens em território nacional,a partir de tal ponto observa-se um paradigma de câmbio estrutural de escolhas por parte dos viajantes como pela priorização de viagens mais curtas e como  principal meio locomotivo veículos de aluguel.Com essa prorrogação,quando em turismo tais visitantes desejam conhecer lugares como pontos turísticos, museus, realizar atividades culturais e começam a se preocupar com o planejamento da viagem muito antes do corrimento da mesma.Um exemplo da  afimação se mostra no aumento do consumo de conteúdos de viagem,em um documento divulgado pela Comscore, denominado "Travel Report" constatou-se o aumento de tempo do turista em sites de busca sobre locomoção,turismo e locação de fins de temporada.Isso demonstra uma mudança de paradigma do turista brasileiro no intuito de maior planejamento e na opção por explorar lugares de maneiras mais efetivas e em curto prazo.
 
 
 ## 1.1. Problema
 
-_Um dos principais problemas enfrentados por viajantes diz respeito primeiramente a orquestração de suas atividades a serem realizadas quando estam viajando,uma vez que desejam conhecer muitos pontos que na maioria das vezes se localizam proximamente.Concisamente,os mesmos em sua maioria não possuem conhecimento de eventos ocorrentes na cidade em comparação a um nativo que conhece páginas de entretenimentos específicas de sua cidade.Segundamente,não existe uma fonte confiável de troca de informações entre pessoas conhecendo um mesmo local com tal contato sendo realizado através de grupos de Facebook,não tornando-se uma maneira segura de intercomunicação dado que pessoas podem se passar por outras ou fornecer informações errôneas._
+Um dos principais problemas enfrentados por viajantes diz respeito primeiramente a orquestração de suas atividades a serem realizadas quando estam viajando,uma vez que desejam conhecer muitos pontos que na maioria das vezes se localizam proximamente.Concisamente,os mesmos em sua maioria não possuem conhecimento de eventos ocorrentes na cidade em comparação a um nativo que conhece páginas de entretenimentos específicas de sua cidade.Segundamente,não existe uma fonte confiável de troca de informações entre pessoas conhecendo um mesmo local com tal contato sendo realizado através de grupos de Facebook,não tornando-se uma maneira segura de intercomunicação dado que pessoas podem se passar por outras ou fornecer informações errôneas.
 
 ## 1.2. Objetivos do trabalho
 
-_O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar ao usuários a criação de listas de roteiros turísticos que desejam realizar juntamente ao compartilhamento dessa a outras pessoas interessadas.Comitantemente a informatização de eventos ocorrentes na determinada localidade dos usuários e o fornecimento de uma chat para comunicação, no qual as pessoas poderão interagir para marcar encontros e compartilhar dicas._
+O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar ao usuários a criação de listas de roteiros turísticos que desejam realizar juntamente ao compartilhamento dessa a outras pessoas interessadas.Comitantemente a informatização de eventos ocorrentes na determinada localidade dos usuários e o fornecimento de uma chat para comunicação, no qual as pessoas poderão interagir para marcar encontros e compartilhar dicas.
+
+## 1.3. Definições e Abreviaturas
+*MVC*(Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas.
+
+*API*(Application Programming Interface):Conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas por meio de comunicações.
 
 
 <a name="requisitos"></a>
 # 2. Requisitos
 
-_Esta seção discorre sobre requisitos necessários para a implementação do projeto, de equivalência na contemplação da descrição arquitetural. Os mesmos foram divididos em requisitos funcionais e não funcionais, a seguir:_
+Esta seção discorre sobre requisitos necessários para a implementação do projeto, de equivalência na contemplação da descrição arquitetural. Os mesmos foram divididos em requisitos funcionais e não funcionais, a seguir:
 
 ## 2.1. Requisitos Funcionais
 
@@ -142,7 +149,7 @@ _Esta seção discorre sobre requisitos necessários para a implementação do p
 # 3. Modelagem e projeto arquitetural
 
 
-_Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação.Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados._
+Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação.Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
 
 ![Visão Geral da Solução](imagens/modelo_arquitetura_tis5.png "Visão Geral da Solução")
 
@@ -179,7 +186,7 @@ _Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qua
 | **Atores** | Usuário |
 | **Prioridade** | Essencial|
 | **Requisitos associados** | RF003|
-| **Fluxo Principal** | UC01|
+| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em cadastrar roteiro|
 
 
 #### UC03 – VIZUALIZAR ROTEIROS 03
@@ -189,7 +196,7 @@ _Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qua
 | **Atores** | Usuário|
 | **Prioridade** | Essencial |
 | **Requisitos associados** | RF004|
-| **Fluxo Principal** | UC01 |
+| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar roteiro |
 
 #### UC04 – LISTAR ESTABELECIMENTOS 04
 
@@ -198,7 +205,7 @@ _Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qua
 | **Atores** | Usuário|
 | **Prioridade** | Essencial|
 | **Requisitos associados** | RF005|
-| **Fluxo Principal** | UC1|
+| **Fluxo Principal** |1.Usuário realiza login na plataforma,2.Usuário clica em listar estabelecimentos|
 
 #### UC05 – VIZUALIZAR LOCALIZAÇAO 05
 
@@ -207,7 +214,7 @@ _Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qua
 | **Atores** |Usuário|
 | **Prioridade** |Essencial |
 | **Requisitos associados** | RF007|
-| **Fluxo Principal** |UC1|
+| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar localização|
 
 
 Exemplos de Histórias de Usuário:
