@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    justifyContent: "space-around",
     paddingTop: 40,
     padding: 20,
     borderTopLeftRadius: 16,
@@ -27,14 +28,5 @@ export const styles = StyleSheet.create({
   textContent: {
     color: theme.colors.text,
     textAlign: "auto",
-  },
-  button: {
-    marginTop: 100,
-    paddingVertical: 10,
-    borderRadius: 8,
-    backgroundColor: theme.colors.primary,
-    justifyContent: "center",
-
-    alignItems: "center",
   },
 });

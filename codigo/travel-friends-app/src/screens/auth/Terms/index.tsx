@@ -3,6 +3,8 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { useInitialNavigation } from "../../../hooks/navigation";
 import { term } from "./mock";
 
+import Button from "../../../components/Button";
+
 import { styles } from "./styles";
 
 export default function Terms() {
@@ -15,12 +17,12 @@ export default function Terms() {
       </View>
       <View style={styles.content}>
         <Text style={styles.textContent}>{term}</Text>
-        <TouchableOpacity
-          style={styles.button}
+        <Button title="Aceitar" onPress={() => navigation.navigate("SignIn")} />
+        <Button
+          transparent
+          title="Aceitar"
           onPress={() => navigation.navigate("SignIn")}
-        >
-          <Text style={{ color: "white", fontSize: 22 }}>Aceitar</Text>
-        </TouchableOpacity>
+        />
       </View>
     </View>
   );
