@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { useTermsNavigation } from "../../../hooks/navigation";
+import { useInitialNavigation } from "../../../hooks/navigation";
 import { term } from "./mock";
 
 import { styles } from "./styles";
 
 export default function Terms() {
-  const navigation = useTermsNavigation();
+  const navigation = useInitialNavigation();
 
   return (
     <View style={styles.container}>
@@ -17,7 +17,7 @@ export default function Terms() {
         <Text style={styles.textContent}>{term}</Text>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("SignIn")}
         >
           <Text style={{ color: "white", fontSize: 22 }}>Aceitar</Text>
         </TouchableOpacity>

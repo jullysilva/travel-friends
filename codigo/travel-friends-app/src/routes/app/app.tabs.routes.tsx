@@ -13,7 +13,7 @@ import { AppRoutesParams } from "../routes";
 import theme from "../../utils/theme";
 const colors = theme.colors;
 const { Navigator, Screen } = createBottomTabNavigator<AppRoutesParams>();
-export function AppTabsRoutes() {
+export default function AppTabsRoutes() {
   return (
     <Navigator
       screenOptions={({ route }) => ({
