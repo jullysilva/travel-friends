@@ -42,6 +42,7 @@ export default function AppTabsRoutes() {
           } else if (route.name === "ProfileScreens") {
             iconName = focused ? "user-circle" : "user-circle-o";
           }
+          //@ts-ignore
           return <FontAwesome name={iconName} size={size} color={color} />;
         },
       })}
