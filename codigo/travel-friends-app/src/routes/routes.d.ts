@@ -25,3 +25,10 @@ export type FavoriteRoutesParams = {
 export type ProfileRoutesParams = {
   Profile: undefined;
 };
+
+export type InitialRoutesParams = {
+  ForgotPassword: undefined;
+  SignIn: undefined;
+  SignUp: undefined;
+  Terms: undefined;
+};

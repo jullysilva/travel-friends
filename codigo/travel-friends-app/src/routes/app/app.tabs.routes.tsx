@@ -13,7 +13,7 @@ import { AppRoutesParams } from "../routes";
 import theme from "../../utils/theme";
 const colors = theme.colors;
 const { Navigator, Screen } = createBottomTabNavigator<AppRoutesParams>();
-export function AppTabsRoutes() {
+export default function AppTabsRoutes() {
   return (
     <Navigator
       screenOptions={({ route }) => ({
@@ -42,6 +42,7 @@ export function AppTabsRoutes() {
           } else if (route.name === "ProfileScreens") {
             iconName = focused ? "user-circle" : "user-circle-o";
           }
+          //@ts-ignore
           return <FontAwesome name={iconName} size={size} color={color} />;
         },
       })}
