@@ -1,5 +1,7 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, View, KeyboardAvoidingView } from "react-native";
+import Button from "../../../components/Button";
+import Input from "../../../components/Input";
 import { useInitialNavigation } from "../../../hooks/navigation";
 
 import { styles } from "./styles";
@@ -8,13 +10,20 @@ export default function SignIn() {
   const navigation = useInitialNavigation();
   return (
     <View style={styles.container}>
-      <Text>login</Text>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("SignUp")}
-      >
-        <Text style={{ color: "white", fontSize: 22 }}>Login</Text>
-      </TouchableOpacity>
+      <View style={styles.header}>
+        <Text style={styles.title}>Entrar</Text>
+      </View>
+      <View style={styles.content}>
+        <KeyboardAvoidingView>
+          <Input text="E-mail" />
+          <Input text="Senha" />
+          <Button
+            onPress={() => navigation.navigate("SignUp")}
+            title="Entrar"
+          />
+        </KeyboardAvoidingView>
+        <Text>Não tem uma conta?</Text>
+      </View>
     </View>
   );
 }
