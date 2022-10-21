@@ -1,22 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { LoginScreen } from './src/screens/Login';
+import { NavigationContainer } from "@react-navigation/native";
+import React from "react";
+import { UserProvider } from "./src/contexts/userData";
+import { Routes } from "./src/routes";
+
+import { navigationRef } from "./src/routes/RootNavigation";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <LoginScreen />
-    </View>
+    <NavigationContainer ref={navigationRef}>
+      <UserProvider>
+        <Routes />
+      </UserProvider>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

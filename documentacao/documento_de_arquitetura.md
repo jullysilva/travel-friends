@@ -1,4 +1,4 @@
-# TITULO DO PROJETO
+# TRAVEL FRIENDS
 
 
 **Ian Asenjo Dominguez Cunha,  iadcunha@sga.pucminas.br**
@@ -28,17 +28,19 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+**Resumo**
 
----
+Atráves da necessidade constante de pessoas que viajam e buscam se conectar com o lugar que visam se estabelecer, seja de forma comunicacional ou no entendimento de informações importandes a despeito de uma localidade.O objetivo deste presente trabalho visa o desenvolvimento de uma aplicação utilitária a viajantes no que tange a criação de roteitos que podem ser comportilhados concomitantemente a criação de eventos e troca de informações atráves de uma comunidade estabelecida com base na distância e localização de membros.Os resultados relevantes obtidos com o trabalho se relaciona...  
+
 
 ## Histórico de Revisões
 
 | **Data** | **Autor** | **Descrição** | **Versão** |
 | --- | --- | --- | --- |
-| **[dd/mm/aaaa]** | [Nome do autor] | [Descrever as principais alterações realizadas no documento, evidenciando as seções ou capítulos alterados] | [X] |
 | 03/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções 1,1.1 e 1.2  | 1.0|
+| 14/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções  2 e 3 | 1.0|
+| 17/09/2022|Lorrayne Reis |Alterações | 1.1|
+| 25/09/2022|Lorrayne Reis |Alterações | 1.2|
 | | | | |
 
 ## SUMÁRIO
@@ -71,130 +73,161 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 <a name="apresentacao"></a>
 # 1. Apresentação
 
-_No atual contexto pós pandêmico é indubitável a ascensão de pessoas no que tange a realização de viagens em território nacional,a partir de tal ponto observa-se um paradigma de câmbio estrutural de escolhas por parte dos viajantes como pela priorização de viagens mais curtas e como  principal meio locomotivo veículos de aluguel.Com essa prorrogação,quando em turismo tais visitantes desejam conhecer lugares como pontos turísticos, museus, realizar atividades culturais e começam a se preocupar com o planejamento da viagem muito antes do corrimento da mesma.Um exemplo da  afimação se mostra no aumento do consumo de conteúdos de viagem,em um documento divulgado pela Comscore, denominado "Travel Report" constatou-se o aumento de tempo do turista em sites de busca sobre locomoção,turismo e locação de fins de temporada.Isso demonstra uma mudança de paradigma do turista brasileiro no intuito de maior planejamento e na opção por explorar lugares de maneiras mais efetivas e em curto prazo._
+No atual contexto pós pandêmico é indubitável a ascensão de pessoas no que tange a realização de viagens em território nacional,a partir de tal ponto observa-se um paradigma de câmbio estrutural de escolhas por parte dos viajantes como pela priorização de viagens mais curtas e como  principal meio locomotivo veículos de aluguel.Com essa prorrogação,quando em turismo tais visitantes desejam conhecer lugares como pontos turísticos, museus, realizar atividades culturais e começam a se preocupar com o planejamento da viagem muito antes do corrimento da mesma.Um exemplo da  afimação se mostra no aumento do consumo de conteúdos de viagem,em um documento divulgado pela Comscore, denominado "Travel Report" constatou-se o aumento de tempo do turista em sites de busca sobre locomoção,turismo e locação de fins de temporada.Isso demonstra uma mudança de paradigma do turista brasileiro no intuito de maior planejamento e na opção por explorar lugares de maneiras mais efetivas e em curto prazo.
 
 
 ## 1.1. Problema
 
-_Um dos principais problemas enfrentados por viajantes diz respeito primeiramente a orquestração de suas atividades a serem realizadas quando estam viajando,uma vez que desejam conhecer muitos pontos que na maioria das vezes se localizam proximamente.Concisamente,os mesmos em sua maioria não possuem conhecimento de eventos ocorrentes na cidade em comparação a um nativo que conhece páginas de entretenimentos específicas de sua cidade.Segundamente,não existe uma fonte confiável de troca de informações entre pessoas conhecendo um mesmo local com tal contato sendo realizado através de grupos de Facebook,não tornando-se uma maneira segura de intercomunicação dado que pessoas podem se passar por outras ou fornecer informações errôneas._
+Um dos principais problemas enfrentados por viajantes diz respeito primeiramente a orquestração de suas atividades a serem realizadas quando estam viajando,uma vez que desejam conhecer muitos pontos que na maioria das vezes se localizam proximamente.Concisamente,os mesmos em sua maioria não possuem conhecimento de eventos ocorrentes na cidade em comparação a um nativo que conhece páginas de entretenimentos específicas de sua cidade.Segundamente,não existe uma fonte confiável de troca de informações entre pessoas conhecendo um mesmo local com tal contato sendo realizado através de grupos de Facebook,não tornando-se uma maneira segura de intercomunicação dado que pessoas podem se passar por outras ou fornecer informações errôneas.
 
 ## 1.2. Objetivos do trabalho
 
-_O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar ao usuários a criação de listas de roteiros turísticos que desejam realizar juntamente ao compartilhamento dessa a outras pessoas interessadas.Comitantemente a informatização de eventos ocorrentes na determinada localidade dos usuários e o fornecimento de uma chat para comunicação, no qual as pessoas poderão interagir para marcar encontros e compartilhar dicas._
+O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar ao usuários a criação de listas de roteiros turísticos que desejam realizar juntamente ao compartilhamento dessa a outras pessoas interessadas.Comitantemente a informatização de eventos ocorrentes na determinada localidade dos usuários e o fornecimento de uma chat para comunicação, no qual as pessoas poderão interagir para marcar encontros e compartilhar dicas.
 
 ## 1.3. Definições e Abreviaturas
+*MVC*(Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas.
 
-Coloque aqui as definições, siglas e abreviaturas utilizadas no trabalho._
+*API*(Application Programming Interface):Conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas por meio de comunicações.
+
+## 1.4. Protótipo
+https://www.figma.com/file/2X6TUKJbtMx8gNObhrUZUs/Travel-Friends?node-id=0%3A1
 
 <a name="requisitos"></a>
 # 2. Requisitos
 
-_Esta seção descreve os requisitos comtemplados nesta descrição arquitetural, divididos em dois grupos: funcionais e não funcionais._
+Esta seção discorre sobre requisitos necessários para a implementação do projeto, de equivalência na contemplação da descrição arquitetural. Os mesmos foram divididos em requisitos funcionais e não funcionais, a seguir:
 
 ## 2.1. Requisitos Funcionais
 
-_Enumere os requisitos funcionais previstos para a sua aplicação. Concentre-se nos requisitos funcionais que sejam críticos para a definição arquitetural. Lembre-se de listar todos os requisitos que são necessários para garantir cobertura arquitetural. Esta seção deve conter uma lista de requisitos ainda sem modelagem. Na coluna Prioridade utilize uma escala (do mais prioritário para o menos): Essencial, Desejável, Opcional._
 
 | **ID** | **Descrição** | **Prioridade** |
 | --- | --- | --- |
-| RF001 | | |
-| RF002 | | |
-| | | |
-| | | |
-| | | |
+| RF001 | O usuário deve autentificar-se pela web| Essencial|
+| RF002 | O usuário deve autentificar-se através de seu telefone| Essencial |
+| RF003| O utente poderá cadastrar roteiros de viagens| Essencial|
+| RF004| Deve ser apresentado uma lista de exibição de roteiros aos usuários| Essencial |
+| RF005| Deve ser apresentado  uma lista de estabelecimentos aos usuários| Essencial |
+| RF006| Devem ser emitidas notificações informacionais |Desejável |
+| RF007| O usuário poderá vizualizar sua localização| Essencial |
 
-Obs: acrescente mais linhas, se necessário.
+
 
 ## 2.2. Requisitos Não-Funcionais
 
-_Enumere os requisitos não-funcionais previstos para a sua aplicação. Entre os requisitos não funcionais, inclua todos os requisitos que julgar importante do ponto de vista arquitetural ou seja os requisitos que terão impacto na definição da arquitetura. Os requisitos devem ser descritos de forma completa e preferencialmente quantitativa._
 
 | **ID** | **Descrição** |
 | --- | --- |
-| RNF001 | |
-| RNF002 | |
-| | |
-| | |
-| | |
+| RNF001 | O tempo de resposta realizar buscas de roteiros deve ser de 10 segundos|
+| RNF002 | A plataforma deve armazenar os dados dos usuários de acordo com seu acesso|
+| RNF003| Deve ser de fácil utilização|
+| RNF004| Deve fornecer uma interface que vá de acordo com regras heurísticas de interação entre usuário e máquina|
+| RNF005| As notificações devem ser emitidas com no mínimo 1 para a ocorrência do evento |
+| RNF006| A plataforma deve apontar ao usuário caso a localização desse seja referente a uma distância de 5km ou mais do evento|
+| RNF007| O usuário poderá cadastrar no máximo 10 roteiros de acordo com sua localidade|
+| RNF008| Os componentes devem ser construídos de forma que possam ser reutilizados|
 
-Obs: acrescente mais linhas, se necessário.
 
 ## 2.3. Restrições Arquiteturais
 
-_Enumere as restrições arquiteturais. Lembre-se de que as restrições arquiteturais geralmente não são consideradas requisitos uma vez que limitam a solução candidata. Os requisitos não impõem restrição, mas precisam ser satisfeitos._
-
-As restrições impostas ao projeto que afetam sua arquitetura são (por exemplo):
-
-- O software deverá ser desenvolvido em Python/Django;
-- A comunicação da API deve seguir o padrão RESTful.
+- A aplicação deve ser construída segundo a arquitetura MVC , na qual o frontend será desenvolvido em React;
+- O aplicativo será funcional em dispositivos celulares Android e IOS os quais devem ter acesso a internet;
+- O frontend deve ser desenvolvido para consumir diferentes serviços de APIs diferentes, portanto um módulo não pode interferir no outro;
+- O serviço de autenticação de usuários será fornecido por uma API externa.
 
 ## 2.4. Mecanismos Arquiteturais
 
-_Visão geral dos mecanismos que compõem a arquitetura do sosftware baseando-se em três estados: (1) análise, (2) design e (3) implementação. Em termos de Análise devem ser listados os aspectos gerais que compõem a arquitetura do software como: persistência, integração com sistemas legados, geração de logs do sistema, ambiente de front end, tratamento de exceções, formato dos testes, formato de distribuição/implantação (deploy), entre outros. Em Design deve-se identificar o padrão tecnológico a seguir para cada mecanismo identificado na análise. Em Implementação, deve-se identificar o produto a ser utilizado na solução.
- Ex: Análise (Persistência), Design (ORM), Implementação (Hibernate)._
 
 | **Análise** | **Design** | **Implementação** |
 | --- | --- | --- |
-| Persistência | | |
-| Front end | | |
-| Back end | | |
-| Integração | | |
-| Log do sistema | | |
-| Teste de Software | | |
-| Deploy | | |
+| Persistência | Banco de dados não relacional| MongoDB|
+| Front end |Interface de comunicação com o usuário |React, Axios, ESlint |
+| Back end | Estruturação de operalização do sistema |Node, Eslint, Express Js, Mongoose|
+| Integração |Controle de recursos com web e mobile | MVC|
+| Log do sistema |Implementação dos recursos de log do componente de persistência| Jest|
+| Teste de Software | Tratamento de exceções criando interações e cenários diferentes para usuários|Jest|
+| Deploy |Configuração da IDE de deploy|Vs code |
 
 <a name="modelagem"></a>
 # 3. Modelagem e projeto arquitetural
 
-_Apresente uma visão geral da solução proposta para o projeto e explique brevemente esse diagrama de visão geral, de forma textual. Esse diagrama não precisa seguir os padrões da UML, e deve ser completo e tão simples quanto possível, apresentando a macroarquitetura da solução._
 
-![Visão Geral da Solução](imagens/visao.png "Visão Geral da Solução")
+Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação.Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
 
-**Figura 1 - Visão Geral da Solução (fonte: https://medium.com)**
+![Visão Geral da Solução](imagens/modelo_arquitetura_tis5.png "Visão Geral da Solução")
 
-Obs: substitua esta imagem por outra, adequada ao seu projeto (cada arquitetura é única).
+**Figura 1 - Visão Geral da Solução**
 
 ## 3.1. Visão de Negócio (Funcionalidades)
 
-_Apresente uma lista simples com as funcionalidades previstas no projeto (escopo do produto)._
 
-1. O sistema deve...
-2. O sistema deve...
-3. ...
+1. O sistema deve realizar autenticação do usuário ( Web e Mobile).
+2. O sistema deve oferecer o cadastro de roteiros.
+3. O sistema deve oferecer o cadastro de estabelecimentos.
+4. O sistema deve fazer a exibição de roteiros.
+5. O sistema deve fazer a exibição de estabelecimentos.
+6. Deve ser implementado um ambiente de interação entre os usuários.
+7. Deve ser implementado  um serviço de notificações.
+8. Deve ser implementado  um serviço de geolocalização.
 
-Obs: a quantidade e o escopo das funcionalidades deve ser negociado com os professores/orientadores do trabalho.
 
 ### Descrição resumida dos Casos de Uso / Histórias de Usuário
 
-_Nesta seção, os casos de uso devem ser resumidos. Esse detalhamento pode ser na forma de um texto sintético ou, alternativamente, você pode optar por descrever estórias de usuários seguindo os métodos ágeis. Neste caso a seção deve chamar &quot;Histórias de usuários&quot;. Lembre-se das características de qualidade das estórias de usuários, ou seja, o que é preciso para descrever boas histórias de usuários._
+#### UC01 – REALIZAR LOGIN NA PLATAFORMA 01
 
-Exemplos de resumo de Casos de Uso:
+| **Descrição** | Efetuar login na plataforma para utilizar recursos|
+| --- | --- |
+| **Atores** | Usuário|
+| **Prioridade** | Essencial |
+| **Requisitos associados** | RF001,RF002|
+| **Fluxo Principal** |-|
 
-#### UC01 – NOME DO CASO DE USO 01
+#### UC02 – CADASTRAR ROTEIRO DE VIAGEM 02
+
+| **Descrição** | Realizar o cadastramento de roteiros de viagens para que outros usuários possam vizualizar |
+| --- | --- |
+| **Atores** | Usuário |
+| **Prioridade** | Essencial|
+| **Requisitos associados** | RF003|
+| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em cadastrar roteiro|
+
+
+#### UC03 – VIZUALIZAR ROTEIROS 03
+
+| **Descrição** | Vizualizar roteiros referentes a localização geográfica próxima ou atráves de busca |
+| --- | --- |
+| **Atores** | Usuário|
+| **Prioridade** | Essencial |
+| **Requisitos associados** | RF004|
+| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar roteiro |
+
+#### UC04 – LISTAR ESTABELECIMENTOS 04
 
 | **Descrição** | |
 | --- | --- |
-| **Atores** | |
-| **Prioridade** | |
-| **Requisitos associados** | |
-| **Fluxo Principal** | |
+| **Atores** | Usuário|
+| **Prioridade** | Essencial|
+| **Requisitos associados** | RF005|
+| **Fluxo Principal** |1.Usuário realiza login na plataforma,2.Usuário clica em listar estabelecimentos|
 
-#### UC02 – NOME DO CASO DE USO 02
+#### UC05 – VIZUALIZAR LOCALIZAÇAO 05
 
-| **Descrição** | |
+| **Descrição** | Vizualizar localização atual do utente|
 | --- | --- |
-| **Atores** | |
-| **Prioridade** | |
-| **Requisitos associados** | |
-| **Fluxo Principal** | |
+| **Atores** |Usuário|
+| **Prioridade** |Essencial |
+| **Requisitos associados** | RF007|
+| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar localização|
+
 
 Exemplos de Histórias de Usuário:
 
-- Como Fulano eu quero poder convidar meus amigos para que a gente possa se reunir...
+- Como Camila eu quero criar roteiros para compartilhar informações de viagens com outras pessoas.
 
-- Como Cicrano eu quero poder organizar minhas tarefas diárias, para que...
+- Como João eu quero vizualizar uma lista de roteiros para escolher o que mais combina com o meu estilo de viagem.
 
-- Como gerente eu quero conseguir entender o progresso do trabalho do meu time, para que eu possa ter relatórios periódicos dos nossos acertos e falhas.
+- Como Priscila eu quero vizualizar a minha localização para me referenciar dentro das ocorrências de eventos próximas.
+
+- Como Pedro eu quero logar em uma aplicação que seja mobile e app para ampliar meu repertório de possibilidades de acesso.
 
 ## 3.2. Visão Lógica
 
@@ -202,7 +235,7 @@ _Apresente os artefatos que serão utilizados descrevendo em linhas gerais as mo
 
 ### Diagrama de Classes
 
-![Diagrama de classes](imagens/classes.gif "Diagrama de classes")
+![TIS_Diagram-Class](https://user-images.githubusercontent.com/42702863/193717317-9ba5996b-a59f-44b0-a0c9-a49bbd152bc5.png)
 
 
 **Figura 2 – Diagrama de classes (exemplo). Fonte: o próprio autor.**
@@ -213,7 +246,7 @@ Obs: Acrescente uma breve descrição sobre o diagrama apresentado na Figura 3.
 
 _Apresente o diagrama de componentes da aplicação, indicando, os elementos da arquitetura e as interfaces entre eles. Liste os estilos/padrões arquiteturais utilizados e faça uma descrição sucinta dos componentes indicando o papel de cada um deles dentro da arquitetura/estilo/padrão arquitetural. Indique também quais componentes serão reutilizados (navegadores, SGBDs, middlewares, etc), quais componentes serão adquiridos por serem proprietários e quais componentes precisam ser desenvolvidos._
 
-![Diagrama de componentes](imagens/componentes.png "Diagrama de componentes")
+![diagrama](https://user-images.githubusercontent.com/55992267/190260891-217a9e1b-bba2-4143-be9a-6288e4a33b79.jpg)
 
 **Figura 3 – Diagrama de Componentes (exemplo). Fonte: o próprio autor.**
 

@@ -49,32 +49,40 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **1.5 Objetivo do projeto:** 
 
-O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
+No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
+
+Nesse contexto de crescente mercado turistico, os viajantes estão em busca de particidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
 
 **1.6 Benefícios que justificam o projeto:**
-- Nessidade de um mercado de turismo crescente
-- Pouca concorrência 
+- Mercado de turismo crescente
+- Facilitar a experiência de viagens, beneficiando os usários com praticidade
 
 **1.7 Qualidade esperada do produto final (requisitos de qualidade):**
 - Bom desempenho
-- Excelência nos serviços 
+- Excelência nos serviços, agregando valor para os usuários
+- Funcionalidades em acordo com a Lei Geral de Proteção de Dados
 
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
-- Roteiros turísticos
-- Interação entre os usuários do sistema
-- Geolocalização
+- Criação de roteiros turísticos para os usuários
+- Ambiente de socialização para os usuários compartilharem suas experiências de viagens e passeio
+- Utilização de serviço de geolocalização no aplicativo
 
 **2.2 O que não será feito no projeto (contra-escopo)**
 - Realização de pagamentos
-- Responsabilidade com a interação dos usuários fora do aplicativo
+- Parceria com empresas de turismos
+- Fornecimento de transpotres para os usuários 
+- Parceria com estabelecimentos de hotelaria
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
-| **1.** | Aplicativo mobile |
+| Aplicativo Mobile | Sistema Web |
 | --- | --- |
-| **2.** | **Sistema web** |
+| Autenticação no sistema | Cadastro e Adesão dos termos de Uso|
+| Exibição de roteiros de viagem | Criação de roteiros turisticos|
+| Exibição de estabecimentos| Cadastro de estabelecimentos|
+| Ambiente de interação dos usuários| Ambiente de interação dos usuários|
 
 **2.4 Condições para início do projeto**
 - Registro da Declaração de Escopo
@@ -94,22 +102,24 @@ O objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e 
 
 | Item de custo | Qtd. horas | Valor / hora  | Valor total |
 | --- | --- | --- | --- |
-| **4.1 Recursos Humanos** **(desenvolvedores):** | 80 | 20,5 | 20.500|
-| **4.2 Hardware (configurações):** | 2 | 0.0 | 0.0 |
-| **4.3 Rede e serviços de hospedagem:** | 10 | 20,5 | 200 |
-| **4.4 Software de terceiros:** | 2 | 0.0 | 0.0 |
-| **4.5 Serviços e treinamento:** | 6 | 20,5 | 123 |
-| **4.6 Total Geral:** | 100 | 20,5 | 20.823 |
+| **4.1 Recursos Humanos** | 5 |76,87 |384,35 |
+| **4.1.1 Desenvolvimento (4 pessoas)** | 60 | 98,20 |5.892 |
+| **4.1.2 Gerenciamento** | 15 |120,33 |1.804,95 |
+| **4.2 Hardware (equipamentos)** | 2 | -- | 12.000 |
+| **4.3 Rede e serviços de hospedagem (Azure)** | 10 |--| 31,09|
+| **4.4 Software de terceiros (Azure)** | 2 |-- |--|
+| **4.5 Serviços e treinamento** | 6 |120,33|721,98|
+| **4.6 Total Geral** | 100 | -- | 80.944,65|
 
 ## 5. PARTES INTERESSADAS
 
 | Nome | Papel no projeto | Assinatura |
 | --- | --- | --- |
-| Ian Asenjo Dominguez Cunha | Desenvolvedor |     |
-| Jully Ketely Alves da Silva | DevOps |     |
-| Laura Lourdes Coutinho Rodrigues | Scrum Master |     |
-| Lorrayne Reis Silva | Desenvolvedor |     |
-| Warley Leandro dos Anjos | Arquiteto de Software |     |
+| Ian Asenjo Dominguez Cunha | Desenvolvedor | Ian Cunha    |
+| Jully Ketely Alves da Silva | DevOps | Jully Ketely    | 
+| Laura Lourdes Coutinho Rodrigues | Scrum Master | Laura Lourdes   |
+| Lorrayne Reis Silva | Desenvolvedor | Lorrayne Reis    |
+| Warley Leandro dos Anjos | Arquiteto de Software | Warley Leandro  |
 
 **Observações:**
 
