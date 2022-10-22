@@ -18,6 +18,7 @@ export default function SignUp() {
           <Input text="Nome" />
           <Input text="E-mail" />
           <Input text="Senha" />
+          <Input text="Confirme a senha" />
           <Button
             onPress={() => navigation.navigate("ForgotPassword")}
             title="Registrar"
