@@ -18,11 +18,6 @@ export default function Terms() {
       <View style={styles.content}>
         <Text style={styles.textContent}>{term}</Text>
         <Button title="Aceitar" onPress={() => navigation.navigate("SignIn")} />
-        <Button
-          transparent
-          title="Aceitar"
-          onPress={() => navigation.navigate("SignIn")}
-        />
       </View>
     </View>
   );

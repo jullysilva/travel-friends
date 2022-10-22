@@ -7,13 +7,22 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: theme.colors.fild,
   },
-  button: {
-    marginTop: 100,
-    paddingVertical: 10,
-    borderRadius: 8,
-    backgroundColor: theme.colors.primary,
-    justifyContent: "center",
+  header: {
+    paddingVertical: 60,
+    padding: 20,
+  },
+  content: {
+    flex: 1,
 
-    alignItems: "center",
+    paddingTop: 40,
+    padding: 20,
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+    backgroundColor: theme.colors.shape,
+  },
+  title: {
+    color: theme.colors.title,
+    fontSize: 34,
+    fontWeight: "600",
   },
 });
