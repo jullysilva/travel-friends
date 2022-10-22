@@ -11,7 +11,7 @@ Os principais documentos a serem produzidos são:
 	* Registro das Partes Interessadas.
 
 * `Declaracao de escopo.docx`
-	* Declaracao de escopo.
+	* Declaração de escopo.
 
 
 Demais artefatos que julgar pertinentes.
