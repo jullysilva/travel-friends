@@ -14,6 +14,6 @@ Liste os artefatos produzidos, com suas localizaçãoes e descrição do conteú
 * `/gerencia`
 
 	* Documentos
-	* Termo de Abertura do Projeto.
-        * Registro das Partes Interessadas.
-        * Declaração de escopo.
+	* **Termo de Abertura do Projeto.
+        * **Registro das Partes Interessadas.
+        * **Declaração de escopo.
