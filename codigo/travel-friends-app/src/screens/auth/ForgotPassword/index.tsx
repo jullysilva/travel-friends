@@ -1,5 +1,12 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import {
+  KeyboardAvoidingView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import Button from "../../../components/Button";
+import Input from "../../../components/Input";
 import { useInitialNavigation } from "../../../hooks/navigation";
 
 import { styles } from "./styles";
@@ -9,13 +16,20 @@ export default function ForgotPassword() {
 
   return (
     <View style={styles.container}>
-      <Text>forgot passWord</Text>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("SignUp")}
-      >
-        <Text style={{ color: "white", fontSize: 22 }}>Senha</Text>
-      </TouchableOpacity>
+      <View style={styles.header}>
+        <Text style={styles.title}>Recuperar senha</Text>
+      </View>
+      <View style={styles.content}>
+        <KeyboardAvoidingView>
+          <Input text="E-mail" />
+          <Input text="Nova Senha" />
+          <Input text="Repetir Senha" />
+          <Button
+            onPress={() => navigation.navigate("Terms")}
+            title="Acessar"
+          />
+        </KeyboardAvoidingView>
+      </View>
     </View>
   );
 }

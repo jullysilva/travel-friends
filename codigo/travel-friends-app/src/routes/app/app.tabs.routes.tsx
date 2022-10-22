@@ -20,8 +20,8 @@ export default function AppTabsRoutes() {
         tabBarHideOnKeyboard: true,
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarActiveTintColor: colors.secundary,
-        tabBarInactiveTintColor: colors.shape,
+        tabBarActiveTintColor: colors.shape,
+        tabBarInactiveTintColor: colors.secundary,
         tabBarStyle: {
           backgroundColor: colors.primary,
           borderTopLeftRadius: 16,
