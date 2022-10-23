@@ -1,8 +1,8 @@
 import api from "../api";
 
-export async function getAllRoadmap() {
+export async function getAllUsers() {
   try {
-    const response = await api.get("/roadmap");
+    const response = await api.get("/user");
 
     const data = {
       data: response.data,
@@ -12,6 +12,6 @@ export async function getAllRoadmap() {
     console.log(data);
     return data;
   } catch (error) {
-    console.log("---> Roteiro error: ");
+    console.log("---> User error: ");
   }
 }

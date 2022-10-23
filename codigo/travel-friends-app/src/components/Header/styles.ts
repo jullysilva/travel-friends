@@ -5,8 +5,10 @@ const { height, width } = Dimensions.get("window");
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.colors.primary,
-
+    height: 120,
     width: width,
     padding: 20,
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12,
   },
 });

@@ -1,10 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
-interface User {
-  id: number;
-  email: string;
-  senha: string;
-}
+import { User } from "../@types/models.interface";
 
 interface UserProviderProps {
   children: ReactNode;
@@ -12,7 +8,7 @@ interface UserProviderProps {
 
 interface UserContextData {
   userData: User;
-  getUser: ({ id }: User) => void;
+  getUser: ({ idUser }: User) => void;
   setUser: (userData: User) => void;
 }
 
@@ -20,9 +16,11 @@ const UserContext = createContext<UserContextData>({} as UserContextData);
 
 export function UserProvider({ children }: UserProviderProps) {
   const [userData, setUserData] = useState<User>({
-    id: 1,
+    idUser: "1",
+    cpf: "12345678",
+    nome: "leo anjos",
+    senha: "abcd",
     email: "leo@gmail.com",
-    senha: "1234",
   });
 
   const setUser = (userData: User) => {

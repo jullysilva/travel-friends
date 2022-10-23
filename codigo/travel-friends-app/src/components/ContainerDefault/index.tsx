@@ -17,14 +17,13 @@ export default function ContainerDefault({
   isBlue,
 }: StatusBarProps) {
   return (
-    <View style={[styles.container]}>
+    <View>
       <StatusBar
         barStyle="light-content"
         backgroundColor={isBlue ? theme.colors.primary : theme.colors.shape}
         hidden={hiden}
       />
-
-      {children}
+      <View style={[styles.container]}>{children}</View>
     </View>
   );
 }
