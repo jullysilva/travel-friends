@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import TextField from "@material-ui/core/TextField";
-import { Button, Paper, Container, Switch, FormGroup, FormControlLabel } from "@material-ui/core";
+import TextField from "@mui/material/TextField";
+import { Button, Paper, Container, Switch, FormGroup, FormControlLabel } from "@mui/material";
 import { getRoadmap } from '../../services/api/Requests/roadmap'
 
 const Roadmap = () => {
@@ -24,41 +24,41 @@ const Roadmap = () => {
     setTextValue("");
   }
 
-  return(
+  return (
     <Container>
       <FormGroup>
 
-      <Paper>
-        <h2>Criar roteiro</h2>
+        <Paper>
+          <h2>Criar roteiro</h2>
 
-        <TextField
-          onChange={onTextChange}
-          value={textValue}
-          label={"Título"} //optional
+          <TextField
+            onChange={onTextChange}
+            value={textValue}
+            label={"Título"} //optional
           />
 
           <FormControlLabel control={<Switch />} label="Gratuito" />
-          
+
           <TextField
-          onChange={onTextChange}
-          value={textValue}
-          label={"Título"} //optional
+            onChange={onTextChange}
+            value={textValue}
+            label={"Título"} //optional
           />
           <TextField
-          onChange={onTextChange}
-          value={textValue}
-          label={"Título"} //optional
+            onChange={onTextChange}
+            value={textValue}
+            label={"Título"} //optional
           />
           <TextField
-          onChange={onTextChange}
-          value={textValue}
-          label={"Título"} //optional
+            onChange={onTextChange}
+            value={textValue}
+            label={"Título"} //optional
           />
 
-        <Button onClick={handleSubmit}>Salvar</Button>
-        <Button onClick={handleReset}>Cancelar</Button>
-      </Paper>
-          </FormGroup>
+          <Button onClick={handleSubmit}>Salvar</Button>
+          <Button onClick={handleReset}>Cancelar</Button>
+        </Paper>
+      </FormGroup>
     </Container>
   );
 }
