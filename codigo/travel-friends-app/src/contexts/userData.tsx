@@ -21,6 +21,7 @@ export function UserProvider({ children }: UserProviderProps) {
     nome: "leo anjos",
     senha: "abcd",
     email: "leo@gmail.com",
+    TOKEN: '',
   });
 
   const setUser = (userData: User) => {

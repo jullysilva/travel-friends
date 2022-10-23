@@ -5,13 +5,17 @@ import { styles } from "./styles";
 
 type InputProps = {
   text: string;
+  value: string;
+  onChangeText: (text: any) => void;
+  onBlur?: () => void;
 };
 
-export default function Input({ text }: InputProps) {
+export default function Input({ text, value, onChangeText, onBlur }: InputProps) {
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{text}</Text>
-      <TextInput style={styles.input} />
+      <TextInput value={value} style={styles.input} onChangeText={onChangeText} onBlur={onBlur} />
     </View>
   );
 }

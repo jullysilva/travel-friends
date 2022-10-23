@@ -4,6 +4,7 @@ export interface User {
   cpf: string;
   email: string;
   senha: string;
+  TOKEN?: string;
 }
 
 export interface RoadMap {
