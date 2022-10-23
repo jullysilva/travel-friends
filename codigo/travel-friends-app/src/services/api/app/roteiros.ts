@@ -9,7 +9,6 @@ export async function getAllRoadmap() {
       status: response.status,
     };
 
-    console.log(data);
     return data;
   } catch (error) {
     console.log("---> Roteiro error: ");

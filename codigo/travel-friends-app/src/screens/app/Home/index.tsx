@@ -7,9 +7,11 @@ import { getAllRoadmap } from "../../../services/api/app/roteiros";
 import Header from "../../../components/Header";
 import CardInfo from "../../../components/CardInfo";
 
+import TextApp from "../../../components/Text";
+
 import { style } from "./styles";
 import theme from "../../../utils/theme";
-import TextApp from "../../../components/Text";
+import Card from "../../../components/Card";
 
 export default function Home() {
   const user = userHook();
@@ -24,6 +26,10 @@ export default function Home() {
 
   function renderItem(item: RoadMap) {
     return <CardInfo item={item} />;
+  }
+
+  function renderVertical(item: RoadMap) {
+    return <Card item={item} />;
   }
 
   useEffect(() => {
@@ -56,12 +62,28 @@ export default function Home() {
         />
       </View>
 
-      <View style={{ paddingHorizontal: 20 }}>
+      <View
+        style={{ paddingHorizontal: 20, paddingTop: 30, paddingBottom: 14 }}
+      >
         <TextApp
           size={theme.fonts.subTitle}
           text={"Em alta"}
           isBold
           color={theme.colors.title}
+        />
+      </View>
+
+      <View style={{}}>
+        <FlatList
+          snapToAlignment={"start"}
+          scrollEventThrottle={16}
+          decelerationRate={"fast"}
+          showsVerticalScrollIndicator={false}
+          keyExtractor={(item, i) => `${item}${i}`}
+          data={roadmapList}
+          renderItem={({ item }) => renderVertical(item)}
+          style={{}}
+          ListFooterComponent={<View style={{ height: 340 }} />}
         />
       </View>
     </View>
