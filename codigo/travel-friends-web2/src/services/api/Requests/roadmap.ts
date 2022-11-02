@@ -5,14 +5,14 @@ export const getRoadmap = async () => {
     const response = await api.get("/roadmap");
     return response;
   } catch (error) {
-    console.log('erro na requisicao');
+    console.log("erro na requisicao");
   }
 };
 
-export const createRoadmap = async ({ data }) => {
+export const createRoadmap = async (data: any) => {
   await api.post("/", data);
 };
 
-export const updateRoadmap = async ({ data }) => {
-  const response = await api.post("/")
+export const updateRoadmap = async (data: any) => {
+  const response = await api.post("/");
 };

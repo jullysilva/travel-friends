@@ -1,1 +1,1 @@
-console.log("components");
+export { default as Icon } from "./Icon/Icon";
