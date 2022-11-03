@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Navigate, Link } from "react-router-dom";
 import { Container, Row, Col, Card,Form, Figure, Button } from 'react-bootstrap';
 import { ContainerSC, FormLabelSC, BoxForm, ButtonSC, Title } from './signin.styled';
-import { Icon } from '../../components';
+// import { Icon } from '../../components';
 import { loginUser } from '../../services/api/Requests/login';
 import planet from '../../assets/icon-planet.svg';
 import logo from '../../assets/logo-app.png';
@@ -30,9 +30,9 @@ const SignIn = () => {
     // className="d-flex align-items-center justify-content-center"
     >
       <Row style={{height: '100%'}}>
-        <Col sm={7} className="align-items-center">
-        {/* <Icon name="planet" width="250" /> */}
+        <Col sm={7} className="align-items-center" style={{alignSelf: 'center'}}>
           <Figure style={{textAlign: 'center'}}>
+            {/* <Icon name="planet" width="250" /> */}
             <Figure.Image width="70%" alt="171x180" src={planet}/>
             <Figure.Caption style={{padding: '0 15%', textAlign: 'justify'}} className="mt-3">
               Conectando pessoas a lugares e experiências incríveis! Com a Travel Friends você descobre os melhores rolês próximos a você e pode participar de um grupo ou criar o seu próprio. O tema você escolhe... seja balada, trilha, família...
@@ -40,7 +40,7 @@ const SignIn = () => {
           </Figure>
         </Col>
         <BoxForm sm={5}>
-            <Container>
+            <Container style={{height: '100%', display:'inline'}}>
               <Col style={{textAlign: 'center'}}>
                 <img src={logo} width="142" alt="Logo" />
                 <Title>Login</Title>
