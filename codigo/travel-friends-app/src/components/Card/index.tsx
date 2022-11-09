@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { TouchableOpacity, View } from "react-native";
+
+import { FontAwesome } from "@expo/vector-icons";
 
 import { RoadMap } from "../../@types/models.interface";
 import theme from "../../utils/theme";
@@ -10,6 +12,8 @@ type CardProps = {
 };
 
 export default function Card({ item }: CardProps) {
+  const [isFavorite, setIsFavorite] = useState<boolean>(item.favorites);
+
   return (
     <TouchableOpacity
       style={styles.container}
@@ -34,10 +38,27 @@ export default function Card({ item }: CardProps) {
           />
           <TextApp
             size={theme.fonts.subText}
-            text={`valor: R$ ${item.price}`}
+            text={`Valor: R$ ${item.price}`}
             color={theme.colors.text}
             fontWeight="400"
           />
+        </View>
+        <View
+          style={{
+            alignSelf: "flex-end",
+
+            alignItems: "flex-end",
+
+            flex: 1,
+          }}
+        >
+          <TouchableOpacity onPress={() => setIsFavorite(!isFavorite)}>
+            {isFavorite ? (
+              <FontAwesome name={"heart"} size={32} color={"red"} />
+            ) : (
+              <FontAwesome name={"heart-o"} size={32} color={"gray"} />
+            )}
+          </TouchableOpacity>
         </View>
       </View>
     </TouchableOpacity>

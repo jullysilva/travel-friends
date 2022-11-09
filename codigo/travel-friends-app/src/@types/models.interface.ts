@@ -13,6 +13,7 @@ export interface RoadMap {
   idLocal: string | null;
   title: string | null;
   description?: string | null;
+  favorites: boolean;
   isFree: boolean;
   price: number;
   type: string | null;

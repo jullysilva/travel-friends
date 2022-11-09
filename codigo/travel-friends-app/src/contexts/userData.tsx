@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
-import { User } from "../@types/models.interface";
+import { RoadMap, User } from "../@types/models.interface";
 
 interface UserProviderProps {
   children: ReactNode;
@@ -21,7 +21,7 @@ export function UserProvider({ children }: UserProviderProps) {
     nome: "leo anjos",
     senha: "abcd",
     email: "leo@gmail.com",
-    TOKEN: '',
+    TOKEN: "",
   });
 
   const setUser = (userData: User) => {

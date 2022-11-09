@@ -1,20 +1,67 @@
-import React from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, Dimensions, StatusBar, FlatList } from "react-native";
+import { RoadMap } from "../../../@types/models.interface";
+import Card from "../../../components/Card";
+import TextApp from "../../../components/Text";
+import { getAllRoadmap } from "../../../services/api/app/roteiros";
 import theme from "../../../utils/theme";
 import { style } from "./styles";
 
 export function Favorite() {
+  const { height, width } = Dimensions.get("window");
+
+  const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
+
+  async function loadRoadmap() {
+    const resp = await getAllRoadmap();
+    setRoadmapList(resp?.data);
+  }
+
+  function renderVertical(item: RoadMap) {
+    if (item.favorites) {
+      return <Card item={item} />;
+    }
+  }
+
+  useEffect(() => {
+    loadRoadmap();
+  }, []);
+  console.log(roadmapList);
+
   return (
     <View style={style.container}>
-      <View style={style.logo}>
-        <Text
-          style={[
-            style.title,
-            { color: theme.colors.title, fontWeight: "600" },
-          ]}
-        >
-          Favorite
-        </Text>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor={theme.colors.primary}
+      />
+
+      <View
+        style={{ paddingHorizontal: 20, paddingTop: 30, paddingBottom: 14 }}
+      >
+        <TextApp
+          size={theme.fonts.subTitle}
+          text={"Meus favoritos"}
+          isBold
+          color={theme.colors.title}
+        />
+      </View>
+
+      <View style={{ width: "100%" }}>
+        {!!roadmapList ? (
+          <FlatList
+            snapToAlignment={"start"}
+            scrollEventThrottle={16}
+            decelerationRate={"fast"}
+            showsVerticalScrollIndicator={false}
+            keyExtractor={(item, i) => `${item}${i}`}
+            data={roadmapList}
+            renderItem={({ item }) => renderVertical(item)}
+            style={{}}
+            ListFooterComponent={<View style={{ height: 340 }} />}
+          />
+        ) : (
+          <TextApp size={12} text="carregando lista de roteiros..." />
+        )}
       </View>
     </View>
   );
