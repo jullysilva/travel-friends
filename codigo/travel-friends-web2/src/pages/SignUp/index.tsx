@@ -75,7 +75,7 @@ const SignUp = () => {
                 </Form.Group>
                 <Form.Group className="mb-3 d-flex" style={{gap: 5}}>
                 <Form.Check type="checkbox" />
-                <p>Ao criar uma conta, tem de concordar com os <a href='#'>Termos e Condições</a>.</p>
+                <p className='text-white'>Ao criar uma conta, tem de concordar com os <a href='#'>Termos e Condições</a>.</p>
                 </Form.Group>
                 <Button
                   type='submit'

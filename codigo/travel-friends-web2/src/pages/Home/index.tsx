@@ -1,14 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Container, Col, Row, Figure, Nav, Form, Button, Navbar } from 'react-bootstrap';
-import { getRoadmap } from '../../services/api/Requests/roadmap';
+import { getAllRoadmap } from '../../services/api/Requests/roadmap';
+import { RoadMap } from "../../@types/models.interface";
 import LogoTipo from '../../assets/logo-web.png';
 import User from '../../assets/user-icon.svg';
+import { CardBox } from '../../components';
 
 const Home = () => {
 
+  const [roadmapList, setRoadmapList] = useState();
+
+  async function loadRoadmap() {
+    const resp = await getAllRoadmap();
+    setRoadmapList(resp?.data);
+  }
+
   useEffect(() => {
-    const data = getRoadmap();
-    console.log(data);
+    loadRoadmap();
   }, []);
 
   return (
@@ -63,7 +71,7 @@ const Home = () => {
           </Container>
           </Navbar>
           <Col sm={12}>
-
+            <CardBox data={roadmapList} />
           </Col>
           <Col sm={12}></Col>
         </Col>

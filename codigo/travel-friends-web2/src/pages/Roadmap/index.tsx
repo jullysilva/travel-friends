@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getRoadmap } from '../../services/api/Requests/roadmap'
+// import { getRoadmap } from '../../services/api/Requests/roadmap'
 
 const Roadmap = () => {
   const roteiro = {
@@ -18,7 +18,7 @@ const Roadmap = () => {
   const onTextChange = (e: any) => setTextValue(e.target.value);
   const handleSubmit = () => console.log(textValue);
   const handleReset = () => {
-    getRoadmap();
+    // getRoadmap();
     setTextValue("");
   }
 

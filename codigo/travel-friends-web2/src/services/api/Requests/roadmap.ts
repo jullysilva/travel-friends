@@ -1,11 +1,17 @@
 import api from "..";
 
-export const getRoadmap = async () => {
+export const getAllRoadmap = async() => {
   try {
     const response = await api.get("/roadmap");
-    return response;
+
+    const data = {
+      data: response.data,
+      status: response.status,
+    };
+
+    return data;
   } catch (error) {
-    console.log("erro na requisicao");
+    console.log("---> Roteiro error: ");
   }
 };
 
