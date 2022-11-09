@@ -10,7 +10,9 @@ import { Theme } from '../../utils';
 const SignUp = () => {
   const [validated, setValidated] = useState(false);
   const [values, setValues] = useState({
+    name: '',
     email: '',
+    cpf: '',
     password: ''
   });
 
@@ -44,11 +46,25 @@ const SignUp = () => {
               </Col>
               <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="m-5">
                 <Form.Group className="mb-3">
+                  <Form.Label className='text-white'>Nome</Form.Label>
+                  <Form.Control type="text" name="name" value={values.name} onChange={(e) => {
+                    values.name = e.target.value;
+                    setValues({...values});
+                  }} placeholder="Insira seu nome" required/>
+                </Form.Group>
+                <Form.Group className="mb-3">
                   <Form.Label className='text-white'>Email</Form.Label>
                   <Form.Control type="email" name="email" value={values.email} onChange={(e) => {
                     values.email = e.target.value;
                     setValues({...values});
                   }} placeholder="Insira seu email" required/>
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Label className='text-white'>CPF</Form.Label>
+                  <Form.Control type="text" name="cpf" value={values.cpf} onChange={(e) => {
+                    values.cpf = e.target.value;
+                    setValues({...values});
+                  }} placeholder="xxx.xxx.xxx-xx" maxLength={11} required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label className='text-white'>Senha</Form.Label>

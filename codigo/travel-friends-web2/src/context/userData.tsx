@@ -8,7 +8,7 @@ interface UserProviderProps {
 
 interface UserContextData {
   userData: User;
-  getUser: ({ idUser }: User) => void;
+  getUser: ({ id }: User) => void;
   setUser: (userData: User) => void;
 }
 

@@ -14,8 +14,7 @@ const SignIn = () => {
     email: '',
     password: ''
   });
-  // const { setUser } = userHook();
-  const user = userHook();
+  const { setUser } = userHook();
   
   const handleSubmit = async(e: any) => {
     e.preventDefault();
@@ -24,8 +23,10 @@ const SignIn = () => {
       e.stopPropagation();
     }
     const data = await loginUser(values);
-    // setUser(data);
     console.log(data);
+    // if(data.status === 200){
+    //   setUser(data.data);
+    // }
     setValidated(true);
   };
 
