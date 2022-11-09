@@ -9,7 +9,7 @@ import { Theme } from '../../utils';
 
 const ResetPassword = () => {
   const [validated, setValidated] = useState(false);
-  const [newPassword, setNewPassword] = useState();
+  const [newPassword, setNewPassword] = useState('');
   const [values, setValues] = useState({
     email: '',
     password: ''
@@ -26,8 +26,11 @@ const ResetPassword = () => {
     setValidated(true);
   };
 
-  const handleNewPassword = (e: any) => {
-    e.preventDefault();
+  const checkPassword = () => {
+    if(values.password === newPassword){
+      return true;
+    }
+    return false;
   }
 
   return (
@@ -64,7 +67,7 @@ const ResetPassword = () => {
                 </Form.Group>
                 <Form.Group className="mb-4">
                   <Form.Label className='text-white'>Repetir senha</Form.Label>
-                  <Form.Control type="password" name="newPassword" value={newPassword} onChange={(e) => handleNewPassword(e)} placeholder="Repita a senha" required/>
+                  <Form.Control type="password" name="newPassword" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} onBlur={checkPassword} placeholder="Repita a senha" required/>
                 </Form.Group>
                 <Button
                   type='submit'
