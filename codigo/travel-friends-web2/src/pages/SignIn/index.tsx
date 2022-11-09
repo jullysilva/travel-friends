@@ -3,6 +3,7 @@ import { Container, Row, Col,Form, Figure } from 'react-bootstrap';
 import { ContainerSC, LinkSC, BoxForm, Title } from './signin.styled';
 import { loginUser } from '../../services/api/Requests/login';
 import { Button } from '../../components';
+import { userHook } from '../../context/userData';
 import planet from '../../assets/icon-planet.svg';
 import logo from '../../assets/logo-app.png';
 import { Theme } from '../../utils';
@@ -13,7 +14,9 @@ const SignIn = () => {
     email: '',
     password: ''
   });
-
+  // const { setUser } = userHook();
+  const user = userHook();
+  
   const handleSubmit = async(e: any) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -21,6 +24,7 @@ const SignIn = () => {
       e.stopPropagation();
     }
     const data = await loginUser(values);
+    // setUser(data);
     console.log(data);
     setValidated(true);
   };

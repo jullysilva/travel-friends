@@ -1,10 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
-interface User {
-  id: number;
-  email: string;
-  senha: string;
-}
+import { User } from "../@types/models.interface";
 
 interface UserProviderProps {
   children: ReactNode;
@@ -12,18 +8,14 @@ interface UserProviderProps {
 
 interface UserContextData {
   userData: User;
-  getUser: ({ id }: User) => void;
+  getUser: ({ idUser }: User) => void;
   setUser: (userData: User) => void;
 }
 
 const UserContext = createContext<UserContextData>({} as UserContextData);
 
 export function UserProvider({ children }: UserProviderProps) {
-  const [userData, setUserData] = useState<User>({
-    id: 1,
-    email: "leo@gmail.com",
-    senha: "1234",
-  });
+  const [userData, setUserData] = useState<User>({} as User);
 
   const setUser = (userData: User) => {
     setUserData(userData);
@@ -46,6 +38,7 @@ export function UserProvider({ children }: UserProviderProps) {
 }
 
 export function userHook(): UserContextData {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const context = useContext(UserContext);
 
   return context;

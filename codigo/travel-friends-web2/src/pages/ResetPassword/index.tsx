@@ -73,7 +73,7 @@ const ResetPassword = () => {
                   type='submit'
                   bg={Theme.colors.yellow}
                   color="white"
-                  children = "Salvar"/>
+                  children = "Recuperar"/>
               </Form>
               </Container>
         </BoxForm>
