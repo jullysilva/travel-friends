@@ -4,9 +4,14 @@ import { View, TouchableOpacity, StatusBar } from "react-native";
 import TextApp from "../../../components/Text";
 import { formatNickName } from "../../../utils/formatNickName";
 import theme from "../../../utils/theme";
+import { useAuth } from "../../../contexts/useAuth";
+import { userHook } from "../../../contexts/userData";
+
 import { styles } from "./styles";
 
 export function Profile() {
+  const { logout } = useAuth();
+
   return (
     <View style={styles.container}>
       <View style={styles.headerProfile}>
@@ -49,7 +54,7 @@ export function Profile() {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => logout()}>
             <View style={styles.underlineButton}>
               <FontAwesome
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment

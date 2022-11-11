@@ -14,7 +14,7 @@ import theme from "../../../utils/theme";
 import Card from "../../../components/Card";
 
 export default function Home() {
-  const user = userHook();
+  const { userData } = userHook();
   const { height, width } = Dimensions.get("window");
 
   const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
@@ -35,8 +35,9 @@ export default function Home() {
   useEffect(() => {
     loadRoadmap();
   }, []);
-  console.log(roadmapList);
-  const { userData } = user;
+
+  console.log(userData);
+
   return (
     <View style={style.container}>
       <StatusBar
