@@ -54,9 +54,9 @@ export default function Card({ item }: CardProps) {
         >
           <TouchableOpacity onPress={() => setIsFavorite(!isFavorite)}>
             {isFavorite ? (
-              <FontAwesome name={"heart"} size={32} color={"red"} />
+              <FontAwesome name={"heart"} size={28} color={"red"} />
             ) : (
-              <FontAwesome name={"heart-o"} size={32} color={"gray"} />
+              <FontAwesome name={"heart-o"} size={28} color={"gray"} />
             )}
           </TouchableOpacity>
         </View>
