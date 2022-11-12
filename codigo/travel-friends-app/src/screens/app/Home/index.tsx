@@ -46,20 +46,22 @@ export default function Home() {
       <Header />
 
       <View style={{}}>
-        <FlatList
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          snapToAlignment={"start"}
-          scrollEventThrottle={16}
-          decelerationRate={"fast"}
-          keyExtractor={(item, i) => `${item}${i}`}
-          snapToOffsets={[...Array(roadmapList.length)].map(
-            (item, index) => index * (width * 0.8 - 40) + (index - 1) * 40
-          )}
-          data={roadmapList}
-          renderItem={({ item }) => renderItem(item)}
-          style={{ marginTop: -40 }}
-        />
+        {!!roadmapList ? (
+          <FlatList
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            snapToAlignment={"start"}
+            scrollEventThrottle={16}
+            decelerationRate={"fast"}
+            keyExtractor={(item, i) => `${item}${i}`}
+            snapToOffsets={[...Array(roadmapList.length)].map(
+              (item, index) => index * (width * 0.8 - 40) + (index - 1) * 40
+            )}
+            data={roadmapList}
+            renderItem={({ item }) => renderItem(item)}
+            style={{ marginTop: -40 }}
+          />
+        ) : null}
       </View>
 
       <View
@@ -74,17 +76,21 @@ export default function Home() {
       </View>
 
       <View style={{}}>
-        <FlatList
-          snapToAlignment={"start"}
-          scrollEventThrottle={16}
-          decelerationRate={"fast"}
-          showsVerticalScrollIndicator={false}
-          keyExtractor={(item, i) => `${item}${i}`}
-          data={roadmapList}
-          renderItem={({ item }) => renderVertical(item)}
-          style={{}}
-          ListFooterComponent={<View style={{ height: 340 }} />}
-        />
+        {!!roadmapList ? (
+          <FlatList
+            snapToAlignment={"start"}
+            scrollEventThrottle={16}
+            decelerationRate={"fast"}
+            showsVerticalScrollIndicator={false}
+            keyExtractor={(item, i) => `${item}${i}`}
+            data={roadmapList}
+            renderItem={({ item }) => renderVertical(item)}
+            style={{}}
+            ListFooterComponent={<View style={{ height: 340 }} />}
+          />
+        ) : (
+          <TextApp size={12} text="carregando lista de roteiros..." />
+        )}
       </View>
     </View>
   );
