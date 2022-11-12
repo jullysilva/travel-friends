@@ -8,15 +8,13 @@ import planet from '../../assets/icon-planet.svg';
 import logo from '../../assets/logo-app.png';
 import { Theme } from '../../utils';
 import { useNavigate } from 'react-router-dom';
+import { UserLogin } from '../../@types/models.interface';
 
 const SignIn = () => {
   const navigate = useNavigate();
-  const [message, setMessage] = useState(false);
+  const [message, setMessage] = useState(null);
   const [validated, setValidated] = useState(false);
-  const [values, setValues] = useState({
-    email: '',
-    password: ''
-  });
+  const [values, setValues] = useState<UserLogin>({} as UserLogin);
   const { setUser } = userHook();
   
   const handleSubmit = async(e: any) => {
@@ -25,13 +23,13 @@ const SignIn = () => {
     if (form.checkValidity() === false) {
       e.stopPropagation();
     }
-    const response: unknown = await loginUser(values);
-    if(response?.status === 200){
-      setUser(response?.data);
-      navigate('/');
+    const {data, status} = await loginUser(values);
+    if(status === 200){
+      setUser(data);
+      navigate('/painel');
     }
     else{
-      setMessage(true);
+      setMessage(data.error);
     }
     setValidated(true);
   };
@@ -54,7 +52,7 @@ const SignIn = () => {
                 <Title>Login</Title>
               </Col>
               <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="me-5 ms-5">
-                {message && <Alert variant='danger'>Dados inseridos não estão corretos!</Alert>}
+                {message && <Alert variant='danger'>{message}</Alert>}
                 <Form.Group className="mb-4">
                   <Form.Label className='text-white'>Email</Form.Label>
                   <Form.Control type="email" name="email" value={values.email} onChange={(e) => {

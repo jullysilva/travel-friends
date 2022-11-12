@@ -1,10 +1,27 @@
+export declare interface AuthUser {
+  data: User,
+  status: number
+}
+
+export type UserRegister = {
+  name: string;
+  email: string;
+  cpf: string;
+  password: string;
+};
+
+export type UserLogin = {
+  email: string;
+  password: string;
+};
+
 export interface User {
     cpf: string;
     email: string;
     id: string;
     message: string;
     name: string;
-    TOKEN?: string;
+    TOKEN: string | null;
   }
   
   export interface RoadMap {
