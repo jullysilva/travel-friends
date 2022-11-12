@@ -10,12 +10,16 @@ export const loginUser = async (data: UserLogin) => {
   };
 };
 
-export const resetPassword = async (data: any) => {
-  await api.post('', data).then((res) => {
-    return res.data;
-  }).catch((error) => {
-    return error;
-  });
+export const resetPassword = async (data: UserLogin) => {
+  let url = `/user/${data.email}`;
+  try {
+    const response = await api.patch<AuthUser>(url, {
+      password: data.password,
+    });
+    return response;
+  } catch (error) {
+      return error.response;
+  };
 };
 
 export const registerUser = async (data: UserRegister) => {

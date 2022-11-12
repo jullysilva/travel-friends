@@ -1,19 +1,22 @@
 import { useState } from 'react';
-import { Container, Row, Col,Form, Figure } from 'react-bootstrap';
+import { Container, Row, Col,Form, Figure, Alert } from 'react-bootstrap';
 import { ContainerSC, BoxForm, Title } from './resetPassword.styled';
-import { loginUser } from '../../services/api/Requests/login';
+import { resetPassword } from '../../services/api/Requests/login';
 import { Button } from '../../components';
 import planet from '../../assets/icon-planet.svg';
 import logo from '../../assets/logo-app.png';
 import { Theme } from '../../utils';
+import { UserRegister } from '../../@types/models.interface';
+import { useNavigate } from 'react-router-dom';
 
 const ResetPassword = () => {
+  const [messageSuccess, setMessageSuccess] = useState(false);
+  const [message, setMessage] = useState(false);
   const [validated, setValidated] = useState(false);
   const [newPassword, setNewPassword] = useState('');
-  const [values, setValues] = useState({
-    email: '',
-    password: ''
-  });
+  const [values, setValues] = useState<UserRegister>({} as UserRegister);
+
+  const navigate = useNavigate();
 
   const handleSubmit = async(e: any) => {
     e.preventDefault();
@@ -21,8 +24,16 @@ const ResetPassword = () => {
     if (form.checkValidity() === false) {
       e.stopPropagation();
     }
-    const data = await loginUser(values);
-    console.log(data);
+    const { status } = await resetPassword(values);
+    if(status === 200){
+      setMessageSuccess(true);
+      setTimeout(() => {
+        navigate('/entrar');
+      }, 3000);
+    }
+    else{
+      setMessage(true);
+    };
     setValidated(true);
   };
 
@@ -46,11 +57,14 @@ const ResetPassword = () => {
         </Col>
         <BoxForm sm={5}>
             <Container className='h-100 d-inline'>
-              <Col className='text-center'>
+              <Col className='text-center mb-3'>
                 <img src={logo} width="142" alt="Logo" />
                 <Title>Recuperar conta</Title>
               </Col>
-              <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="m-5">
+              <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="me-5 ms-5">
+                
+              {message && <Alert variant='danger'>Algo inesperado aconteceu! Tente novamente mais tarde.</Alert>}
+              {messageSuccess && <Alert variant='success'>Senha alterado com sucesso! Você será redirecionado.</Alert>}
                 <Form.Group className="mb-3">
                   <Form.Label className='text-white'>Email</Form.Label>
                   <Form.Control type="email" name="email" value={values.email} onChange={(e) => {
