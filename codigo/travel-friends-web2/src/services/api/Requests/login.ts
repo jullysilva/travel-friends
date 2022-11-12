@@ -19,9 +19,10 @@ export const resetPassword = async (data: any) => {
 };
 
 export const registerUser = async (data: UserRegister) => {
-  await api.post('/auth/register', data).then((res) => {
-    return res.data;
-  }).catch((error) => {
-    return error;
-  });
+  try {
+    const response = await api.post<AuthUser>('/auth/register', data);
+    return response;
+  } catch (error) {
+      return error.response;
+  };
 };

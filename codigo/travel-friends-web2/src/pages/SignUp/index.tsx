@@ -1,20 +1,21 @@
 import { useState } from 'react';
-import { Container, Row, Col,Form, Figure } from 'react-bootstrap';
+import { Container, Row, Col,Form, Figure, Alert } from 'react-bootstrap';
 import { ContainerSC, BoxForm, Title } from './signUp.styled';
 import { registerUser } from '../../services/api/Requests/login';
 import { Button } from '../../components';
 import planet from '../../assets/icon-planet.svg';
 import logo from '../../assets/logo-app.png';
+import { useNavigate } from 'react-router-dom';
 import { Theme } from '../../utils';
+import { UserRegister } from '../../@types/models.interface';
 
 const SignUp = () => {
+  const [messageSuccess, setMessageSuccess] = useState(null);
+  const [message, setMessage] = useState(null);
   const [validated, setValidated] = useState(false);
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    cpf: '',
-    password: ''
-  });
+  const [values, setValues] = useState<UserRegister>({} as UserRegister);
+
+  const navigate = useNavigate();
 
   const handleSubmit = async(e: any) => {
     e.preventDefault();
@@ -22,8 +23,16 @@ const SignUp = () => {
     if (form.checkValidity() === false) {
       e.stopPropagation();
     }
-    const data = await registerUser(values);
-    console.log(data);
+    const { data, status } = await registerUser(values);
+    if(status === 201){
+      setMessageSuccess(data.message);
+      setTimeout(() => {
+        navigate('/entrar');
+      }, 3000);
+    }
+    else{
+      setMessage(data.error);
+    };
     setValidated(true);
   };
 
@@ -40,11 +49,13 @@ const SignUp = () => {
         </Col>
         <BoxForm sm={5}>
             <Container className='h-100 d-inline'>
-              <Col className='text-center'>
+              <Col className='text-center mb-3'>
                 <img src={logo} width="142" alt="Logo" />
                 <Title>Registrar-se</Title>
               </Col>
-              <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="m-5">
+              <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="ms-5 me-5">
+              {message && <Alert variant='danger'>{message}</Alert>}
+              {messageSuccess && <Alert variant='success'>{messageSuccess} Você será redirecionado.</Alert>}
                 <Form.Group className="mb-3">
                   <Form.Label className='text-white'>Nome</Form.Label>
                   <Form.Control type="text" name="name" value={values.name} onChange={(e) => {
