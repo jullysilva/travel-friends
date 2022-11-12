@@ -1,13 +1,16 @@
 import React from "react";
 import { Row, Col, Card } from 'react-bootstrap';
+import BannerDefault from '../../assets/banner-default.svg';
+import { Divider } from "../Divider/Divider.styled";
 import { RoadMap } from "../../@types/models.interface";
 
 interface Props {
     data?: RoadMap[];
-  bg?: string;
-  color?: string;
-  children?: React.ReactNode;
-  onClick?: () => void;
+    divider?: boolean;
+    bg?: string;
+    color?: string;
+    children?: React.ReactNode;
+    onClick?: () => void;
 }
 
 const CardBox: React.FC<Props> = ({ 
@@ -15,21 +18,23 @@ const CardBox: React.FC<Props> = ({
     color,
     children,
     data,
+    divider,
     onClick,
   }) => { 
   return (
-    <Row xs={1} md={2} className="g-4">
-      {data?.map((_, idx) => (
+    <Row xs={1} md={2} lg={3} className="g-4">
+      {data?.map((item, idx) => (
         <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+          <Card tabIndex={idx} className="h-100" bg="light">
+            <Card.Img className="p-5" variant="top" src={BannerDefault} />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>{item.title}</Card.Title>
+              {item.isFree && <Card.Text>Gratuito</Card.Text>}
+              {/* <Card.Text>{item.}</Card.Text> */}
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+              <Divider pad="0 15px" />
               </Card.Text>
+              <Card.Text>{item.description}</Card.Text>
             </Card.Body>
           </Card>
         </Col>

@@ -1,16 +1,22 @@
 import api from "..";
+import { User } from "../../../@types/models.interface";
 
-export const loginUser = async (data: any) => {
-  await api
-    .post("/auth/login", data)
-    .then((res) => {
-      const response = {
-        data: res.data,
-        status: res.status
-      }; 
+interface AuthProps{
+  data: User,
+  status: number
+};
 
-      return response;
-    });
+export const loginUser = async (data: {}) => {
+    try {
+      const response = await api.post('/auth/login', data);
+      const user = {
+        data: response.data,
+        status: response.status
+      };
+      return user;
+  } catch (error) {
+      return error;
+  };
 };
 
 export const resetPassword = async (data: any) => {

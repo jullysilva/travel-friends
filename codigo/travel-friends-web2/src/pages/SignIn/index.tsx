@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col,Form, Figure } from 'react-bootstrap';
+import { Container, Row, Col,Form, Figure, Alert } from 'react-bootstrap';
 import { ContainerSC, LinkSC, BoxForm, Title } from './signin.styled';
 import { loginUser } from '../../services/api/Requests/login';
 import { Button } from '../../components';
@@ -7,8 +7,11 @@ import { userHook } from '../../context/userData';
 import planet from '../../assets/icon-planet.svg';
 import logo from '../../assets/logo-app.png';
 import { Theme } from '../../utils';
+import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  const [message, setMessage] = useState(false);
   const [validated, setValidated] = useState(false);
   const [values, setValues] = useState({
     email: '',
@@ -22,11 +25,14 @@ const SignIn = () => {
     if (form.checkValidity() === false) {
       e.stopPropagation();
     }
-    const data = await loginUser(values);
-    console.log(data);
-    // if(data.status === 200){
-    //   setUser(data.data);
-    // }
+    const response: unknown = await loginUser(values);
+    if(response?.status === 200){
+      setUser(response?.data);
+      navigate('/');
+    }
+    else{
+      setMessage(true);
+    }
     setValidated(true);
   };
 
@@ -43,11 +49,12 @@ const SignIn = () => {
         </Col>
         <BoxForm sm={5}>
             <Container className='h-100 d-inline'>
-              <Col className='text-center'>
+              <Col className='text-center mb-3'>
                 <img src={logo} width="142" alt="Logo" />
                 <Title>Login</Title>
               </Col>
-              <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="m-5">
+              <Form noValidate validated={validated} onSubmit={(e) => handleSubmit(e)} className="me-5 ms-5">
+                {message && <Alert variant='danger'>Dados inseridos não estão corretos!</Alert>}
                 <Form.Group className="mb-4">
                   <Form.Label className='text-white'>Email</Form.Label>
                   <Form.Control type="email" name="email" value={values.email} onChange={(e) => {
@@ -62,11 +69,13 @@ const SignIn = () => {
                     setValues({...values});
                   }} placeholder="Insira a senha" required/>
                 </Form.Group>
-                <Button
-                  type='submit'
-                  bg={Theme.colors.yellow}
-                  color="white"
-                  children = "Entrar"/>
+                <Form.Group className='mt-4'>
+                  <Button
+                    type='submit'
+                    bg={Theme.colors.yellow}
+                    color="white"
+                    children = "Entrar"/>
+                </Form.Group>
                 <Col className="mt-3 d-grid text-center">
                   <Form.Label>
                    <LinkSC to='/reset'>Esqueci a senha</LinkSC>

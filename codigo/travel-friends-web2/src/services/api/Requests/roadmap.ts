@@ -4,12 +4,7 @@ export const getAllRoadmap = async() => {
   try {
     const response = await api.get("/roadmap");
 
-    const data = {
-      data: response.data,
-      status: response.status,
-    };
-
-    return data;
+    return response.data;
   } catch (error) {
     console.log("---> Roteiro error: ");
   }
@@ -22,3 +17,4 @@ export const createRoadmap = async (data: any) => {
 export const updateRoadmap = async (data: any) => {
   const response = await api.post("/");
 };
+
