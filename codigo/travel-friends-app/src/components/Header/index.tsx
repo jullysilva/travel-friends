@@ -20,7 +20,7 @@ export default function Header() {
       <TextApp
         color={colors.shape}
         size={fonts.title}
-        text={`Olá, ${user.userData.nome}`}
+        text={`Olá, ${user.userData.name}`}
       />
       <TextApp color={colors.shape} size={fonts.text} text="O que planeja?" />
     </View>

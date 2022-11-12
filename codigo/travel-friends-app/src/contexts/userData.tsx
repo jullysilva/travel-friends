@@ -8,21 +8,14 @@ interface UserProviderProps {
 
 interface UserContextData {
   userData: User;
-  getUser: ({ idUser }: User) => void;
+  getUser: ({ id }: User) => void;
   setUser: (userData: User) => void;
 }
 
 const UserContext = createContext<UserContextData>({} as UserContextData);
 
 export function UserProvider({ children }: UserProviderProps) {
-  const [userData, setUserData] = useState<User>({
-    idUser: "1",
-    cpf: "12345678",
-    nome: "leo anjos",
-    senha: "abcd",
-    email: "leo@gmail.com",
-    TOKEN: "",
-  });
+  const [userData, setUserData] = useState<User>({} as User);
 
   const setUser = (userData: User) => {
     setUserData(userData);

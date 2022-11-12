@@ -1,57 +1,98 @@
 import React, { useState } from "react";
 import { Text, View, KeyboardAvoidingView } from "react-native";
-import * as EmailValidator from 'email-validator';
+import * as EmailValidator from "email-validator";
 import Button from "../../../components/Button";
 import Input from "../../../components/Input";
 import { useInitialNavigation } from "../../../hooks/navigation";
-import { authUser } from '../../../services/api/auth/login'
+import { userHook } from "../../../contexts/userData";
+import { useAuth } from "../../../contexts/useAuth";
+import { authUser } from "../../../services/api/auth/login";
 
 import { styles } from "./styles";
+import TextApp from "../../../components/Text";
+import theme from "../../../utils/theme";
+
+import { UserLogin } from "../../../@types/signOff.interface";
 
 export default function SignIn() {
+  const { setUser, userData } = userHook();
+  const { login } = useAuth();
+
   const navigation = useInitialNavigation();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [isError, setIsError] = useState(false);
+
+  const [message, setMessage] = useState<string>("");
+  const [userLogin, setUserLogin] = useState<UserLogin>({} as UserLogin);
+  const [isError, setIsError] = useState<boolean>(false);
 
   const onSubmit = async () => {
-    const data = {
-      email: email,
-      password: password
-    }
-    if (!isError) {
-      const res = await authUser(data);
-      console.log(res);
-      // navigation.navigate("SignUp");
-    }
+    if (true) {
+      const { data, status } = await authUser(userLogin);
 
-  }
-
-  const handleCheck = () => {
-    if (EmailValidator.validate(email)) {
-      setIsError(false);
-    } else {
-      setIsError(true);
+      if (status === 200) {
+        setUser(data);
+        login();
+      } else {
+        setIsError(true);
+        setMessage("Credenciais não encontradas!");
+      }
     }
-  }
+  };
+
+  // const handleCheck = () => {
+  //   if (EmailValidator.validate(email)) {
+  //     setIsError(false);
+  //   } else {
+  //     setIsError(true);
+  //   }
+  // };
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Entrar</Text>
       </View>
+
       <View style={styles.content}>
-        <KeyboardAvoidingView>
-          <Input text="E-mail" value={email} onChangeText={(text) => setEmail(text)} onBlur={handleCheck} />
-          <Input text="Senha" value={password} onChangeText={(text) => setPassword(text)} />
-          <Button
-            onPress={onSubmit}
-            title="Entrar"
+        {isError && (
+          <TextApp text={message} size={16} color={theme.colors.red} />
+        )}
+        <KeyboardAvoidingView style={{ paddingTop: 8 }}>
+          <Input
+            text="E-mail"
+            keyboardType="email-address"
+            value={userLogin.email}
+            onChangeText={(text) => {
+              userLogin.email = text;
+              setUserLogin({ ...userLogin });
+            }}
+            //onBlur={handleCheck}
           />
+          <Input
+            text="Senha"
+            value={userLogin.password}
+            onChangeText={(text) => {
+              userLogin.password = text;
+              setUserLogin({ ...userLogin });
+            }}
+          />
+          <Button onPress={onSubmit} title="Entrar" />
         </KeyboardAvoidingView>
-        <Text>Não tem uma conta?</Text>
+        <View style={{ paddingTop: 24, flexDirection: "row" }}>
+          <TextApp
+            text="Não tem uma conta?"
+            size={16}
+            color={theme.colors.text}
+          />
+          <View style={{ paddingHorizontal: 8 }}>
+            <TextApp
+              text="Cadastre-se"
+              size={16}
+              color={theme.colors.primary}
+              onPress={() => navigation.navigate("SignUp")}
+            />
+          </View>
+        </View>
       </View>
     </View>
   );
 }
-

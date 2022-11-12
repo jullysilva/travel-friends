@@ -14,7 +14,7 @@ interface AuthContextData {
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 export function AuthProvider({ children }: AuthProviderProps) {
-  const [isAuth, setIsAuth] = useState<boolean>(true);
+  const [isAuth, setIsAuth] = useState<boolean>(false);
 
   //TODO: essa function ira verificar se o usuario ta logado
   const getIsLogged = () => {

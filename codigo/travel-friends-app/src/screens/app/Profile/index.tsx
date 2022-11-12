@@ -11,19 +11,20 @@ import { styles } from "./styles";
 
 export function Profile() {
   const { logout } = useAuth();
+  const { userData } = userHook();
 
   return (
     <View style={styles.container}>
       <View style={styles.headerProfile}>
         <View style={styles.nickName}>
           <TextApp
-            text={formatNickName("Leo Anjos")}
+            text={formatNickName(userData.name)}
             size={24}
             color={theme.colors.shape}
           />
         </View>
         <View style={styles.underlineProfile}>
-          <TextApp text="Leo Anjos" size={24} />
+          <TextApp text={userData.name} size={24} />
         </View>
       </View>
       <View style={styles.bodyProfile}>

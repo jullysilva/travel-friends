@@ -8,8 +8,6 @@ import theme from "../../../utils/theme";
 import { style } from "./styles";
 
 export function Favorite() {
-  const { height, width } = Dimensions.get("window");
-
   const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
 
   async function loadRoadmap() {
@@ -26,7 +24,6 @@ export function Favorite() {
   useEffect(() => {
     loadRoadmap();
   }, []);
-  console.log(roadmapList);
 
   return (
     <View style={style.container}>
