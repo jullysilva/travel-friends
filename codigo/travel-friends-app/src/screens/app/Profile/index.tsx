@@ -8,11 +8,12 @@ import { useAuth } from "../../../contexts/useAuth";
 import { userHook } from "../../../contexts/userData";
 
 import { styles } from "./styles";
+import { useHomeNavigation } from "../../../hooks/navigation";
 
 export function Profile() {
   const { logout } = useAuth();
   const { userData } = userHook();
-
+  const navigation = useHomeNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.headerProfile}>
@@ -29,7 +30,7 @@ export function Profile() {
       </View>
       <View style={styles.bodyProfile}>
         <View style={styles.menuProfile}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <View style={styles.underlineButton}>
               <FontAwesome
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -40,6 +41,18 @@ export function Profile() {
                 style={{ marginRight: 20 }}
               />
               <TextApp text="Favoritos" size={theme.fonts.text} />
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <View style={styles.underlineButton}>
+              <FontAwesome
+                name={"bell"}
+                size={24}
+                color={theme.colors.title}
+                style={{ marginRight: 20 }}
+              />
+              <TextApp text="Notificação" size={theme.fonts.text} />
             </View>
           </TouchableOpacity>
 

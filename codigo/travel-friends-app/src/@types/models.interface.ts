@@ -11,7 +11,7 @@ export interface RoadMap {
   _id: string;
   idCreator: string | null;
   idLocal: string | null;
-  title: string | null;
+  title: string;
   description?: string | null;
   favorites: boolean;
   isFree: boolean;

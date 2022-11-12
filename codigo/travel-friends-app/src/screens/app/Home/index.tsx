@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { View, FlatList, Dimensions, StatusBar } from "react-native";
+import {
+  View,
+  FlatList,
+  Dimensions,
+  StatusBar,
+  ActivityIndicator,
+} from "react-native";
 import { userHook } from "../../../contexts/userData";
 import { RoadMap } from "../../../@types/models.interface";
 import { getAllRoadmap } from "../../../services/api/app/roteiros";
@@ -47,6 +53,7 @@ export default function Home() {
       <Header />
 
       <View style={{}}>
+        {roadmapList.length == 0 ? <ActivityIndicator /> : null}
         {!!roadmapList ? (
           <FlatList
             horizontal
@@ -77,6 +84,7 @@ export default function Home() {
       </View>
 
       <View style={{}}>
+        {roadmapList.length == 0 ? <ActivityIndicator /> : null}
         {!!roadmapList ? (
           <FlatList
             snapToAlignment={"start"}

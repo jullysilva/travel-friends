@@ -75,6 +75,14 @@ export default function SignIn() {
               setUserLogin({ ...userLogin });
             }}
           />
+          <View style={{ paddingBottom: 16, alignSelf: "flex-end" }}>
+            <TextApp
+              text="Esqueci minha senha"
+              size={16}
+              color={theme.colors.primary}
+              onPress={() => navigation.navigate("ForgotPassword")}
+            />
+          </View>
           <Button onPress={onSubmit} title="Entrar" />
         </KeyboardAvoidingView>
         <View style={{ paddingTop: 24, flexDirection: "row" }}>

@@ -1,18 +1,35 @@
-import React from "react";
-import {
-  KeyboardAvoidingView,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import React, { useState } from "react";
+import { Alert, KeyboardAvoidingView, Text, View } from "react-native";
+import { UserLogin } from "../../../@types/signOff.interface";
 import Button from "../../../components/Button";
 import Input from "../../../components/Input";
 import { useInitialNavigation } from "../../../hooks/navigation";
+import { recoverPassword } from "../../../services/api/auth/login";
 
 import { styles } from "./styles";
 
 export default function ForgotPassword() {
   const navigation = useInitialNavigation();
+
+  const [message, setMessage] = useState<string>("");
+  const [userLogin, setUserLogin] = useState<UserLogin>({} as UserLogin);
+  const [isError, setIsError] = useState<boolean>(false);
+
+  const onSubmit = async () => {
+    if (userLogin.email && userLogin.password) {
+      const { data, status } = await recoverPassword(userLogin);
+
+      if (status === 200 || status === 201) {
+        Alert.alert(
+          "Sucesso!",
+          "Senha alterada. Confirme para efetuar seu login."
+        );
+        navigation.navigate("SignIn");
+      } else {
+        Alert.alert("Erro!", "Sua senha não foi recuperada...");
+      }
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -21,13 +38,26 @@ export default function ForgotPassword() {
       </View>
       <View style={styles.content}>
         <KeyboardAvoidingView>
-          <Input text="E-mail" />
-          <Input text="Nova Senha" />
-          <Input text="Repetir Senha" />
-          <Button
-            onPress={() => navigation.navigate("Terms")}
-            title="Acessar"
+          <Input
+            text="E-mail"
+            keyboardType="email-address"
+            value={userLogin.email}
+            onChangeText={(text) => {
+              userLogin.email = text;
+              setUserLogin({ ...userLogin });
+            }}
+            //onBlur={handleCheck}
           />
+          <Input
+            text="Nova senha"
+            value={userLogin.password}
+            onChangeText={(text) => {
+              userLogin.password = text;
+              setUserLogin({ ...userLogin });
+            }}
+          />
+
+          <Button onPress={() => onSubmit()} title="Recuperar" />
         </KeyboardAvoidingView>
       </View>
     </View>

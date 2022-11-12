@@ -10,5 +10,12 @@ export const styles = StyleSheet.create({
     padding: 20,
     borderBottomLeftRadius: 12,
     borderBottomRightRadius: 12,
+    flexDirection: "row",
+  },
+  textBox: {},
+  bell: {
+    alignItems: "flex-end",
+
+    flex: 1,
   },
 });

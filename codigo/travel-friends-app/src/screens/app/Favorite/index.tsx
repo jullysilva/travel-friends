@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Dimensions, StatusBar, FlatList } from "react-native";
+import { View, StatusBar, FlatList, ActivityIndicator } from "react-native";
 import { RoadMap } from "../../../@types/models.interface";
 import Card from "../../../components/Card";
 import TextApp from "../../../components/Text";
@@ -36,7 +36,7 @@ export function Favorite() {
         style={{ paddingHorizontal: 20, paddingTop: 30, paddingBottom: 14 }}
       >
         <TextApp
-          size={theme.fonts.subTitle}
+          size={theme.fonts.title}
           text={"Meus favoritos"}
           isBold
           color={theme.colors.title}
@@ -44,6 +44,9 @@ export function Favorite() {
       </View>
 
       <View style={{ width: "100%" }}>
+        {roadmapList.length == 0 ? (
+          <ActivityIndicator color={theme.colors.primary} size="large" />
+        ) : null}
         {!!roadmapList ? (
           <FlatList
             snapToAlignment={"start"}
