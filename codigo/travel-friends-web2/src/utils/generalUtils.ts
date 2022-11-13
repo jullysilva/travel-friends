@@ -6,7 +6,7 @@ export const SearchCEP = (value: string) => {
 
     if (cep !== "") {
         if(validacep.test(cep)) {
-            const response = axios.get('https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback');
+            const response = axios.get('https://viacep.com.br/ws/'+ cep + '/json/?');
             return response;
         }
         else {

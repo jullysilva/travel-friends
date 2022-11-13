@@ -45,12 +45,23 @@ export interface User {
   }
   
   export interface Local {
-    idLocal: string;
     idCriador: string;
-    nome: string;
-    endereco: string;
-  
-    horarioInicial: string;
-    horarioFinal: string;
+    name: string;
+    address: string;
+    cep: string;
+    openTime: string;
+    closeTime: string;
+  }
+
+  export interface TRoadmaps {
+    restaurante: string;
+    loja: string;
+    museu: string;
+    igreja: string;
+    praca: string;
+    parque: string;
+    shopping: string;
+    arLivre: string;
+    educacao: string;
   }
   

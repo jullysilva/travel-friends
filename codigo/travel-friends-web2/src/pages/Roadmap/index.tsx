@@ -35,7 +35,7 @@ const Roadmap = () => {
                 <Row className="mb-3">
                     <Form.Group as={Col}>
                         <Form.Label>Nome do local</Form.Label>
-                        <Form.Control type="text" value={values.nome} placeholder="Insira o nome do local" required/>
+                        <Form.Control type="text" value={values.name} placeholder="Insira o nome do local" required/>
                     </Form.Group>
 
                     <Form.Group as={Col}>
@@ -50,17 +50,17 @@ const Roadmap = () => {
                 <Row className="mb-3">
                     <Form.Group as={Col}>
                         <Form.Label>CEP</Form.Label>
-                        <Form.Control maxLength={8} value={values.nome} placeholder='Insira o CEP' required/>
+                        <Form.Control maxLength={8} value={values.cep} placeholder='Insira o CEP' required/>
                     </Form.Group>
 
                     <Form.Group as={Col}>
                         <Form.Label>Endereço</Form.Label>
-                        <Form.Control value={values.nome} type="text" placeholder="Insira o logradouro"/>
+                        <Form.Control value={values.address} type="text" placeholder="Insira o logradouro"/>
                     </Form.Group>
 
                     <Form.Group as={Col} className="mb-3" controlId="formGridAddress1">
                         <Form.Label>Número</Form.Label>
-                        <Form.Control value={values.nome} type='text' placeholder="1234" />
+                        <Form.Control value='nada' type='text' placeholder="1234" />
                     </Form.Group>
                 </Row>
                 <Row className="mb-3">
