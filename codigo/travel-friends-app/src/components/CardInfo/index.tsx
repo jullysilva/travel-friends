@@ -34,7 +34,7 @@ export default function CardInfo({ item }: CardInfoProps) {
           />
           <TextApp
             size={theme.fonts.subText}
-            text={`valor: R$ ${item.price}`}
+            text={item.isFree ? "Gratuito" : `Valor: R$ ${item.price}`}
             color={theme.colors.text}
             fontWeight="400"
           />

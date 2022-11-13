@@ -3,27 +3,21 @@ import { View, StatusBar, FlatList, ActivityIndicator } from "react-native";
 import { RoadMap } from "../../../@types/models.interface";
 import Card from "../../../components/Card";
 import TextApp from "../../../components/Text";
-import { getAllRoadmap } from "../../../services/api/app/roteiros";
+import Button from "../../../components/Button";
+
 import theme from "../../../utils/theme";
+
 import { style } from "./styles";
+import { userHook } from "../../../contexts/userData";
 
 export function Favorite() {
-  const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
-
-  async function loadRoadmap() {
-    const resp = await getAllRoadmap();
-    setRoadmapList(resp?.data);
-  }
+  const { roadmapFavorite, clearFavorite } = userHook();
 
   function renderVertical(item: RoadMap) {
     if (item.favorites) {
       return <Card item={item} />;
     }
   }
-
-  useEffect(() => {
-    loadRoadmap();
-  }, []);
 
   return (
     <View style={style.container}>
@@ -41,20 +35,21 @@ export function Favorite() {
           isBold
           color={theme.colors.title}
         />
+        <Button title="Limpar" onPress={() => clearFavorite()} />
       </View>
 
       <View style={{ width: "100%" }}>
-        {roadmapList.length == 0 ? (
+        {roadmapFavorite.length == 0 ? (
           <ActivityIndicator color={theme.colors.primary} size="large" />
         ) : null}
-        {!!roadmapList ? (
+        {!!roadmapFavorite ? (
           <FlatList
             snapToAlignment={"start"}
             scrollEventThrottle={16}
             decelerationRate={"fast"}
             showsVerticalScrollIndicator={false}
             keyExtractor={(item, i) => `${item}${i}`}
-            data={roadmapList}
+            data={roadmapFavorite}
             renderItem={({ item }) => renderVertical(item)}
             style={{}}
             ListFooterComponent={<View style={{ height: 340 }} />}

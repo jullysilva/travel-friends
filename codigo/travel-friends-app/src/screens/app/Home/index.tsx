@@ -18,12 +18,21 @@ import TextApp from "../../../components/Text";
 import { style } from "./styles";
 import theme from "../../../utils/theme";
 import Card from "../../../components/Card";
+import { useHomeNavigation } from "../../../hooks/navigation";
 
 export default function Home() {
-  const { userData } = userHook();
+  const navigation = useHomeNavigation();
+  const { getRoadmapFavorite } = userHook();
   const { height, width } = Dimensions.get("window");
 
   const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
+  const [roadmapFavorite, setRoadmapFavorite] = useState<RoadMap[]>([]);
+
+  async function loadRoadmapVertical() {
+    console.log("aquii");
+    const resp = getRoadmapFavorite();
+    setRoadmapFavorite(resp);
+  }
 
   async function loadRoadmap() {
     const resp = await getAllRoadmap();
@@ -35,14 +44,16 @@ export default function Home() {
   }
 
   function renderVertical(item: RoadMap) {
-    return <Card item={item} />;
+    if (item) {
+      return <Card item={item} key={item._id} />;
+    }
   }
 
   useEffect(() => {
+    navigation.addListener("focus", () => loadRoadmapVertical());
     loadRoadmap();
-  }, []);
-
-  console.log(userData);
+    loadRoadmapVertical();
+  }, [navigation]);
 
   return (
     <View style={style.container}>
@@ -84,15 +95,15 @@ export default function Home() {
       </View>
 
       <View style={{}}>
-        {roadmapList.length == 0 ? <ActivityIndicator /> : null}
-        {!!roadmapList ? (
+        {roadmapFavorite.length == 0 ? <ActivityIndicator /> : null}
+        {!!roadmapFavorite ? (
           <FlatList
             snapToAlignment={"start"}
             scrollEventThrottle={16}
             decelerationRate={"fast"}
             showsVerticalScrollIndicator={false}
             keyExtractor={(item, i) => `${item}${i}`}
-            data={roadmapList}
+            data={roadmapFavorite}
             renderItem={({ item }) => renderVertical(item)}
             style={{}}
             ListFooterComponent={<View style={{ height: 340 }} />}

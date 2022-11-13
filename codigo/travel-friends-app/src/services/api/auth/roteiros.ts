@@ -9,7 +9,6 @@ export async function getAllUsers() {
       status: response.status,
     };
 
-    console.log(data);
     return data;
   } catch (error) {
     console.log("---> User error: ");
