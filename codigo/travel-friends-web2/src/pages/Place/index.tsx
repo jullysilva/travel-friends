@@ -5,7 +5,7 @@ import { Local } from '../../@types/models.interface';
 import { SearchCEP } from '../../utils/generalUtils';
 import InputTime from '../../components/InputTime/InputTime';
 
-const Roadmap = () => {
+const Place = () => {
     const [values, setValues] = useState<Local>({} as Local);
     const [validated, setValidated] = useState(false);
 
@@ -31,20 +31,12 @@ const Roadmap = () => {
     return (
       <Navigation className="d-flex">
         <Container className='p-5 justify-content-center align-self-center'>
-            <Form noValidate validated={validated} onSubmit={(e) => onSubmit(e)}>
+            <Form noValidate validated={validated} onSubmit={(e) => onSubmit(e)} className='pe-5 ps-5'>
                 <Row className="mb-3">
                     <Form.Group as={Col}>
                         <Form.Label>Nome do local</Form.Label>
                         <Form.Control type="text" value={values.nome} placeholder="Insira o nome do local" required/>
-                    </Form.Group>
-
-                    <Form.Group as={Col}>
-                        <Form.Label>Tipo do estabelecimento</Form.Label>
-                        <Form.Select defaultValue="Escolha..." required>
-                            <option>Choose...</option>
-                            <option>...</option>
-                        </Form.Select>
-                    </Form.Group>    
+                    </Form.Group>   
                 </Row>
 
                 <Row className="mb-3">
@@ -99,4 +91,4 @@ const Roadmap = () => {
     );
 }
 
-export default Roadmap;
+export default Place;

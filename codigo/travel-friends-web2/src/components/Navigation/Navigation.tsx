@@ -1,14 +1,25 @@
-import { Container, Col, Row, Figure, Nav, Form, Button, Navbar } from 'react-bootstrap';
+import { Container, Col, Row, Figure, Nav, Form, Button, Navbar, Dropdown } from 'react-bootstrap';
 import LogoTipo from '../../assets/logo-web.png';
 import User from '../../assets/user-icon.svg';
 import { userHook } from '../../context/userData';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = ({ children }: any) => {
   const { userData } = userHook();
+  const navigate = useNavigate();
 
+  const handleSelect = (e: any) => {
+    if(e === 'passeio'){
+      navigate('/cadastrar-roteiro');
+    }
+    if(e === 'local'){
+      navigate('/cadastrar-local');
+    }
+    console.log(e);
+  }
 
     return (
-      <Container fluid>
+      <Container className='h-100' fluid>
         <Row className='h-100'>
           <Col sm={2} style={{backgroundColor: '#F5F5F5'}}>
             <Figure className='text-center'>
@@ -43,7 +54,13 @@ const Navigation = ({ children }: any) => {
                   <Nav.Link href="#pricing">Meus roteiros</Nav.Link>
                 </Nav>
                 <Nav className="me-5">
-                  <Button className='mr-5' variant="outline-warning">Criar</Button>
+                  <Dropdown onSelect={(e) => handleSelect(e)}>
+                    <Dropdown.Toggle variant="warning" id="dropdown-basic">Criar</Dropdown.Toggle>
+                    <Dropdown.Menu >
+                      <Dropdown.Item eventKey='local'>Local</Dropdown.Item>
+                      <Dropdown.Item eventKey='passeio'>Passeio</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
                 </Nav>
                 <Nav>
                   <Nav.Link>{userData.name}</Nav.Link>

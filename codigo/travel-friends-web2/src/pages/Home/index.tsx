@@ -1,8 +1,7 @@
 import { useCallback } from 'react';
 import { getAllRoadmap } from '../../services/api/Requests/roadmap';
-import { CardBox, FallbackWrapper } from '../../components';
+import { CardBox, FallbackWrapper, Navigation } from '../../components';
 import { usePromise } from '../../hooks';
-import Navigation from '../../components/Navigation/Navigation';
 import { Container } from 'react-bootstrap';
 
 const Home = () => {
