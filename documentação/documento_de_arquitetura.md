@@ -10,7 +10,6 @@
 **Lorrayne Reis Silva, lorrayne.silva.1220819@sga.pucminas.br**
 
 **Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br**
-
 ---
 
 Professores:
