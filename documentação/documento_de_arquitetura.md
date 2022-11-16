@@ -102,26 +102,26 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 | **ID** | **Descrição** | **Prioridade** |
 | --- | --- | --- |
-| RF001 | O usuário deve ser capaz de realizar cadastro na plataforma Web| Essencial
-| RF002 | O usuário deve ser capaz de acessar a plataforma Web através de email e senha anteriormente cadastrados
-| RF003 | Após acessar a plataforma Web o usuário deve ler e confirmar que está em acordo com os termos de uso
-| RF004 | Após acessar a plataforma Web o usuário deve ser capaz de alterar a sua senha de registro
-| RF005 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o local onde será realizado o seu passeio
-| RF006 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o seu passeio com as informações necessárias
-| RF007 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
-| RF008 | Após acessar a plataforma Web o Uuário deve ser capaz de alterar ou complementar suas informações de perfil
-| RF009 | Após acessar a plataforma Web o Uuário deve ser capaz de salvar em favoritos os seus passeios
-| RF010 | Após acessar a plataforma Web o Uuário deve ser capaz de pesquisar determinado passseio registrado
-| RF011 | O usuário deve ser capaz de realizar cadastro no aplicativo
-| RF012 | O usuário deve ser capaz de acessar o aplicativo através de email e senha anteriormente cadastrados
-| RF013 | Após acessar o aplicativo o usuário deve ser capaz de alterar a sua senha de registro
-| RF014 | Após acessar o aplicativo o usuário deve ser capaz de visualizar os passeios disponíveis e ingressar 
-| RF015 | Após acessar o aplicativo o usuário deve ser capaz de alterar ou complementar suas informações de perfil
-| RF016 | Após acessar o aplicativo o usuário deve ser capaz de salvar em favoritos os seus passeios
-| RF017 | Após acessar a plataforma Web o usuário deve ser capaz de pesquisar determinado passseio
-| RF018 | Após acessar a plataforma Web o usuário deve ser capaz de solicitar suporte
-| RF019 | Após acessar a plataforma Web o usuário deve estar apto a receber notificações
-| RF020 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar seus passeios ingressados em uma agenda
+| RF001 | O usuário deve ser capaz de realizar cadastro na plataforma Web| Obrigatório
+| RF002 | O usuário deve ser capaz de acessar a plataforma Web através de email e senha anteriormente cadastrados | Obrigatório
+| RF003 | Após acessar a plataforma Web o usuário deve ler e confirmar que está em acordo com os termos de uso | Obrigatório
+| RF004 | Após acessar a plataforma Web o usuário deve ser capaz de alterar a sua senha de registro | Obrigatório
+| RF005 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o local onde será realizado o seu passeio | Obrigatório
+| RF006 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o seu passeio com as informações necessárias | Obrigatório
+| RF007 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados | Obrigatório
+| RF008 | Após acessar a plataforma Web o Uuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
+| RF009 | Após acessar a plataforma Web o Uuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
+| RF010 | Após acessar a plataforma Web o Uuário deve ser capaz de pesquisar determinado passseio registrado | Obrigatório
+| RF011 | O usuário deve ser capaz de realizar cadastro no aplicativo | Obrigatório
+| RF012 | O usuário deve ser capaz de acessar o aplicativo através de email e senha anteriormente cadastrados | Obrigatório
+| RF013 | Após acessar o aplicativo o usuário deve ser capaz de alterar a sua senha de registro | Obrigatório
+| RF014 | Após acessar o aplicativo o usuário deve ser capaz de visualizar os passeios disponíveis e ingressar | Obrigatório
+| RF015 | Após acessar o aplicativo o usuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
+| RF016 | Após acessar o aplicativo o usuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
+| RF017 | Após acessar a plataforma Web o usuário deve ser capaz de aplicar filtros e pesquisar determinado passseio | Obrigatório
+| RF018 | Após acessar a plataforma Web o usuário deve ser capaz de solicitar suporte | Obrigatório
+| RF019 | Após acessar a plataforma Web o usuário deve estar apto a receber notificações | Desejável
+| RF020 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar seus passeios ingressados em uma agenda | Desejável
 
 
 
