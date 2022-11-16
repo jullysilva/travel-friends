@@ -108,10 +108,10 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 | RF004 | Após acessar a plataforma Web o usuário deve ser capaz de alterar a sua senha de registro | Obrigatório
 | RF005 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o local onde será realizado o seu passeio | Obrigatório
 | RF006 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o seu passeio com as informações necessárias | Obrigatório
-| RF007 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados | Obrigatório
-| RF008 | Após acessar a plataforma Web o Uuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
-| RF009 | Após acessar a plataforma Web o Uuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
-| RF010 | Após acessar a plataforma Web o Uuário deve ser capaz de pesquisar determinado passseio registrado | Obrigatório
+| RF007 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar os locais e passeios registrados | Obrigatório
+| RF008 | Após acessar a plataforma Web o usuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
+| RF009 | Após acessar a plataforma Web o usuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
+| RF010 | Após acessar a plataforma Web o usuário deve ser capaz de pesquisar determinado passseio registrado | Obrigatório
 | RF011 | O usuário deve ser capaz de realizar cadastro no aplicativo | Obrigatório
 | RF012 | O usuário deve ser capaz de acessar o aplicativo através de email e senha anteriormente cadastrados | Obrigatório
 | RF013 | Após acessar o aplicativo o usuário deve ser capaz de alterar a sua senha de registro | Obrigatório
@@ -173,14 +173,12 @@ Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual
 ## 3.1. Visão de Negócio (Funcionalidades)
 
 
-1. O sistema deve realizar autenticação do usuário ( Web e Mobile).
-2. O sistema deve oferecer o cadastro de roteiros.
-3. O sistema deve oferecer o cadastro de estabelecimentos.
-4. O sistema deve fazer a exibição de roteiros.
-5. O sistema deve fazer a exibição de estabelecimentos.
-6. Deve ser implementado um ambiente de interação entre os usuários.
-7. Deve ser implementado  um serviço de notificações.
-8. Deve ser implementado  um serviço de geolocalização.
+1. O sistema deve realizar a autenticação do usuário na plataforma Web e Mobile
+2. O sistema deve permitir que o usuário altere a senha anteriormente cadastrada e complemente informações de perfil
+3. O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o local onde será realizado o passeio
+4.  O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o passeio
+5.  
+
 
 
 ### Descrição resumida dos Casos de Uso / Histórias de Usuário
