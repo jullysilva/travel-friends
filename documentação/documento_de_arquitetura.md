@@ -106,8 +106,15 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 | RF003 | Após acessar a plataforma Web o usuário deve ler e confirmar que está em acordo com os termos de uso
 | RF004 | Após acessar a plataforma Web o usuário deve ser capaz de alterar a sua senha de registro
 | RF005 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o local onde será realizado o seu passeio
-| RF006 |
-| RF007 |
+| RF006 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o seu passeio com as informações necessárias
+| RF007 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
+| RF008 | Após acessar a plataforma Web o Uuário deve ser capaz de alterar ou complementar suas informações de perfil
+| RF009 | Após acessar a plataforma Web o Uuário deve ser capaz de salvar em favoritos os seus passeios
+| RF010 | Após acessar a plataforma Web o Uuário deve ser capaz de pesquisar determinado passseio registrado
+| RF011 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
+| RF012 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
+| RF013 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
+
 
 
 
