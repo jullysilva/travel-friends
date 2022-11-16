@@ -176,8 +176,11 @@ Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual
 1. O sistema deve realizar a autenticação do usuário na plataforma Web e Mobile
 2. O sistema deve permitir que o usuário altere a senha anteriormente cadastrada e complemente informações de perfil
 3. O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o local onde será realizado o passeio
-4.  O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o passeio
-5.  
+4.  O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o passeio com as informações necessárias
+5.  O sistema deve exibir para o usuário os locais e passeios registrados
+6.  O sistema deve perimitir que o usuário favorite seus passeios
+7.  O sistema deve permitir 
+8.  
 
 
 
