@@ -102,7 +102,7 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 | **ID** | **Descrição** | **Prioridade** |
 | --- | --- | --- |
-| RF001 | O usuário deve ser capaz de realizar cadastro na plataforma Web
+| RF001 | O usuário deve ser capaz de realizar cadastro na plataforma Web| Essencial
 | RF002 | O usuário deve ser capaz de acessar a plataforma Web através de email e senha anteriormente cadastrados
 | RF003 | Após acessar a plataforma Web o usuário deve ler e confirmar que está em acordo com os termos de uso
 | RF004 | Após acessar a plataforma Web o usuário deve ser capaz de alterar a sua senha de registro
