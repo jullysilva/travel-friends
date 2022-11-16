@@ -2,14 +2,10 @@
 
 
 **Ian Asenjo Dominguez Cunha,  iadcunha@sga.pucminas.br**
-
 **Jully Ketely Alves da Silva,  jkasilva@sga.pucminas.br**
-
 **Laura Lourdes Coutinho Rodrigues, laura.rodrigues.1199007@sga.pucminas.br**
-
 **Lorrayne Reis Silva, lorrayne.silva.1220819@sga.pucminas.br**
-
- **Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br**
+**Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br**
 ---
 
 Professores:
