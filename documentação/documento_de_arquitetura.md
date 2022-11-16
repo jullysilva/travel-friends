@@ -101,13 +101,13 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 | **ID** | **Descrição** | **Prioridade** |
 | --- | --- | --- |
-| RF001 | O usuário deve autentificar-se pela web| Essencial|
-| RF002 | O usuário deve autentificar-se através de seu telefone| Essencial |
-| RF003| O utente poderá cadastrar roteiros de viagens| Essencial|
-| RF004| Deve ser apresentado uma lista de exibição de roteiros aos usuários| Essencial |
-| RF005| Deve ser apresentado  uma lista de estabelecimentos aos usuários| Essencial |
-| RF006| Devem ser emitidas notificações informacionais |Desejável |
-| RF007| O usuário poderá vizualizar sua localização| Essencial |
+| RF001 | O usuário deve ser capaz de realizar cadastro na plataforma Web
+| RF002 | O usuário deve ser capaz de acessar a plataforma Web através de email e senha anteriormente cadastrados
+| RF003 | Após acessar a plataforma Web o usuário deve ler e confirmar que está em acordo com os termos de uso
+| RF004 | Após acessar a plataforma Web o usuário deve ser capaz de alterar a sua senha de registro
+| RF005 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o local onde será realizado o seu passeio
+| RF006 |
+| RF007 |
 
 
 
