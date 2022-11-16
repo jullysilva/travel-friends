@@ -112,10 +112,16 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 | RF008 | Após acessar a plataforma Web o Uuário deve ser capaz de alterar ou complementar suas informações de perfil
 | RF009 | Após acessar a plataforma Web o Uuário deve ser capaz de salvar em favoritos os seus passeios
 | RF010 | Após acessar a plataforma Web o Uuário deve ser capaz de pesquisar determinado passseio registrado
-| RF011 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
-| RF012 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
-| RF013 | Após acessar a plataforma Web o Uuário deve ser capaz de visualizar os locais e passeios registrados
-
+| RF011 | O usuário deve ser capaz de realizar cadastro no aplicativo
+| RF012 | O usuário deve ser capaz de acessar o aplicativo através de email e senha anteriormente cadastrados
+| RF013 | Após acessar o aplicativo o usuário deve ser capaz de alterar a sua senha de registro
+| RF014 | Após acessar o aplicativo o usuário deve ser capaz de visualizar os passeios disponíveis e ingressar 
+| RF015 | Após acessar o aplicativo o usuário deve ser capaz de alterar ou complementar suas informações de perfil
+| RF016 | Após acessar o aplicativo o usuário deve ser capaz de salvar em favoritos os seus passeios
+| RF017 | Após acessar a plataforma Web o usuário deve ser capaz de pesquisar determinado passseio
+| RF018 | Após acessar a plataforma Web o usuário deve ser capaz de solicitar suporte
+| RF019 | Após acessar a plataforma Web o usuário deve estar apto a receber notificações
+| RF020 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar seus passeios ingressados em uma agenda
 
 
 
