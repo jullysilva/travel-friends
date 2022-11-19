@@ -29,7 +29,6 @@ export default function Home() {
   const [roadmapFavorite, setRoadmapFavorite] = useState<RoadMap[]>([]);
 
   async function loadRoadmapVertical() {
-    console.log("aquii");
     const resp = getRoadmapFavorite();
     setRoadmapFavorite(resp);
   }

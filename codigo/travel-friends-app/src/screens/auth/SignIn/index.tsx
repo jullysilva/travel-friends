@@ -60,8 +60,7 @@ export default function SignIn() {
           <Input
             text="E-mail"
             keyboardType="email-address"
-            //value={userLogin.email}
-            value="leo@gmail.com"
+            value={userLogin.email}
             onChangeText={(text) => {
               userLogin.email = text;
               setUserLogin({ ...userLogin });
@@ -70,8 +69,7 @@ export default function SignIn() {
           />
           <Input
             text="Senha"
-            //value={userLogin.password}
-            value="abcd"
+            value={userLogin.password}
             onChangeText={(text) => {
               userLogin.password = text;
               setUserLogin({ ...userLogin });

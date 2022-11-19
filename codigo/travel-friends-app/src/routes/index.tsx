@@ -5,8 +5,6 @@ import { InitialRoutes } from "./auth/auth.initial.routes";
 
 import { useAuth } from "../contexts/useAuth";
 
-//TODO: fazer verificação se esta logado ou não para exibir auth ou app
-
 export function Routes() {
   const { isAuth } = useAuth();
 

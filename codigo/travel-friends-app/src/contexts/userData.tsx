@@ -111,7 +111,6 @@ export function UserProvider({ children }: UserProviderProps) {
       const currentFavorite =
         jsonRoadmap != null ? JSON.parse(jsonRoadmap) : null;
 
-      console.log("favoritos", currentFavorite);
       if (currentFavorite) {
         return setRoadmapFavorite(currentFavorite);
       }
@@ -125,7 +124,6 @@ export function UserProvider({ children }: UserProviderProps) {
   const clearFavorite = async () => {
     await AS_data.clear();
     setRoadmapFavorite(roadmap);
-    console.log("limpando ===> ", roadmap);
   };
 
   const getRoadmapFavorite = () => {
