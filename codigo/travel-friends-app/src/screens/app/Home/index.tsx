@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { View, FlatList, Dimensions, StatusBar } from "react-native";
+import {
+  View,
+  FlatList,
+  Dimensions,
+  StatusBar,
+  ActivityIndicator,
+} from "react-native";
 import { userHook } from "../../../contexts/userData";
 import { RoadMap } from "../../../@types/models.interface";
 import { getAllRoadmap } from "../../../services/api/app/roteiros";
@@ -12,12 +18,20 @@ import TextApp from "../../../components/Text";
 import { style } from "./styles";
 import theme from "../../../utils/theme";
 import Card from "../../../components/Card";
+import { useHomeNavigation } from "../../../hooks/navigation";
 
 export default function Home() {
-  const user = userHook();
+  const navigation = useHomeNavigation();
+  const { getRoadmapFavorite } = userHook();
   const { height, width } = Dimensions.get("window");
 
   const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
+  const [roadmapFavorite, setRoadmapFavorite] = useState<RoadMap[]>([]);
+
+  async function loadRoadmapVertical() {
+    const resp = getRoadmapFavorite();
+    setRoadmapFavorite(resp);
+  }
 
   async function loadRoadmap() {
     const resp = await getAllRoadmap();
@@ -29,14 +43,17 @@ export default function Home() {
   }
 
   function renderVertical(item: RoadMap) {
-    return <Card item={item} />;
+    if (item) {
+      return <Card item={item} key={item._id} />;
+    }
   }
 
   useEffect(() => {
+    navigation.addListener("focus", () => loadRoadmapVertical());
     loadRoadmap();
-  }, []);
-  console.log(roadmapList);
-  const { userData } = user;
+    loadRoadmapVertical();
+  }, [navigation]);
+
   return (
     <View style={style.container}>
       <StatusBar
@@ -46,6 +63,7 @@ export default function Home() {
       <Header />
 
       <View style={{}}>
+        {roadmapList.length == 0 ? <ActivityIndicator /> : null}
         {!!roadmapList ? (
           <FlatList
             horizontal
@@ -76,14 +94,15 @@ export default function Home() {
       </View>
 
       <View style={{}}>
-        {!!roadmapList ? (
+        {roadmapFavorite.length == 0 ? <ActivityIndicator /> : null}
+        {!!roadmapFavorite ? (
           <FlatList
             snapToAlignment={"start"}
             scrollEventThrottle={16}
             decelerationRate={"fast"}
             showsVerticalScrollIndicator={false}
             keyExtractor={(item, i) => `${item}${i}`}
-            data={roadmapList}
+            data={roadmapFavorite}
             renderItem={({ item }) => renderVertical(item)}
             style={{}}
             ListFooterComponent={<View style={{ height: 340 }} />}

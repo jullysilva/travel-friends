@@ -3,8 +3,14 @@ import AppTabsRoutes from "./app/app.tabs.routes";
 
 import { InitialRoutes } from "./auth/auth.initial.routes";
 
-//TODO: fazer verificação se esta logado ou não para exibir auth ou app
+import { useAuth } from "../contexts/useAuth";
 
 export function Routes() {
-  return <AppTabsRoutes />;
+  const { isAuth } = useAuth();
+
+  if (isAuth) {
+    return <AppTabsRoutes />;
+  } else {
+    return <InitialRoutes />;
+  }
 }

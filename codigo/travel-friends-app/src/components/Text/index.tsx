@@ -6,6 +6,7 @@ type TextProps = {
   color?: string;
   isBold?: boolean;
   text: string;
+  onPress?: () => void;
   fontWeight?: "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700";
 };
 
@@ -15,13 +16,20 @@ export default function TextApp({
   isBold,
   text,
   fontWeight,
+  onPress,
 }: TextProps) {
   return isBold ? (
-    <Text style={{ color: color, fontSize: size, fontWeight: "bold" }}>
+    <Text
+      onPress={onPress}
+      style={{ color: color, fontSize: size, fontWeight: "bold" }}
+    >
       {text}
     </Text>
   ) : (
-    <Text style={{ color: color, fontSize: size, fontWeight: fontWeight }}>
+    <Text
+      onPress={onPress}
+      style={{ color: color, fontSize: size, fontWeight: fontWeight }}
+    >
       {text}
     </Text>
   );

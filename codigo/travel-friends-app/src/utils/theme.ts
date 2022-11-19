@@ -7,6 +7,7 @@ const theme = {
     text: "#818191",
     title: "#101d42",
     yellow: "#ffc60b",
+    red: "#E73535",
   },
   fonts: {
     title: 24,
