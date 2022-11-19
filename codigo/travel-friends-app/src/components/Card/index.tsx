@@ -8,6 +8,8 @@ import theme from "../../utils/theme";
 import TextApp from "../Text";
 import { styles } from "./styles";
 import { userHook } from "../../contexts/userData";
+import { useHomeNavigation } from "../../hooks/navigation";
+
 type CardProps = {
   item: RoadMap;
 };
@@ -16,6 +18,8 @@ export default function Card({ item }: CardProps) {
   const [isFavorite, setIsFavorite] = useState<boolean>(item.favorites);
 
   const { roadmapFavorite, setRoadmap_AS } = userHook();
+
+  const navigation = useHomeNavigation();
 
   const changeStatusFavorite = async (id: RoadMap["_id"]) => {
     const newRoad = roadmapFavorite.map((road) => {
@@ -29,11 +33,13 @@ export default function Card({ item }: CardProps) {
   return (
     <TouchableOpacity
       style={styles.container}
-      onPress={() => {}}
+      onPress={() => navigation.navigate("Roadmap", item)}
       key={item._id}
     >
       <View style={styles.header}>
-        <View style={styles.img}></View>
+        <View style={styles.img}>
+          <FontAwesome name={"coffee"} size={28} color={"white"} />
+        </View>
         <View style={styles.textBox}>
           <TextApp
             size={theme.fonts.subText}

@@ -1,7 +1,12 @@
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 
-import { HomeRoutesParams, InitialRoutesParams } from "../routes/routes";
+import {
+  AppRoutesParams,
+  FavoriteRoutesParams,
+  HomeRoutesParams,
+  InitialRoutesParams,
+} from "../routes/routes";
 
 export function useHomeNavigation() {
   const navigation = useNavigation<StackNavigationProp<HomeRoutesParams>>();
@@ -10,5 +15,10 @@ export function useHomeNavigation() {
 
 export function useInitialNavigation() {
   const navigation = useNavigation<StackNavigationProp<InitialRoutesParams>>();
+  return navigation;
+}
+
+export function useTabAPPNavigation() {
+  const navigation = useNavigation<StackNavigationProp<AppRoutesParams>>();
   return navigation;
 }

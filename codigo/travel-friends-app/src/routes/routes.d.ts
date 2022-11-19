@@ -1,3 +1,5 @@
+import { RoadMap } from "../@types/models.interface";
+
 export type AppRoutesParams = {
   HomeScreens: HomeRoutesParams;
   ListScreens: ListRoutesParams;
@@ -8,6 +10,7 @@ export type AppRoutesParams = {
 
 export type HomeRoutesParams = {
   Home: undefined;
+  Roadmap: RoadMap;
 };
 
 export type ListRoutesParams = {

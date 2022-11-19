@@ -31,6 +31,8 @@ export const styles = StyleSheet.create({
     marginTop: 4,
   },
   img: {
+    justifyContent: "center",
+    alignItems: "center",
     width: 50,
     height: 50,
     backgroundColor: theme.colors.secundary,

@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.fild,
   },
   header: {
-    paddingVertical: 60,
     padding: 20,
   },
   content: {

@@ -50,9 +50,12 @@ export default function Home() {
 
   useEffect(() => {
     navigation.addListener("focus", () => loadRoadmapVertical());
+  }, [roadmapFavorite]);
+
+  useEffect(() => {
     loadRoadmap();
     loadRoadmapVertical();
-  }, [navigation]);
+  }, []);
 
   return (
     <View style={style.container}>

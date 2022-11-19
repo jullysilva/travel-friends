@@ -11,8 +11,10 @@ import Button from "../../../components/Button";
 import Input from "../../../components/Input";
 import { useInitialNavigation } from "../../../hooks/navigation";
 import { createUser } from "../../../services/api/auth/login";
+import HeaderGoback from "../../../components/HeaderGoback";
 
 import { styles } from "./styles";
+import theme from "../../../utils/theme";
 
 //TODO: validar os campos vazios da aplicação
 
@@ -40,6 +42,7 @@ export default function SignUp() {
 
   return (
     <View style={styles.container}>
+      <HeaderGoback color={theme.colors.text} />
       <View style={styles.header}>
         <Text style={styles.title}>Registrar</Text>
       </View>

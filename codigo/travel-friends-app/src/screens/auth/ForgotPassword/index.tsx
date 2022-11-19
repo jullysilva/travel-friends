@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Alert, KeyboardAvoidingView, Text, View } from "react-native";
 import { UserLogin } from "../../../@types/signOff.interface";
 import Button from "../../../components/Button";
+import HeaderGoback from "../../../components/HeaderGoback";
 import Input from "../../../components/Input";
 import { useInitialNavigation } from "../../../hooks/navigation";
 import { recoverPassword } from "../../../services/api/auth/login";
+import theme from "../../../utils/theme";
 
 import { styles } from "./styles";
 
@@ -33,6 +35,7 @@ export default function ForgotPassword() {
 
   return (
     <View style={styles.container}>
+      <HeaderGoback color={theme.colors.text} />
       <View style={styles.header}>
         <Text style={styles.title}>Recuperar senha</Text>
       </View>

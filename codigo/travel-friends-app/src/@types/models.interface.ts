@@ -37,3 +37,15 @@ export interface Local {
   horarioInicial: string;
   horarioFinal: string;
 }
+
+export interface TRoadmaps {
+  restaurante: string;
+  loja: string;
+  museu: string;
+  igreja: string;
+  praca: string;
+  parque: string;
+  shopping: string;
+  arLivre: string;
+  educacao: string;
+}

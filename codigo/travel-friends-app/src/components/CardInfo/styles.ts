@@ -25,12 +25,13 @@ export const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
     padding: 4,
-    //backgroundColor: "green",
   },
   footer: {
     marginTop: 4,
   },
   img: {
+    justifyContent: "center",
+    alignItems: "center",
     width: 50,
     height: 50,
     backgroundColor: theme.colors.secundary,

@@ -3,7 +3,6 @@ import { View, StatusBar, FlatList, ActivityIndicator } from "react-native";
 import { RoadMap } from "../../../@types/models.interface";
 import Card from "../../../components/Card";
 import TextApp from "../../../components/Text";
-import Button from "../../../components/Button";
 
 import theme from "../../../utils/theme";
 
@@ -11,13 +10,14 @@ import { style } from "./styles";
 import { userHook } from "../../../contexts/userData";
 
 export function Favorite() {
-  const { roadmapFavorite, clearFavorite } = userHook();
+  const { roadmapFavorite } = userHook();
 
   function renderVertical(item: RoadMap) {
     if (item.favorites) {
       return <Card item={item} />;
     }
   }
+  useEffect(() => {}, []);
 
   return (
     <View style={style.container}>
@@ -35,11 +35,10 @@ export function Favorite() {
           isBold
           color={theme.colors.title}
         />
-        <Button title="Limpar" onPress={() => clearFavorite()} />
       </View>
 
       <View style={{ width: "100%" }}>
-        {roadmapFavorite.length == 0 ? (
+        {roadmapFavorite.length === 0 ? (
           <ActivityIndicator color={theme.colors.primary} size="large" />
         ) : null}
         {!!roadmapFavorite ? (
@@ -53,6 +52,11 @@ export function Favorite() {
             renderItem={({ item }) => renderVertical(item)}
             style={{}}
             ListFooterComponent={<View style={{ height: 340 }} />}
+            ListEmptyComponent={
+              <View>
+                <TextApp size={12} text={"Não há favoritos..."} />
+              </View>
+            }
           />
         ) : (
           <TextApp size={12} text="carregando lista de roteiros..." />

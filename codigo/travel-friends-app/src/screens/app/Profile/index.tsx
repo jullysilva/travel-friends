@@ -8,12 +8,12 @@ import { useAuth } from "../../../contexts/useAuth";
 import { userHook } from "../../../contexts/userData";
 
 import { styles } from "./styles";
-import { useHomeNavigation } from "../../../hooks/navigation";
+import { useTabAPPNavigation } from "../../../hooks/navigation";
 
 export function Profile() {
   const { logout } = useAuth();
   const { userData } = userHook();
-  const navigation = useHomeNavigation();
+  const navigation = useTabAPPNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.headerProfile}>
@@ -30,7 +30,9 @@ export function Profile() {
       </View>
       <View style={styles.bodyProfile}>
         <View style={styles.menuProfile}>
-          <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("FavoriteScreens")}
+          >
             <View style={styles.underlineButton}>
               <FontAwesome
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
