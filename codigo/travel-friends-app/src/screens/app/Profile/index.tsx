@@ -1,5 +1,5 @@
 import { FontAwesome } from "@expo/vector-icons";
-import React from "react";
+import React, { useEffect } from "react";
 import { View, TouchableOpacity, StatusBar } from "react-native";
 import TextApp from "../../../components/Text";
 import { formatNickName } from "../../../utils/formatNickName";
@@ -9,11 +9,21 @@ import { userHook } from "../../../contexts/userData";
 
 import { styles } from "./styles";
 import { useTabAPPNavigation } from "../../../hooks/navigation";
+import { useNotification } from "../../../contexts/useNotification";
+import { useFocusEffect } from "@react-navigation/native";
 
 export function Profile() {
   const { logout } = useAuth();
   const { userData } = userHook();
+  const { notificatioList } = useNotification();
   const navigation = useTabAPPNavigation();
+
+  const not = notificatioList.length;
+
+  useFocusEffect(() => {
+    console.log("aaa");
+  });
+
   return (
     <View style={styles.container}>
       <View style={styles.headerProfile}>
@@ -54,7 +64,7 @@ export function Profile() {
                 color={theme.colors.title}
                 style={{ marginRight: 20 }}
               />
-              <TextApp text="Notificação" size={theme.fonts.text} />
+              <TextApp text={`Notificação - ${not}`} size={theme.fonts.text} />
             </View>
           </TouchableOpacity>
 

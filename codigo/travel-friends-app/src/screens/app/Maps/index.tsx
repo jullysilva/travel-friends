@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
+import { getAllLocal } from "../../../services/api/app/local";
 
 import { style } from "./styles";
 
 export function Maps() {
   const [region, setRegion] = useState(null);
+  const [latitude, setLatitude] = useState<number>(-19.93266);
+  const [longitude, setLongitude] = useState<number>(-43.93859);
 
-  const latitude = -19.9337364;
-  const longitude = -43.9362059;
+  const [local, setLocal] = useState<Local[]>([] as Local[]);
+
+  async function loadDataLocal() {
+    const { data, status } = await getAllLocal();
+    if (status === 200) {
+      setLatitude(data[0]?.location["lat"]);
+      setLongitude(data[0]?.location["lng"]);
+      setLocal(data);
+    }
+  }
+
+  useEffect(() => {
+    loadDataLocal();
+  }, []);
 
   return (
     <View style={style.container}>
@@ -21,9 +36,18 @@ export function Maps() {
         }}
         style={style.map}
         loadingEnabled
-        showsUserLocation
       >
-        <Marker coordinate={{ latitude: latitude, longitude: longitude }} />
+        {local.map((item, index) => (
+          <Marker
+            key={index}
+            coordinate={{
+              latitude: item?.location["lat"],
+              longitude: item?.location["lng"],
+            }}
+            title={item?.name}
+            description={item?.address}
+          />
+        ))}
       </MapView>
     </View>
   );

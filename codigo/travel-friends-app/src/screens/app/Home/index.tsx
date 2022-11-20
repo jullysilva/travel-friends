@@ -21,11 +21,12 @@ import { style } from "./styles";
 import theme from "../../../utils/theme";
 import Card from "../../../components/Card";
 import { useHomeNavigation } from "../../../hooks/navigation";
+import { useFocusEffect } from "@react-navigation/native";
 
 export default function Home() {
   const navigation = useHomeNavigation();
   const { getRoadmapFavorite } = userHook();
-  const { startGeneration } = useNotification();
+  const { startGeneration, notificatioList } = useNotification();
   const { height, width } = Dimensions.get("window");
 
   const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
@@ -53,13 +54,18 @@ export default function Home() {
 
   useEffect(() => {
     navigation.addListener("focus", () => loadRoadmapVertical());
-  }, [roadmapFavorite]);
+  }, [roadmapFavorite.length]);
 
   useEffect(() => {
     loadRoadmap();
     loadRoadmapVertical();
     startGeneration();
-  }, []);
+  }, [notificatioList.length]);
+
+  useFocusEffect(() => {
+    loadRoadmapVertical();
+    console.log("bbbbb");
+  });
 
   return (
     <View style={style.container}>

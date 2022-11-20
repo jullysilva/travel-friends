@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RouteProp, useRoute } from "@react-navigation/native";
 import { View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
@@ -9,13 +9,30 @@ import theme from "../../../utils/theme";
 import { style } from "./styles";
 import { HomeRoutesParams } from "../../../routes/routes";
 import HeaderGoback from "../../../components/HeaderGoback";
+import { getLocalById } from "../../../services/api/app/local";
 
 type RoadmapScreenProps = RouteProp<HomeRoutesParams, "Roadmap">;
 
 export default function Roadmap() {
   const { params } = useRoute<RoadmapScreenProps>();
-  const latitude = -19.9337364;
-  const longitude = -43.9362059;
+
+  const [local, setLocal] = useState<Local[]>([] as Local[]);
+  const [latitude, setLatitude] = useState<number>(-19.93266);
+  const [longitude, setLongitude] = useState<number>(-43.93859);
+
+  async function loadDataLocal() {
+    const { data, status } = await getLocalById(params.idLocal);
+    if (status === 200) {
+      setLocal(data);
+
+      setLatitude(data?.location["lat"]);
+      setLongitude(data?.location["lng"]);
+    }
+  }
+
+  useEffect(() => {
+    loadDataLocal();
+  }, []);
 
   return (
     //TODO: pegar latitude e long do local
@@ -29,12 +46,23 @@ export default function Roadmap() {
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}
+        region={{
+          latitude: latitude,
+          longitude: longitude,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
         style={style.map}
         minZoomLevel={15}
         loadingEnabled
         showsUserLocation
       >
-        <Marker coordinate={{ latitude: latitude, longitude: longitude }} />
+        <Marker
+          coordinate={{
+            latitude: latitude,
+            longitude: longitude,
+          }}
+        />
       </MapView>
       <View style={style.content}>
         <View style={style.header}>
@@ -75,18 +103,49 @@ export default function Roadmap() {
             text={`${params?.description}`}
             color={theme.colors.text}
           />
-          <View style={{ paddingTop: 16 }}>
-            <TextApp
-              size={theme.fonts.subTitle}
-              text={"Participantes"}
-              color={theme.colors.title}
-              isBold
-            />
-            <TextApp
-              size={theme.fonts.subText}
-              text={` ${params.participants.length} de ${params.person} `}
-              color={theme.colors.text}
-            />
+          <View
+            style={{
+              paddingTop: 16,
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
+            <View>
+              <TextApp
+                size={theme.fonts.subTitle}
+                text={"Local"}
+                color={theme.colors.title}
+                isBold
+              />
+              <TextApp
+                size={theme.fonts.subText}
+                text={` ${local?.name}  `}
+                color={theme.colors.text}
+              />
+              <TextApp
+                size={theme.fonts.subText}
+                text={` ${local?.address}  `}
+                color={theme.colors.text}
+              />
+              <TextApp
+                size={theme.fonts.subText}
+                text={` ${local?.cep}  `}
+                color={theme.colors.text}
+              />
+            </View>
+            <View>
+              <TextApp
+                size={theme.fonts.subTitle}
+                text={"Participantes"}
+                color={theme.colors.title}
+                isBold
+              />
+              <TextApp
+                size={theme.fonts.subText}
+                text={` ${params.participants.length} de ${params.person} `}
+                color={theme.colors.text}
+              />
+            </View>
           </View>
         </View>
         <View style={style.footer}>

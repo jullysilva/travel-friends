@@ -1,11 +1,14 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
+import { notificationDB } from "../database/notificationDB";
+
 interface ProviderProps {
   children: ReactNode;
 }
 
 interface INotification {
-  type: "info" | "alert" | "warning";
+  id: number;
+  type: string;
   title: string;
   description: string;
 }
@@ -25,19 +28,15 @@ export function NotificationProvider({ children }: ProviderProps) {
   );
 
   function generateNotification() {
-    //Pegar de um array rander
-    const newNotification: INotification = {
-      title: "Nova Promoção!",
-      description:
-        "Convide um amigo para a Travel e ganhe 50% de desconto no seu próximo passeio.",
-      type: "info",
-    };
-    console.log("notificações =>", notificatioList.length);
+    const num = Math.floor(Math.random() * notificationDB.length);
+    const newNotification = notificationDB[num];
+
+    console.log("notificações =>", notificatioList.length, newNotification);
     notificatioList.unshift(newNotification);
   }
 
   function startGeneration() {
-    setInterval(() => generateNotification(), 10000);
+    setInterval(() => generateNotification(), 100000);
   }
 
   function clearNotification() {

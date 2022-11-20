@@ -10,7 +10,7 @@ export interface User {
 export interface RoadMap {
   _id: string;
   idCreator: string | null;
-  idLocal: string | null;
+  idLocal: string;
   title: string;
   description?: string | null;
   favorites: boolean;
@@ -29,13 +29,17 @@ export interface RoadMap {
 }
 
 export interface Local {
-  idLocal: string;
-  idCriador: string;
-  nome: string;
-  endereco: string;
-
-  horarioInicial: string;
-  horarioFinal: string;
+  location: {
+    lat: number;
+    lng: number;
+  };
+  _id: string;
+  idCreator: string;
+  name: string;
+  address: string;
+  cep: string;
+  openTime: string;
+  closeTime: string;
 }
 
 export interface TRoadmaps {
