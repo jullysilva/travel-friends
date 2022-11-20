@@ -7,9 +7,9 @@ type InputTimeProps = {
   mountFocus: boolean;
   name: string;
   value: string | number | readonly string[] | undefined;
-  onTimeChange: (e: any) => void; 
-  onFocusHandler: (e: any) => void;
-  onBlurHandler: (e: any) => void;
+  onTimeChange: (e: any) => void | undefined; 
+  onFocusHandler: (e: any) => void | undefined;
+  onBlurHandler: (e: any) => void | undefined;
 };
 
 const InputTime: React.FC<InputTimeProps> = ({...props}) => {

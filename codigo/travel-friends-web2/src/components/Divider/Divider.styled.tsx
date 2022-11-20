@@ -6,7 +6,6 @@ interface DividerProps {
 
 export const Divider = styled.div<DividerProps>`
   width: 100%;
-  border-bottom-width: 1px;
-  border-bottom-color: gray;
-  padding: ${(props) => props.pad || '0 5px'};
+  background-color: lightgray;
+  padding: ${(props) => props.pad || '1px 5px'};
 `;

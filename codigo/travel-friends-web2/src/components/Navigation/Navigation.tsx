@@ -26,8 +26,9 @@ const Navigation = ({ children }: any) => {
               <Figure.Image width="70%" alt="171x180" src={LogoTipo}/>
             </Figure>
   
-            <Nav defaultActiveKey="/home" className="flex-column">
-              <Nav.Link href="/home">Início</Nav.Link>
+            <Nav defaultActiveKey="/painel" className="flex-column">
+              <Nav.Link href="/painel">Início</Nav.Link>
+              <Nav.Link href="/locais">Locais</Nav.Link>
               <Nav.Link eventKey="link-1">Configuração</Nav.Link>
               <Nav.Link eventKey="link-2">Sair</Nav.Link>
             </Nav>

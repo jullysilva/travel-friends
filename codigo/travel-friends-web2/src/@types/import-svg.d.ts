@@ -8,3 +8,7 @@ declare module '*.svg' {
     const content: ImageSourcePropType;
     export default content;
   }
+
+  declare module '*.jpg' {
+    export default content;
+  }

@@ -10,7 +10,7 @@ export const SearchCEP = (value: string) => {
             return response;
         }
         else {
-            return "Formato de CEP inválido.";
+            return null;
         }
     };
 };

@@ -15,6 +15,11 @@ export type UserLogin = {
   password: string;
 };
 
+export declare interface Valiable {
+  data: null;
+  status: number;
+}
+
 export interface User {
     cpf: string;
     email: string;
@@ -25,18 +30,18 @@ export interface User {
   }
   
   export interface RoadMap {
-    _id: string;
-    idCreator: string | null;
-    idLocal: string | null;
-    title: string | null;
-    description?: string | null;
+    _id?: string;
+    idCreator?: string;
+    idLocal: string;
+    title: string;
+    description?: string;
     isFree: boolean;
     price: number;
-    type: string | null;
+    type: string;
     person: number;
-    start: string | null;
-    end: string | null;
-    participants: [
+    start: string;
+    end: string;
+    participants?: [
       {
         idUser: string;
         _id: string;
@@ -45,13 +50,21 @@ export interface User {
   }
   
   export interface Local {
+    _id?: string;
     idCriador: string;
     name: string;
     address: string;
     cep: string;
     openTime: string;
     closeTime: string;
+    location: ILocation;
   }
+
+  export interface ILocation {
+    lat: string;
+    lng: string;
+  }
+
 
   export interface TRoadmaps {
     restaurante: string;
