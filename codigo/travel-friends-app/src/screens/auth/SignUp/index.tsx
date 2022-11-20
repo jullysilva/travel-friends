@@ -55,6 +55,7 @@ export default function SignUp() {
               setUserRegister({ ...userRegister });
             }}
             value={userRegister.name}
+            placeholder={"Digite seu nome"}
           />
           <Input
             text="E-mail"
@@ -64,6 +65,7 @@ export default function SignUp() {
               setUserRegister({ ...userRegister });
             }}
             value={userRegister.email}
+            placeholder={"Digite seu e-mail"}
           />
           <Input
             text="CPF"
@@ -73,6 +75,7 @@ export default function SignUp() {
               setUserRegister({ ...userRegister });
             }}
             value={userRegister.cpf}
+            placeholder={"Digite seu CPF"}
           />
           <Input
             text="Senha"
@@ -81,6 +84,8 @@ export default function SignUp() {
               setUserRegister({ ...userRegister });
             }}
             value={userRegister.password}
+            placeholder={"Crie sua senha"}
+            password={true}
           />
           <Button onPress={() => onSubmit()} title="Registrar" />
         </KeyboardAvoidingView>

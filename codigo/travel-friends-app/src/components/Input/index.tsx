@@ -7,6 +7,9 @@ type InputProps = {
   keyboardType?: "default" | "decimal-pad" | "email-address";
   text: string;
   value: string;
+  placeholder?: string;
+  password?: boolean;
+
   onChangeText: (text: any) => void;
   onBlur?: () => void;
 };
@@ -14,8 +17,10 @@ type InputProps = {
 export default function Input({
   text,
   value,
+  password = false,
   onChangeText,
   onBlur,
+  placeholder,
   keyboardType,
 }: InputProps) {
   return (
@@ -27,6 +32,8 @@ export default function Input({
         style={styles.input}
         onChangeText={onChangeText}
         onBlur={onBlur}
+        placeholder={placeholder}
+        secureTextEntry={password}
       />
     </View>
   );

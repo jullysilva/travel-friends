@@ -36,7 +36,7 @@ export function NotificationProvider({ children }: ProviderProps) {
   }
 
   function startGeneration() {
-    setInterval(() => generateNotification(), 100000);
+    setInterval(() => generateNotification(), 1000000);
   }
 
   function clearNotification() {

@@ -49,7 +49,7 @@ export default function ForgotPassword() {
               userLogin.email = text;
               setUserLogin({ ...userLogin });
             }}
-            //onBlur={handleCheck}
+            placeholder={"Digite seu e-mail"}
           />
           <Input
             text="Nova senha"
@@ -58,6 +58,8 @@ export default function ForgotPassword() {
               userLogin.password = text;
               setUserLogin({ ...userLogin });
             }}
+            placeholder={"Digite sua nova senha"}
+            password={true}
           />
 
           <Button onPress={() => onSubmit()} title="Recuperar" />
