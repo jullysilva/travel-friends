@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     width: 50,
     height: 50,
-    backgroundColor: theme.colors.secundary,
+    backgroundColor: theme.colors.red,
     borderRadius: 6,
   },
   textBox: {

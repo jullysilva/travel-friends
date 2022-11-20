@@ -18,6 +18,8 @@ export default function Roadmap() {
   const longitude = -43.9362059;
 
   return (
+    //TODO: pegar latitude e long do local
+
     <View style={style.container}>
       <HeaderGoback color={theme.colors.text} title={params.title} />
       <MapView
@@ -28,6 +30,7 @@ export default function Roadmap() {
           longitudeDelta: 0.0421,
         }}
         style={style.map}
+        minZoomLevel={15}
         loadingEnabled
         showsUserLocation
       >

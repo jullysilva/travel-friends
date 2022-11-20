@@ -7,6 +7,8 @@ import {
   ActivityIndicator,
 } from "react-native";
 import { userHook } from "../../../contexts/userData";
+import { useNotification } from "../../../contexts/useNotification";
+
 import { RoadMap } from "../../../@types/models.interface";
 import { getAllRoadmap } from "../../../services/api/app/roteiros";
 
@@ -23,6 +25,7 @@ import { useHomeNavigation } from "../../../hooks/navigation";
 export default function Home() {
   const navigation = useHomeNavigation();
   const { getRoadmapFavorite } = userHook();
+  const { startGeneration } = useNotification();
   const { height, width } = Dimensions.get("window");
 
   const [roadmapList, setRoadmapList] = useState<RoadMap[]>([]);
@@ -55,6 +58,7 @@ export default function Home() {
   useEffect(() => {
     loadRoadmap();
     loadRoadmapVertical();
+    startGeneration();
   }, []);
 
   return (
