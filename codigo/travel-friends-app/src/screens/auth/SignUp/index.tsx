@@ -1,30 +1,87 @@
-import React from "react";
-import { KeyboardAvoidingView, Text, View } from "react-native";
+import React, { useState } from "react";
+import {
+  KeyboardAvoidingView,
+  ScrollView,
+  Text,
+  View,
+  Alert,
+} from "react-native";
+import { UserRegister } from "../../../@types/signOff.interface";
 import Button from "../../../components/Button";
 import Input from "../../../components/Input";
 import { useInitialNavigation } from "../../../hooks/navigation";
+import { createUser } from "../../../services/api/auth/login";
 
 import { styles } from "./styles";
 
+//TODO: validar os campos vazios da aplicação
+
 export default function SignUp() {
   const navigation = useInitialNavigation();
+
+  const [userRegister, setUserRegister] = useState<UserRegister>(
+    {} as UserRegister
+  );
+  const [isError, setIsError] = useState<boolean>(false);
+
+  const onSubmit = async () => {
+    if (true) {
+      const { data, status } = await createUser(userRegister);
+
+      if (status === 200 || status === 201) {
+        Alert.alert("Cadastro Realizado", "Confirme para efetuar seu login");
+
+        navigation.navigate("SignIn");
+      } else {
+        Alert.alert("Erro ao cadastrar", "Tente novamente em segundos...");
+      }
+    }
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Registrar</Text>
       </View>
-      <View style={styles.content}>
+      <ScrollView style={styles.content}>
         <KeyboardAvoidingView>
-          <Input text="Nome" />
-          <Input text="E-mail" />
-          <Input text="Senha" />
-          <Input text="Confirme a senha" />
-          <Button
-            onPress={() => navigation.navigate("ForgotPassword")}
-            title="Registrar"
+          <Input
+            text="Nome"
+            onChangeText={(text) => {
+              userRegister.name = text;
+              setUserRegister({ ...userRegister });
+            }}
+            value={userRegister.name}
           />
+          <Input
+            text="E-mail"
+            keyboardType="email-address"
+            onChangeText={(text) => {
+              userRegister.email = text;
+              setUserRegister({ ...userRegister });
+            }}
+            value={userRegister.email}
+          />
+          <Input
+            text="CPF"
+            keyboardType="decimal-pad"
+            onChangeText={(text) => {
+              userRegister.cpf = text;
+              setUserRegister({ ...userRegister });
+            }}
+            value={userRegister.cpf}
+          />
+          <Input
+            text="Senha"
+            onChangeText={(text) => {
+              userRegister.password = text;
+              setUserRegister({ ...userRegister });
+            }}
+            value={userRegister.password}
+          />
+          <Button onPress={() => onSubmit()} title="Registrar" />
         </KeyboardAvoidingView>
-      </View>
+      </ScrollView>
     </View>
   );
 }
