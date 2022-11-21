@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { View } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import { getAllLocal } from "../../../services/api/app/local";
+import theme from "../../../utils/theme";
 
 import { style } from "./styles";
 
@@ -26,30 +27,32 @@ export function Maps() {
   }, []);
 
   return (
-    <View style={style.container}>
-      <MapView
-        initialRegion={{
-          latitude: latitude,
-          longitude: longitude,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
-        }}
-        style={style.map}
-        loadingEnabled
-      >
-        {local.map((item, index) => (
-          <Marker
-            key={index}
-            coordinate={{
-              latitude: item?.location["lat"],
-              longitude: item?.location["lng"],
-            }}
-            title={item?.name}
-            description={item?.address}
-          />
-        ))}
-      </MapView>
-    </View>
+    <SafeAreaView style={{ flex: 1, backgroundColor: theme.colors.primary }}>
+      <View style={style.container}>
+        <MapView
+          initialRegion={{
+            latitude: latitude,
+            longitude: longitude,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+          }}
+          style={style.map}
+          loadingEnabled
+        >
+          {local.map((item, index) => (
+            <Marker
+              key={index}
+              coordinate={{
+                latitude: item?.location["lat"],
+                longitude: item?.location["lng"],
+              }}
+              title={item?.name}
+              description={item?.address}
+            />
+          ))}
+        </MapView>
+      </View>
+    </SafeAreaView>
   );
 }
 //TODO: colocar os pins do mapas dos roteiros

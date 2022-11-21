@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   View,
   StatusBar,
@@ -6,24 +6,26 @@ import {
   ActivityIndicator,
   SafeAreaView,
 } from "react-native";
-import { RoadMap } from "../../../@types/models.interface";
-import Card from "../../../components/Card";
+
 import TextApp from "../../../components/Text";
 
 import theme from "../../../utils/theme";
 
 import { style } from "./styles";
 import { userHook } from "../../../contexts/userData";
+import {
+  INotification,
+  useNotification,
+} from "../../../contexts/useNotification";
+import CardNotification from "../../../components/CardNotification";
+import HeaderGoback from "../../../components/HeaderGoback";
 
-export function Favorite() {
-  const { roadmapFavorite } = userHook();
+export default function Notifications() {
+  const { notificatioList } = useNotification();
 
-  function renderVertical(item: RoadMap) {
-    if (item.favorites) {
-      return <Card item={item} />;
-    }
+  function renderVertical(item: INotification) {
+    return <CardNotification item={item} />;
   }
-  useEffect(() => {}, []);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.colors.primary }}>
@@ -32,42 +34,34 @@ export function Favorite() {
           barStyle="light-content"
           backgroundColor={theme.colors.primary}
         />
+        <HeaderGoback color={theme.colors.text} />
 
-        <View
-          style={{ paddingHorizontal: 20, paddingTop: 30, paddingBottom: 14 }}
-        >
+        <View style={{ paddingHorizontal: 20, paddingBottom: 14 }}>
           <TextApp
             size={theme.fonts.title}
-            text={"Meus favoritos"}
+            text={"Notificações"}
             isBold
             color={theme.colors.title}
           />
         </View>
 
         <View style={{ width: "100%" }}>
-          {roadmapFavorite.length === 0 ? (
+          {notificatioList.length === 0 ? (
             <ActivityIndicator color={theme.colors.primary} size="large" />
           ) : null}
-          {!!roadmapFavorite ? (
+          {!!notificatioList ? (
             <FlatList
               snapToAlignment={"start"}
               scrollEventThrottle={16}
               decelerationRate={"fast"}
               showsVerticalScrollIndicator={false}
               keyExtractor={(item, i) => `${item}${i}`}
-              data={roadmapFavorite}
+              data={notificatioList}
               renderItem={({ item }) => renderVertical(item)}
               style={{}}
               ListFooterComponent={<View style={{ height: 340 }} />}
-              ListEmptyComponent={
-                <View>
-                  <TextApp size={12} text={"Não há favoritos..."} />
-                </View>
-              }
             />
-          ) : (
-            <TextApp size={12} text="carregando lista de roteiros..." />
-          )}
+          ) : null}
         </View>
       </View>
     </SafeAreaView>

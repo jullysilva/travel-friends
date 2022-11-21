@@ -6,15 +6,16 @@ interface ProviderProps {
   children: ReactNode;
 }
 
-interface INotification {
+export interface INotification {
   id: number;
   type: string;
   title: string;
   description: string;
+  date: Date;
 }
 
 interface ContextData {
-  notificatioList: INotification[];
+  notificatioList: Array<INotification>;
   generateNotification: () => void;
   clearNotification: () => void;
   startGeneration: () => void;
@@ -23,24 +24,34 @@ interface ContextData {
 const NotificationContext = createContext<ContextData>({} as ContextData);
 
 export function NotificationProvider({ children }: ProviderProps) {
-  const [notificatioList, setNotificationList] = useState<INotification[]>(
-    [] as INotification[]
-  );
+  let notificatioList = [
+    {
+      id: 7,
+      title: "Atualização de dados!",
+      description:
+        "Alguns dados da sua conta precisam ser complementados, por gentileza acesse sua conta!",
+      type: "warning",
+      date: new Date(),
+    },
+  ];
 
   function generateNotification() {
     const num = Math.floor(Math.random() * notificationDB.length);
     const newNotification = notificationDB[num];
+    const a = {
+      ...newNotification,
+      date: new Date(),
+    };
 
-    console.log("notificações =>", notificatioList.length, newNotification);
-    notificatioList.unshift(newNotification);
+    notificatioList.unshift(a);
   }
 
   function startGeneration() {
-    setInterval(() => generateNotification(), 1000000);
+    setInterval(() => generateNotification(), 10000);
   }
 
   function clearNotification() {
-    setNotificationList([]);
+    notificatioList = [];
   }
 
   return (

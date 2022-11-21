@@ -11,6 +11,7 @@ export type AppRoutesParams = {
 export type HomeRoutesParams = {
   Home: undefined;
   Roadmap: RoadMap;
+  Notifications: undefined;
 };
 
 export type ListRoutesParams = {
