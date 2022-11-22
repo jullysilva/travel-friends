@@ -102,8 +102,6 @@ const Place = () => {
                                 placeEdit.openTime = val;
                                 setPlaceEdit({...placeEdit});
                             }}
-                            onFocusHandler={(e) => e.preventDefault}
-                            onBlurHandler={e => e.preventDefault}
                         />
                     </Form.Group>
                     
@@ -118,8 +116,6 @@ const Place = () => {
                                 placeEdit.closeTime = val;
                                 setPlaceEdit({...placeEdit});
                             }}
-                            onFocusHandler={e => e.preventDefault}
-                            onBlurHandler={e => e.preventDefault}
                         />
                     </Form.Group>
                 </Row>
@@ -165,7 +161,7 @@ const Place = () => {
                     <Card tabIndex={idx} className="h-100" bg="light">
                         <Container className='d-inline mt-2' style={{position: 'absolute', textAlign:'end' }}>
                             <RiDeleteBin6Line onClick={() => onDeletePlace(item._id)} style={{cursor: 'pointer'}} color="white" size={20} />
-                            <FiEdit3 onClick={() => onEditPlace(item._id)} className='ms-2'color='white'size={20}/>
+                            <FiEdit3 style={{cursor: 'pointer'}} onClick={() => onEditPlace(item._id)} className='ms-2'color='white'size={20}/>
                         </Container>
                         <Card.Img variant="top" src={astronaut} />
                         <Card.Body>

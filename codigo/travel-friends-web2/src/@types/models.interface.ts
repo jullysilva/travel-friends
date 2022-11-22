@@ -15,7 +15,7 @@ export type UserLogin = {
   password: string;
 };
 
-export declare interface Valiable {
+export declare interface IResponse {
   data: null;
   status: number;
 }

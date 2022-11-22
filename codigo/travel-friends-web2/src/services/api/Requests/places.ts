@@ -1,5 +1,5 @@
 import api from "..";
-import { Valiable } from "../../../@types/models.interface";
+import { IResponse } from "../../../@types/models.interface";
 
 
 export const getAllPlaces = async() => {
@@ -14,7 +14,7 @@ export const getAllPlaces = async() => {
 
 export const createPlace = async (data: any) => {
     try{
-        const response = await api.post("/local", data);
+        const response = await api.post<IResponse>("/local", data);
         return response.data;
     }catch(error){
         return error;
@@ -44,7 +44,7 @@ export const updatePlace = async(idPlace: any, data: any) => {
 export const deletePlace = async(idPlace: any) => {
     const url = `/local/${idPlace}`;
     try{
-        const response = await api.delete<Valiable>(url);
+        const response = await api.delete<IResponse>(url);
         return response.data; 
     }catch(error){
         return error;
