@@ -70,12 +70,12 @@ export function Profile() {
             <TouchableOpacity onPress={() => clearFavorite()}>
               <View style={styles.underlineButton}>
                 <FontAwesome
-                  name={"user"}
+                  name={"repeat"}
                   size={24}
                   color={theme.colors.title}
                   style={{ marginRight: 20 }}
                 />
-                <TextApp text="Editar conta" size={theme.fonts.text} />
+                <TextApp text="Reload App" size={theme.fonts.text} />
               </View>
             </TouchableOpacity>
 

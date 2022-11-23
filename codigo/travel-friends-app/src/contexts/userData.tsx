@@ -101,7 +101,7 @@ export function UserProvider({ children }: UserProviderProps) {
         JSON.stringify(roadMap)
       );
     } catch (e) {
-      console.log("eero ao salvar na AS pelo card");
+      console.log("erro ao salvar na AS pelo card");
     }
     try {
       const jsonRoadmap = await AS_data.getItem(

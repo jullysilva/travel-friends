@@ -52,7 +52,7 @@ export function NotificationProvider({ children }: ProviderProps) {
     const notificationRoadmap = {
       id: 10,
       title: "Cadastrado com sucesso!",
-      description: `Curta seu passeio na(o) ${title} - Você acabou de registrar um passeio na sua conta!`,
+      description: `Curta seu passeio: ${title} - Você acabou de registrar um passeio na sua conta!`,
       type: "info",
       date: new Date(),
     };

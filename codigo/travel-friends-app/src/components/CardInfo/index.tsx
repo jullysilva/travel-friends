@@ -2,7 +2,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import React from "react";
 import { TouchableOpacity, View } from "react-native";
 
-import { RoadMap } from "../../@types/models.interface";
+import { RoadMap, TRoadmaps } from "../../@types/models.interface";
 import { useHomeNavigation } from "../../hooks/navigation";
 import theme from "../../utils/theme";
 import TextApp from "../Text";
@@ -13,7 +13,32 @@ type CardInfoProps = {
 
 export default function CardInfo({ item }: CardInfoProps) {
   const navigation = useHomeNavigation();
+  const backGround: TRoadmaps = {
+    restaurante: "	#FF4500",
+    loja: "#D8BFD8",
+    museu: "#F4A460",
+    igreja: "#7B68EE",
+    praca: "#98FB98",
+    parque: "#ADFF2F",
+    shopping: "#87CEFA",
+    arLivre: "#58d6ac",
+    educacao: "#EE82EE",
+  };
 
+  const iconList: TRoadmaps = {
+    restaurante: "cutlery",
+    loja: "shopping-bag",
+    museu: "bank",
+    igreja: "home",
+    praca: "leaf",
+    parque: "pagelines",
+    shopping: "gift",
+    arLivre: "sun-o",
+    educacao: "graduation-cap",
+  };
+
+  const cardColor = backGround[item.type];
+  const iconName = iconList[item.type];
   return (
     <TouchableOpacity
       style={styles.container}
@@ -21,8 +46,8 @@ export default function CardInfo({ item }: CardInfoProps) {
       key={item._id}
     >
       <View style={styles.header}>
-        <View style={styles.img}>
-          <FontAwesome name={"coffee"} size={28} color={"white"} />
+        <View style={[styles.img, { backgroundColor: cardColor }]}>
+          <FontAwesome name={iconName} size={28} color={"white"} />
         </View>
         <View style={styles.textBox}>
           <TextApp

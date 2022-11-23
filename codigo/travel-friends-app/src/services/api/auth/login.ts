@@ -17,7 +17,7 @@ export const createUser = async (user: UserRegister) => {
 export const authUser = async (user: UserLogin) => {
   try {
     const response = await api.post("/auth/login", user);
-    console.log(user);
+
     const data = {
       data: response.data,
       status: response.status,
