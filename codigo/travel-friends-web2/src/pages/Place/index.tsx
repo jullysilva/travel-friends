@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 import astronaut from '../../assets/images/astronaut.jpg';
 import { RiDeleteBin6Line } from "@react-icons/all-files/ri/RiDeleteBin6Line";
 import { FiEdit3 } from "@react-icons/all-files/fi/FiEdit3";
+import BannerPlaces from '../../assets/banner-places.svg';
+
 
 const Place = () => {
 
@@ -160,10 +162,10 @@ const Place = () => {
                     <Col>
                     <Card tabIndex={idx} className="h-100" bg="light">
                         <Container className='d-inline mt-2' style={{position: 'absolute', textAlign:'end' }}>
-                            <RiDeleteBin6Line onClick={() => onDeletePlace(item._id)} style={{cursor: 'pointer'}} color="white" size={20} />
-                            <FiEdit3 style={{cursor: 'pointer'}} onClick={() => onEditPlace(item._id)} className='ms-2'color='white'size={20}/>
+                            <RiDeleteBin6Line onClick={() => onDeletePlace(item._id)} style={{cursor: 'pointer'}} color="#6C63FF" size={20} />
+                            <FiEdit3 style={{cursor: 'pointer'}} onClick={() => onEditPlace(item._id)} className='ms-2'color='#6C63FF'size={20}/>
                         </Container>
-                        <Card.Img variant="top" src={astronaut} />
+                        <Card.Img className='ps-3 pe-3 pt-3' variant="top" src={BannerPlaces} />
                         <Card.Body>
                         <Card.Title>{item.name}</Card.Title>
                             <Card.Text>{item.address}</Card.Text>

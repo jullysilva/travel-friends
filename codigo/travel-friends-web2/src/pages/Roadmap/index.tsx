@@ -13,7 +13,17 @@ const Roadmap = () => {
     const [validated, setValidated] = useState(false);
     const [places, setPlaces] = useState<Local[]>();
 
-    const TypeR: TRoadmaps = "" as unknown;
+    const TypeR: TRoadmaps = {
+        restaurante: 'restaurante',
+        loja: 'loja',
+        museu: 'museu',
+        igreja: 'igreja',
+        praca: 'praca',
+        parque: 'parque',
+        shopping: 'shopping',
+        arLivre: 'arLivre',
+        educacao: 'educacao'
+    }
 
     useEffect(() => {
         async function loadPlaces () {

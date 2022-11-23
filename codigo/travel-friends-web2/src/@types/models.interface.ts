@@ -41,7 +41,7 @@ export interface User {
     person: number;
     start: string;
     end: string;
-    participants?: [
+    participants: [
       {
         idUser: string;
         _id: string;
