@@ -129,13 +129,10 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 | **ID** | **Descrição** |
 | --- | --- |
-| RNF001 | O tempo de resposta realizar buscas de roteiros deve ser de 10 segundos|
-| RNF002 | A plataforma deve armazenar os dados dos usuários de acordo com seu acesso|
-| RNF003| Deve ser de fácil utilização|
-| RNF004| Deve fornecer uma interface que vá de acordo com regras heurísticas de interação entre usuário e máquina|
-| RNF005| As notificações devem ser emitidas com no mínimo 1 para a ocorrência do evento |
-| RNF006| A plataforma deve apontar ao usuário caso a localização desse seja referente a uma distância de 5km ou mais do evento|
-| RNF007| O usuário poderá cadastrar no máximo 10 roteiros de acordo com sua localidade|
+| RNF001| A plataforma deve armazenar os dados dos usuários de acordo com seu acesso|
+| RNF002| Deve ser de fácil utilização|
+| RNF003| Deve fornecer uma interface que vá de acordo com regras heurísticas de interação entre usuário e máquina|
+| RNF004| A plataforma deve apontar ao usuário caso a localização desse seja referente a uma distância de 5km ou mais do evento|
 | RNF008| Os componentes devem ser construídos de forma que possam ser reutilizados|
 
 
@@ -190,7 +187,7 @@ Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual
 | --- | --- |
 | **Atores** | Usuário|
 | **Prioridade** | Obrigatório |
-| **Requisitos associados** | RF001,RF002,RF003,RF11,RF12,RF013|
+| **Requisitos associados** | RF001, RF002, RF003, RF11, RF12, RF013|
 | **Fluxo Principal** | O usuário realiza o cadastro na plataforma, aceita os termos e realiza o login |
 
 #### UC02 – CADASTRO DE LOCAL PRIVADO 02
