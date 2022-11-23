@@ -1,4 +1,5 @@
 import api from "..";
+import { IResponse } from "../../../@types/models.interface";
 
 export const getAllRoadmap = async() => {
   try {
@@ -11,10 +12,11 @@ export const getAllRoadmap = async() => {
 };
 
 export const createRoadmap = async (data: any) => {
-  await api.post("/", data);
+  const response = await api.post<IResponse>("/roadmap", data);
+  return response;
 };
 
 export const updateRoadmap = async (data: any) => {
-  const response = await api.post("/");
+  const response = await api.post<IResponse>("/");
 };
 

@@ -30,11 +30,12 @@ const CardBox: React.FC<Props> = ({
             <Card.Body>
               <Card.Title>{item.title}</Card.Title>
               {item.isFree && <Card.Text>Gratuito</Card.Text>}
-              {/* <Card.Text>{item.}</Card.Text> */}
               <Card.Text>
-              <Divider pad="0 15px" />
               </Card.Text>
               <Card.Text>{item.description}</Card.Text>
+              <Divider />
+              <Card.Text>Horário: {item.start} até {item.end}</Card.Text>
+              <Card.Text>{item.participants.length} de {item.person}</Card.Text>
             </Card.Body>
           </Card>
         </Col>

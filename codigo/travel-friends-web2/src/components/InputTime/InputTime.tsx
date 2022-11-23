@@ -4,12 +4,10 @@ import { isValid } from './utils/validate';
 type InputTimeProps = {
   initTime: string; 
   disabled?: boolean;
-  mountFocus: boolean;
+  mountFocus?: boolean;
   name: string;
   value: string | number | readonly string[] | undefined;
   onTimeChange: (e: any) => void | undefined; 
-  onFocusHandler: (e: any) => void | undefined;
-  onBlurHandler: (e: any) => void | undefined;
 };
 
 const InputTime: React.FC<InputTimeProps> = ({...props}) => {
@@ -64,8 +62,6 @@ const InputTime: React.FC<InputTimeProps> = ({...props}) => {
           value={props.value}
           className='form-control'
           onChange={(e) => onChangeHandler(e.target.value)}
-          onFocus={(props.onFocusHandler) ? (e) => props.onFocusHandler(e) : undefined}
-          onBlur={(props.onBlurHandler) ? (e) => props.onBlurHandler(e) : undefined}
           ref={_input}
       />
   );

@@ -48,13 +48,6 @@ const FormPlace = () => {
         }
     }
 
-    const onFocusHandler = (e: any) => {
-        console.log("hello there you entered :  my name is ", e.target.name);
-    }
- 
-    const onBlurHandler = (e: any) => {
-        console.log("you left ");
-    }
     
     return (
       <Navigation className="d-flex">
@@ -101,8 +94,6 @@ const FormPlace = () => {
                                 values.openTime = val;
                                 setValues({...values});
                             }}
-                            onFocusHandler={onFocusHandler}
-                            onBlurHandler={onBlurHandler}
                         />
                     </Form.Group>
                     
@@ -117,8 +108,6 @@ const FormPlace = () => {
                                 values.closeTime = val;
                                 setValues({...values});
                             }}
-                            onFocusHandler={onFocusHandler}
-                            onBlurHandler={onBlurHandler}
                         />
                     </Form.Group>
                     <Form.Group as={Col} className="mb-3">

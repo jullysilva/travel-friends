@@ -29,8 +29,7 @@ const Navigation = ({ children }: any) => {
             <Nav defaultActiveKey="/painel" className="flex-column">
               <Nav.Link href="/painel">Início</Nav.Link>
               <Nav.Link href="/locais">Locais</Nav.Link>
-              <Nav.Link eventKey="link-1">Configuração</Nav.Link>
-              <Nav.Link eventKey="link-2">Sair</Nav.Link>
+              <Nav.Link href='/entrar'>Sair</Nav.Link>
             </Nav>
           </Col>
   
@@ -38,7 +37,7 @@ const Navigation = ({ children }: any) => {
           <Navbar collapseOnSelect expand="lg">
             <Container>
               <Navbar.Brand>
-                <Form className="d-flex">
+                {/* <Form className="d-flex">
                   <Form.Control
                     type="search"
                     placeholder="Pesquisar roteiro"
@@ -46,13 +45,13 @@ const Navigation = ({ children }: any) => {
                     aria-label="Search"
                   />
                   <Button variant="outline-success">Pesquisar</Button>
-                </Form>
+                </Form> */}
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="#features">Explorar</Nav.Link>
-                  <Nav.Link href="#pricing">Meus roteiros</Nav.Link>
+                  <Nav.Link href="/painel">Explorar</Nav.Link>
+                  <Nav.Link href="/locais">Meus roteiros</Nav.Link>
                 </Nav>
                 <Nav className="me-5">
                   <Dropdown onSelect={(e) => handleSelect(e)}>

@@ -5,18 +5,18 @@ export const styles = {
         // Border
         borderRadius: '50%',
         // Background 
-        backgroundImage: `url(https://chat-engine-assets.s3.amazonaws.com/tutorials/my-face-min.png)`, 
+        backgroundImage: `url("https://cdn-icons-png.flaticon.com/512/1239/1239349.png?w=740&t=st=1669221158~exp=1669221758~hmac=9aeb653a64fbe429e1771c3bac1256cbee658754230db5c3df2e70d761a6c786")`, 
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundSize: '84px',
+        backgroundSize: '40px',
         // Size
-        width: '84px',
-        height: '84px',
+        width: '80px',
+        height: '80px',
     },
     avatarHello: { 
         // Position
         position: 'absolute', 
-        left: 'calc(-100% - 44px - 28px)', 
+        left: 'calc((-100% - 4px) - 100px)', 
         top: 'calc(50% - 24px)', 
         // Layering
         zIndex: '10000',
@@ -35,7 +35,7 @@ export const styles = {
         right: '24px',
         // Size
         width: '420px',
-        height: '530px',
+        height: '430px',
         maxWidth: 'calc(100% - 48px)',
         maxHeight: 'calc(100% - 48px)',
         backgroundColor: 'white',

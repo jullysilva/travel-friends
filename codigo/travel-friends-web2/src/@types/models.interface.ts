@@ -15,7 +15,7 @@ export type UserLogin = {
   password: string;
 };
 
-export declare interface Valiable {
+export declare interface IResponse {
   data: null;
   status: number;
 }
@@ -41,7 +41,7 @@ export interface User {
     person: number;
     start: string;
     end: string;
-    participants?: [
+    participants: [
       {
         idUser: string;
         _id: string;
