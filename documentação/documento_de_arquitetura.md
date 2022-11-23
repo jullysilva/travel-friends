@@ -105,23 +105,22 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 | RF001 | O usuário deve ser capaz de realizar cadastro na plataforma Web| Obrigatório
 | RF002 | O usuário deve ser capaz de acessar a plataforma Web através de email e senha anteriormente cadastrados | Obrigatório
 | RF003 | Após acessar a plataforma Web o usuário deve ler e confirmar que está em acordo com os termos de uso | Obrigatório
-| RF004 | Após acessar a plataforma Web o usuário deve ser capaz de alterar a sua senha de registro | Obrigatório
-| RF005 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o local onde será realizado o seu passeio | Obrigatório
-| RF006 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o seu passeio com as informações necessárias | Obrigatório
-| RF007 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar os locais e passeios registrados | Obrigatório
-| RF008 | Após acessar a plataforma Web o usuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
-| RF009 | Após acessar a plataforma Web o usuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
-| RF010 | Após acessar a plataforma Web o usuário deve ser capaz de pesquisar determinado passseio registrado | Obrigatório
-| RF011 | O usuário deve ser capaz de realizar cadastro no aplicativo | Obrigatório
-| RF012 | O usuário deve ser capaz de acessar o aplicativo através de email e senha anteriormente cadastrados | Obrigatório
-| RF013 | Após acessar o aplicativo o usuário deve ser capaz de alterar a sua senha de registro | Obrigatório
-| RF014 | Após acessar o aplicativo o usuário deve ser capaz de visualizar os passeios disponíveis e ingressar | Obrigatório
-| RF015 | Após acessar o aplicativo o usuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
-| RF016 | Após acessar o aplicativo o usuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
-| RF017 | Após acessar a plataforma Web o usuário deve ser capaz de aplicar filtros e pesquisar determinado passseio | Obrigatório
-| RF018 | Após acessar a plataforma Web o usuário deve ser capaz de solicitar suporte | Obrigatório
-| RF019 | Após acessar a plataforma Web o usuário deve estar apto a receber notificações | Desejável
-| RF020 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar seus passeios ingressados em uma agenda | Desejável
+| RF004 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar um local privado ou pesquisar por um local onde será realizado o seu passeio | Obrigatório
+| RF005 | Após acessar a plataforma Web o usuário deve ser capaz de cadastrar o seu passeio com as informações necessárias | Obrigatório
+| RF006 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar os locais e passeios registrados | Obrigatório
+| RF007 | Após acessar a plataforma Web o usuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
+| RF008 | Após acessar a plataforma Web o usuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
+| RF009 | Após acessar a plataforma Web o usuário deve ser capaz de pesquisar determinado passseio registrado | Obrigatório
+| RF010 | O usuário deve ser capaz de realizar cadastro no aplicativo | Obrigatório
+| RF011 | O usuário deve ser capaz de acessar o aplicativo através de email e senha anteriormente cadastrados | Obrigatório
+| RF012 | Após acessar o aplicativo o usuário deve ser capaz de alterar a sua senha de registro | Obrigatório
+| RF013 | Após acessar o aplicativo o usuário deve ser capaz de visualizar os passeios disponíveis e ingressar | Obrigatório
+| RF014 | Após acessar o aplicativo o usuário deve ser capaz de alterar ou complementar suas informações de perfil | Obrigatório
+| RF015 | Após acessar o aplicativo o usuário deve ser capaz de salvar em favoritos os seus passeios | Obrigatório
+| RF016 | Após acessar a plataforma Web o usuário deve ser capaz de aplicar filtros e pesquisar determinado passseio | Obrigatório
+| RF017 | Após acessar a plataforma Web o usuário deve ser capaz de solicitar suporte | Obrigatório
+| RF018 | Após acessar a plataforma Web o usuário deve estar apto a receber notificações | Desejável
+| RF019 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar seus passeios ingressados em uma agenda | Desejável
 
 
 
@@ -174,61 +173,69 @@ Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual
 
 
 1. O sistema deve realizar a autenticação do usuário na plataforma Web e Mobile
-2. O sistema deve permitir que o usuário altere a senha anteriormente cadastrada e complemente informações de perfil
-3. O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o local onde será realizado o passeio
-4.  O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o passeio com as informações necessárias
-5.  O sistema deve exibir para o usuário os locais e passeios registrados
-6.  O sistema deve perimitir que o usuário favorite seus passeios
-7.  O sistema deve permitir 
-8.  
-
+2. O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o local onde será realizado o passeio
+3.  O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o passeio com as informações necessárias
+4.  O sistema deve exibir para o usuário os locais e passeios registrados
+5.  O sistema deve perimitir que o usuário favorite seus passeios
+6.  O sistema deve permitir que o usuário acesse de forma rápida e prática seus passeios
+7.  O sistema deve permitir que o usuário solicite suporte
+8.  O sistema deve permitir que o usuário receba notificações
 
 
 ### Descrição resumida dos Casos de Uso / Histórias de Usuário
 
-#### UC01 – REALIZAR LOGIN NA PLATAFORMA 01
+#### UC01 – AUTENTICAÇÃO NA PLATAFORMA 01
 
-| **Descrição** | Efetuar login na plataforma para utilizar recursos|
+| **Descrição** | Efetuar autenticação na plataforma e aceitar os termos para utilizar recursos|
 | --- | --- |
 | **Atores** | Usuário|
-| **Prioridade** | Essencial |
-| **Requisitos associados** | RF001,RF002|
-| **Fluxo Principal** |-|
+| **Prioridade** | Obrigatório |
+| **Requisitos associados** | RF001,RF002,RF003,RF11,RF12,RF013|
+| **Fluxo Principal** | O usuário realiza o cadastro na plataforma, aceita os termos e realiza o login |
 
-#### UC02 – CADASTRAR ROTEIRO DE VIAGEM 02
+#### UC02 – CADASTRO DE LOCAL PRIVADO 02
 
-| **Descrição** | Realizar o cadastramento de roteiros de viagens para que outros usuários possam vizualizar |
+| **Descrição** | O usuário cadastra um estabelecimento privado para ser utilizado em passeios |
 | --- | --- |
 | **Atores** | Usuário |
-| **Prioridade** | Essencial|
+| **Prioridade** | Obrigatório|
 | **Requisitos associados** | RF003|
 | **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em cadastrar roteiro|
 
 
-#### UC03 – VIZUALIZAR ROTEIROS 03
+#### UC03 – CADASTRO DE PASSEIOS 03
 
 | **Descrição** | Vizualizar roteiros referentes a localização geográfica próxima ou atráves de busca |
 | --- | --- |
 | **Atores** | Usuário|
-| **Prioridade** | Essencial |
+| **Prioridade** | Obrigatório |
 | **Requisitos associados** | RF004|
 | **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar roteiro |
 
-#### UC04 – LISTAR ESTABELECIMENTOS 04
+#### UC04 – EXIBIÇÃO DE PASSEIOS 04
 
 | **Descrição** | |
 | --- | --- |
 | **Atores** | Usuário|
-| **Prioridade** | Essencial|
+| **Prioridade** | Obrigatório|
 | **Requisitos associados** | RF005|
 | **Fluxo Principal** |1.Usuário realiza login na plataforma,2.Usuário clica em listar estabelecimentos|
 
-#### UC05 – VIZUALIZAR LOCALIZAÇAO 05
+#### UC05 – FAVORITAR PASSEIOS 05
 
 | **Descrição** | Vizualizar localização atual do utente|
 | --- | --- |
 | **Atores** |Usuário|
-| **Prioridade** |Essencial |
+| **Prioridade** | Obrigatório |
+| **Requisitos associados** | RF007|
+| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar localização|
+
+#### UC05 – RECEBER NOTIFICAÇÕES 05
+
+| **Descrição** | Vizualizar localização atual do utente|
+| --- | --- |
+| **Atores** |Usuário|
+| **Prioridade** | Obrigatório |
 | **Requisitos associados** | RF007|
 | **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar localização|
 
