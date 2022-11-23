@@ -10,7 +10,7 @@ export interface User {
 export interface RoadMap {
   _id: string;
   idCreator: string | null;
-  idLocal: string | null;
+  idLocal: string;
   title: string;
   description?: string | null;
   favorites: boolean;
@@ -29,11 +29,27 @@ export interface RoadMap {
 }
 
 export interface Local {
-  idLocal: string;
-  idCriador: string;
-  nome: string;
-  endereco: string;
+  location: {
+    lat: number;
+    lng: number;
+  };
+  _id: string;
+  idCreator: string;
+  name: string;
+  address: string;
+  cep: string;
+  openTime: string;
+  closeTime: string;
+}
 
-  horarioInicial: string;
-  horarioFinal: string;
+export interface TRoadmaps {
+  restaurante: string;
+  loja: string;
+  museu: string;
+  igreja: string;
+  praca: string;
+  parque: string;
+  shopping: string;
+  arLivre: string;
+  educacao: string;
 }

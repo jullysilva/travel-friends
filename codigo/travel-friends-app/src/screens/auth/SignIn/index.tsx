@@ -65,7 +65,7 @@ export default function SignIn() {
               userLogin.email = text;
               setUserLogin({ ...userLogin });
             }}
-            //onBlur={handleCheck}
+            placeholder={"Digite seu e-mail"}
           />
           <Input
             text="Senha"
@@ -74,6 +74,8 @@ export default function SignIn() {
               userLogin.password = text;
               setUserLogin({ ...userLogin });
             }}
+            placeholder={"Digite sua senha"}
+            password={true}
           />
           <View style={{ paddingBottom: 16, alignSelf: "flex-end" }}>
             <TextApp

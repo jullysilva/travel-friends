@@ -1,7 +1,9 @@
+import { FontAwesome } from "@expo/vector-icons";
 import React from "react";
 import { TouchableOpacity, View } from "react-native";
 
 import { RoadMap } from "../../@types/models.interface";
+import { useHomeNavigation } from "../../hooks/navigation";
 import theme from "../../utils/theme";
 import TextApp from "../Text";
 import { styles } from "./styles";
@@ -10,14 +12,18 @@ type CardInfoProps = {
 };
 
 export default function CardInfo({ item }: CardInfoProps) {
+  const navigation = useHomeNavigation();
+
   return (
     <TouchableOpacity
       style={styles.container}
-      onPress={() => {}}
+      onPress={() => navigation.navigate("Roadmap", item)}
       key={item._id}
     >
       <View style={styles.header}>
-        <View style={styles.img}></View>
+        <View style={styles.img}>
+          <FontAwesome name={"coffee"} size={28} color={"white"} />
+        </View>
         <View style={styles.textBox}>
           <TextApp
             size={theme.fonts.subText}

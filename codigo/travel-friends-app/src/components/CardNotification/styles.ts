@@ -5,9 +5,10 @@ const { height, width } = Dimensions.get("window");
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.colors.shape,
-    padding: 20,
+    padding: 10,
+    width: "92%",
     borderRadius: 6,
-    width: width * 0.8 - 20,
+
     //height: width / 3.2,
 
     marginHorizontal: 10,
@@ -21,23 +22,25 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.27,
     shadowRadius: 4.65,
     elevation: 6,
+    alignSelf: "center",
   },
   header: {
     flexDirection: "row",
+    alignItems: "center",
     padding: 4,
   },
-  footer: {
-    marginTop: 4,
-  },
+
   img: {
     justifyContent: "center",
     alignItems: "center",
     width: 50,
     height: 50,
-    backgroundColor: theme.colors.secundary,
+    backgroundColor: theme.colors.shape,
     borderRadius: 6,
   },
   textBox: {
-    paddingHorizontal: 8,
+    paddingHorizontal: 16,
+    //backgroundColor: "red",
+    width: "90%",
   },
 });
