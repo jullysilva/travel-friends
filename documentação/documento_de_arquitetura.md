@@ -129,11 +129,10 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 | **ID** | **Descrição** |
 | --- | --- |
-| RNF001| A plataforma deve armazenar os dados dos usuários de acordo com seu acesso|
-| RNF002| Deve ser de fácil utilização|
-| RNF003| Deve fornecer uma interface que vá de acordo com regras heurísticas de interação entre usuário e máquina|
-| RNF004| A plataforma deve apontar ao usuário caso a localização desse seja referente a uma distância de 5km ou mais do evento|
-| RNF008| Os componentes devem ser construídos de forma que possam ser reutilizados|
+| RNF001| A plataforma só pode utilizar os dados do usuário mediante autorização e utilização|
+| RNF002| Deve ser intuitiva para usuários leigos|
+| RNF003| A interface deve estar em acordo com regras heurísticas de interação entre usuário e máquina|
+| RNF004| Os componentes devem ser construídos de forma que possam ser reutilizados|
 
 
 ## 2.3. Restrições Arquiteturais
@@ -196,45 +195,45 @@ Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual
 | --- | --- |
 | **Atores** | Usuário |
 | **Prioridade** | Obrigatório|
-| **Requisitos associados** | RF003|
-| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em cadastrar roteiro|
+| **Requisitos associados** | RF004|
+| **Fluxo Principal** | O usário realiza login na plataforma Web|
 
 
 #### UC03 – CADASTRO DE PASSEIOS 03
 
-| **Descrição** | Vizualizar roteiros referentes a localização geográfica próxima ou atráves de busca |
+| **Descrição** | O usuário cadastra um passeio na plataforma, para que outros usuários possam ingressar |
 | --- | --- |
 | **Atores** | Usuário|
 | **Prioridade** | Obrigatório |
-| **Requisitos associados** | RF004|
-| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar roteiro |
+| **Requisitos associados** | RF005|
+| **Fluxo Principal** | Usuário realiza login na plataforma WEB e realiza o cadastro de passeios |
 
 #### UC04 – EXIBIÇÃO DE PASSEIOS 04
 
-| **Descrição** | |
+| **Descrição** | Os passeios devem ser exibidos de forma prática para os usuários |
 | --- | --- |
 | **Atores** | Usuário|
 | **Prioridade** | Obrigatório|
-| **Requisitos associados** | RF005|
-| **Fluxo Principal** |1.Usuário realiza login na plataforma,2.Usuário clica em listar estabelecimentos|
+| **Requisitos associados** | RF006, RF09, RF013, RF016|
+| **Fluxo Principal** |O usuário realiza login na plataforma e a página inicial exibe os passeios|
 
 #### UC05 – FAVORITAR PASSEIOS 05
 
-| **Descrição** | Vizualizar localização atual do utente|
+| **Descrição** | O usuário cadastrado na plataforma pode favoritar seus passeios preferidos|
 | --- | --- |
 | **Atores** |Usuário|
 | **Prioridade** | Obrigatório |
-| **Requisitos associados** | RF007|
-| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar localização|
+| **Requisitos associados** | RF008, RF015|
+| **Fluxo Principal** | Usuário reliza login na plataforma, e na página de passeio clica no ícone de favoritar|
 
 #### UC05 – RECEBER NOTIFICAÇÕES 05
 
-| **Descrição** | Vizualizar localização atual do utente|
+| **Descrição** | O usuário cadastrado na plataforma recebe notificações|
 | --- | --- |
 | **Atores** |Usuário|
 | **Prioridade** | Obrigatório |
-| **Requisitos associados** | RF007|
-| **Fluxo Principal** | 1.Usuário realiza login na plataforma,2.Usuário clica em vizualizar localização|
+| **Requisitos associados** | RF018|
+| **Fluxo Principal** | Usuário não precisa necessariamente realizar alguma ação para ser notificado, apenas ter cadastro na plataforma|
 
 
 Exemplos de Histórias de Usuário:
