@@ -3,7 +3,7 @@ export const notificationDB = [
     id: 1,
     title: "Nova promoção!",
     description:
-      "Convide um amigo para a Travel Friends e ganhe 50% de desconto no seu próximo passeio",
+      "Convide um amigo para a Travel Friends e ganhe 50% de desconto no seu próximo passeio.",
     type: "info",
   },
 
@@ -11,7 +11,7 @@ export const notificationDB = [
     id: 2,
     title: "As pessoas estão te esperando!",
     description:
-      "Tem passeios incríveis e pessoas para conhecer, venha explorar alguns destinos",
+      "Tem passeios incríveis e pessoas para conhecer, venha explorar alguns destinos!",
     type: "info",
   },
 
@@ -27,7 +27,7 @@ export const notificationDB = [
     id: 4,
     title: "Não sabe onde levar o date?",
     description:
-      "Se está precisando de um lugar para levar aquela pessoa especial, venha dar uma olhada nesses passeios preparados para você",
+      "Se está precisando de um lugar para levar aquela pessoa especial, venha dar uma olhada nesses passeios preparados para você.",
     type: "info",
   },
 
@@ -43,7 +43,7 @@ export const notificationDB = [
     id: 6,
     title: "Acesso a sua conta!",
     description:
-      "Olá! Nosso sistema detectou um acesso na sua conta recentemente. Se não foi você por gentileza verifique e se necessário altere sua senha",
+      "Olá! Nosso sistema detectou um acesso na sua conta recentemente. Se não foi você por gentileza verifique e se necessário altere sua senha.",
     type: "alert",
   },
 
@@ -62,17 +62,4 @@ export const notificationDB = [
       "Olá, temos um recado importante! Nos preocupamos muito com a sua segurança e com a integridade de seus dados, não compartilhe sua senha com terceiros.",
     type: "alert",
   },
-
-  // {
-  //   title: "Cadastrado com sucesso!",
-  //   description: "Você acabou de registrar um passeio na sua conta!",
-  //   type: "warning",
-  // },
-
-  // {
-  //   title: "Mais uma pessoa no seu passeio!",
-  //   description:
-  //     "Uma pessoa acabou de ingressar no seu passeio e quer te conhecer!",
-  //   type: "alert",
-  // },
 ];

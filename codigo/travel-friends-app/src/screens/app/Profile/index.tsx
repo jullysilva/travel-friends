@@ -13,18 +13,12 @@ import {
   useTabAPPNavigation,
 } from "../../../hooks/navigation";
 
-import { useFocusEffect } from "@react-navigation/native";
-
 export function Profile() {
   const { logout } = useAuth();
-  const { userData } = userHook();
+  const { userData, clearFavorite } = userHook();
 
   const navigation = useTabAPPNavigation();
   const navigationHome = useHomeNavigation();
-
-  useFocusEffect(() => {
-    console.log("aaa");
-  });
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.colors.primary }}>
@@ -73,7 +67,7 @@ export function Profile() {
               </View>
             </TouchableOpacity>
 
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => clearFavorite()}>
               <View style={styles.underlineButton}>
                 <FontAwesome
                   name={"user"}

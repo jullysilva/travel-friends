@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RouteProp, useRoute } from "@react-navigation/native";
-import { View } from "react-native";
+import { Alert, View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import Button from "../../../components/Button";
 import TextApp from "../../../components/Text";
@@ -10,11 +10,18 @@ import { style } from "./styles";
 import { HomeRoutesParams } from "../../../routes/routes";
 import HeaderGoback from "../../../components/HeaderGoback";
 import { getLocalById } from "../../../services/api/app/local";
+import { userHook } from "../../../contexts/userData";
+import { updateRoadmapUserList } from "../../../services/api/app/roteiros";
+import { useNotification } from "../../../contexts/useNotification";
 
 type RoadmapScreenProps = RouteProp<HomeRoutesParams, "Roadmap">;
 
 export default function Roadmap() {
   const { params } = useRoute<RoadmapScreenProps>();
+
+  const { inRoadmapNotification } = useNotification();
+
+  const { userData } = userHook();
 
   const [local, setLocal] = useState<Local[]>([] as Local[]);
   const [latitude, setLatitude] = useState<number>(-19.93266);
@@ -33,6 +40,26 @@ export default function Roadmap() {
   useEffect(() => {
     loadDataLocal();
   }, []);
+
+  async function handleSignIn() {
+    const newParticipants = [...params.participants, { idUser: userData.id }];
+
+    console.log("novo participantes:   ", newParticipants);
+
+    const { data, status } = await updateRoadmapUserList(
+      newParticipants,
+      params._id
+    );
+
+    if (status === 200) {
+      const title = params.title;
+      inRoadmapNotification(title);
+      console.log("cadastrou", data);
+      Alert.alert("Que bom que você vai...", "Curta seu passeio com a Travel");
+    } else {
+      console.log("error cadastro");
+    }
+  }
 
   return (
     //TODO: pegar latitude e long do local
@@ -149,12 +176,7 @@ export default function Roadmap() {
           </View>
         </View>
         <View style={style.footer}>
-          <Button
-            onPress={() => {
-              console.log(params);
-            }}
-            title="Inscreva-se"
-          />
+          <Button onPress={() => handleSignIn()} title="Inscreva-se" />
         </View>
       </View>
     </View>

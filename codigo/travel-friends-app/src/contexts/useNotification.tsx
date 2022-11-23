@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, ReactNode } from "react";
+import { RoadMap } from "../@types/models.interface";
 
 import { notificationDB } from "../database/notificationDB";
 
@@ -19,6 +20,7 @@ interface ContextData {
   generateNotification: () => void;
   clearNotification: () => void;
   startGeneration: () => void;
+  inRoadmapNotification: () => void;
 }
 
 const NotificationContext = createContext<ContextData>({} as ContextData);
@@ -26,11 +28,11 @@ const NotificationContext = createContext<ContextData>({} as ContextData);
 export function NotificationProvider({ children }: ProviderProps) {
   let notificatioList = [
     {
-      id: 7,
-      title: "Atualização de dados!",
+      id: 25,
+      title: "Estamos felizes em lhe ver!",
       description:
-        "Alguns dados da sua conta precisam ser complementados, por gentileza acesse sua conta!",
-      type: "warning",
+        "Fique por dentro dos passeios em alta e convide seus amigos para essa aventura!",
+      type: "info",
       date: new Date(),
     },
   ];
@@ -46,8 +48,20 @@ export function NotificationProvider({ children }: ProviderProps) {
     notificatioList.unshift(a);
   }
 
+  function inRoadmapNotification(title: RoadMap["title"]) {
+    const notificationRoadmap = {
+      id: 10,
+      title: "Cadastrado com sucesso!",
+      description: `Curta seu passeio na(o) ${title} - Você acabou de registrar um passeio na sua conta!`,
+      type: "info",
+      date: new Date(),
+    };
+
+    notificatioList.unshift(notificationRoadmap);
+  }
+
   function startGeneration() {
-    setInterval(() => generateNotification(), 10000);
+    setInterval(() => generateNotification(), 100000);
   }
 
   function clearNotification() {
@@ -61,6 +75,7 @@ export function NotificationProvider({ children }: ProviderProps) {
         generateNotification,
         clearNotification,
         startGeneration,
+        inRoadmapNotification,
       }}
     >
       {children}

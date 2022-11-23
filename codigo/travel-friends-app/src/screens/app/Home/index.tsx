@@ -58,9 +58,11 @@ export default function Home() {
     loadRoadmap();
     loadRoadmapVertical();
     startGeneration();
-  }, [count]);
+  }, []);
+  //useEffect(() => {}, [count]);
+  console.log("RENDERIZOU  ", count);
 
-  setInterval(() => setCout(count + 1), 1000000);
+  setInterval(() => setCout(count + 1), 50000);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.colors.primary }}>
