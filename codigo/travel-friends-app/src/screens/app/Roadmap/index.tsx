@@ -44,8 +44,6 @@ export default function Roadmap() {
   async function handleSignIn() {
     const newParticipants = [...params.participants, { idUser: userData.id }];
 
-    console.log("novo participantes:   ", newParticipants);
-
     const { data, status } = await updateRoadmapUserList(
       newParticipants,
       params._id
@@ -54,7 +52,7 @@ export default function Roadmap() {
     if (status === 200) {
       const title = params.title;
       inRoadmapNotification(title);
-      console.log("cadastrou", data);
+
       Alert.alert("Que bom que você vai...", "Curta seu passeio com a Travel");
     } else {
       console.log("error cadastro");
@@ -80,7 +78,7 @@ export default function Roadmap() {
           longitudeDelta: 0.0421,
         }}
         style={style.map}
-        minZoomLevel={15}
+        minZoomLevel={16}
         loadingEnabled
         showsUserLocation
       >
@@ -95,7 +93,7 @@ export default function Roadmap() {
         <View style={style.header}>
           <View>
             <TextApp
-              size={theme.fonts.title}
+              size={theme.fonts.subTitle}
               text={params?.title}
               isBold
               fontWeight="700"
@@ -146,17 +144,17 @@ export default function Roadmap() {
               />
               <TextApp
                 size={theme.fonts.subText}
-                text={` ${local?.name}  `}
+                text={` ${local?.name || ""}  `}
                 color={theme.colors.text}
               />
               <TextApp
                 size={theme.fonts.subText}
-                text={` ${local?.address}  `}
+                text={` ${local?.address || ""}  `}
                 color={theme.colors.text}
               />
               <TextApp
                 size={theme.fonts.subText}
-                text={` ${local?.cep}  `}
+                text={` ${local?.cep || ""}  `}
                 color={theme.colors.text}
               />
             </View>

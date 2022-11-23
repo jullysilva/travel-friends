@@ -20,7 +20,7 @@ export function Favorite() {
 
   function renderVertical(item: RoadMap) {
     if (item.favorites) {
-      return <Card item={item} />;
+      return <Card item={item} hiden />;
     }
   }
   useEffect(() => {}, []);

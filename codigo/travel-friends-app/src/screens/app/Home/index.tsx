@@ -59,8 +59,6 @@ export default function Home() {
     loadRoadmapVertical();
     startGeneration();
   }, []);
-  //useEffect(() => {}, [count]);
-  console.log("RENDERIZOU  ", count);
 
   setInterval(() => setCout(count + 1), 50000);
 
