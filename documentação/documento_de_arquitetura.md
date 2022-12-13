@@ -83,7 +83,7 @@ No caso dos turistas, a maioria não possui conhecimento de eventos ocorridos na
 
 ## 1.2. Objetivos do trabalho
 
-O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar ao usuários a criação de listas de roteiros turísticos que desejam realizar juntamente ao compartilhamento dessa a outras pessoas interessadas.Comitantemente a informatização de eventos ocorrentes na determinada localidade dos usuários e o fornecimento de uma chat para comunicação, no qual as pessoas poderão interagir para marcar encontros e compartilhar dicas.
+O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar as atividades turísticas em diferentes localidades e conectar pessoas interessadas em trocar experiências. Para isso, os usuários vão poder criar encontros em pontos selecionados e disponibilizar para outras pessoas. 
 
 ## 1.3. Definições e Abreviaturas
 *MVC*(Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas.
