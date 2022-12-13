@@ -73,12 +73,13 @@ Atráves da necessidade constante de pessoas que viajam e buscam se conectar com
 <a name="apresentacao"></a>
 # 1. Apresentação
 
-No atual contexto pós pandêmico é indubitável a ascensão de pessoas no que tange a realização de viagens em território nacional,a partir de tal ponto observa-se um paradigma de câmbio estrutural de escolhas por parte dos viajantes como pela priorização de viagens mais curtas e como  principal meio locomotivo veículos de aluguel.Com essa prorrogação,quando em turismo tais visitantes desejam conhecer lugares como pontos turísticos, museus, realizar atividades culturais e começam a se preocupar com o planejamento da viagem muito antes do corrimento da mesma.Um exemplo da  afimação se mostra no aumento do consumo de conteúdos de viagem,em um documento divulgado pela Comscore, denominado "Travel Report" constatou-se o aumento de tempo do turista em sites de busca sobre locomoção,turismo e locação de fins de temporada.Isso demonstra uma mudança de paradigma do turista brasileiro no intuito de maior planejamento e na opção por explorar lugares de maneiras mais efetivas e em curto prazo.
-
+No atual cenário pós pandemia é perceptível um aumento de viagens dentro do território nacional brasileiro. Essas viagens são caracterizadas por serem curtas e locais com fácil acesso, principalmente para automóveis, por isso os viajantes optam por conhecer lugares classificados como pontos turísticos, museus, parques, bares e que oferecem outras atividades culturais.
+Desejando conforto e praticidade, é necessário realizar o planejamento da viagem e muitas vezes as pessoas optam por consumir conteúdos disponíveis na internet em sites de acomodação, transportes e guias. Isso demonstra uma mudança de paradigma do turista brasileiro no intuito de maior planejamento e na opção por explorar lugares de maneiras mais efetivas e em curto prazo.
 
 ## 1.1. Problema
 
-Um dos principais problemas enfrentados por viajantes diz respeito primeiramente a orquestração de suas atividades a serem realizadas quando estam viajando,uma vez que desejam conhecer muitos pontos que na maioria das vezes se localizam proximamente.Concisamente,os mesmos em sua maioria não possuem conhecimento de eventos ocorrentes na cidade em comparação a um nativo que conhece páginas de entretenimentos específicas de sua cidade.Segundamente,não existe uma fonte confiável de troca de informações entre pessoas conhecendo um mesmo local com tal contato sendo realizado através de grupos de Facebook,não tornando-se uma maneira segura de intercomunicação dado que pessoas podem se passar por outras ou fornecer informações errôneas.
+Um dos principais problemas enfrentados por viajantes, turistas e exploradores é o planejamento de suas atividades a serem realizadas durante o passeio, uma vez que desejam conhecer muitos pontos que na maioria das vezes não se encontram em uma distância próxima ou falta informações sobre a localidade.
+No caso dos turistas, a maioria não possui conhecimento de eventos ocorridos na cidade em comparação a um nativo que conhece páginas de entretenimentos específicas de sua cidade, e muitas vezes, não encontram uma fonte confiável de troca de informações entre pessoas.
 
 ## 1.2. Objetivos do trabalho
 
@@ -143,7 +144,6 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 - O serviço de autenticação de usuários será fornecido por uma API externa.
 
 ## 2.4. Mecanismos Arquiteturais
-
 
 | **Análise** | **Design** | **Implementação** |
 | --- | --- | --- |
