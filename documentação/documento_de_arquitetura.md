@@ -41,6 +41,7 @@ Atráves da necessidade constante de pessoas que viajam e buscam se conectar com
 | 14/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções  2 e 3 | 1.0|
 | 17/09/2022|Lorrayne Reis |Alterações | 1.1|
 | 25/09/2022|Lorrayne Reis |Alterações | 1.2|
+
 | | | | |
 
 ## SUMÁRIO
@@ -130,30 +131,35 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 | **ID** | **Descrição** |
 | --- | --- |
-| RNF001| A plataforma só pode utilizar os dados do usuário mediante autorização e utilização|
-| RNF002| Deve ser intuitiva para usuários leigos|
-| RNF003| A interface deve estar em acordo com regras heurísticas de interação entre usuário e máquina|
-| RNF004| Os componentes devem ser construídos de forma que possam ser reutilizados|
-
+| RNF001| O software deve ser compátivel com os sistemas Android e IOS|
+| RNF002| A versão web da aplicação deve operar corretamente nos seguintes navegadores: Google Chrome, Edge e Firefox|
+| RNF003| O usuário deve estar autenticado para utilizar os serviços|
+| RNF004| A plataforma só pode utilizar os dados do usuário mediante autorização|
+| RNF005| Deve ser intuitiva para usuários leigos|
+| RNF006| O sistema deve estar disponível nas modalidades mobile e web|
+| RNF007| O sistema deve estar disponível para interação com o usuário 24 horas e sete dias na semana (24/7).
 
 ## 2.3. Restrições Arquiteturais
 
-- A aplicação deve ser construída segundo a arquitetura MVC , na qual o frontend será desenvolvido em React;
+- O frontend da aplicação deve ser desenvolvido em ReactJS, React Native e TypeScript;
+- A versão web da aplicação deve operar corretamente nos seguintes navegadores: Google Chrome, Edge e Firefox;
 - O aplicativo será funcional em dispositivos celulares Android e IOS os quais devem ter acesso a internet;
 - O frontend deve ser desenvolvido para consumir diferentes serviços de APIs diferentes, portanto um módulo não pode interferir no outro;
 - O serviço de autenticação de usuários será fornecido por uma API externa.
+- O serviço de localização no mobile e web serão fornecidos pelas API´s Google Maps e Correios respectivamente.
 
 ## 2.4. Mecanismos Arquiteturais
 
 | **Análise** | **Design** | **Implementação** |
 | --- | --- | --- |
-| Persistência | Banco de dados não relacional| MongoDB|
-| Front end |Interface de comunicação com o usuário |React, Axios, ESlint |
-| Back end | Estruturação de operalização do sistema |Node, Eslint, Express Js, Mongoose|
-| Integração |Controle de recursos com web e mobile | MVC|
-| Log do sistema |Implementação dos recursos de log do componente de persistência| Jest|
-| Teste de Software | Tratamento de exceções criando interações e cenários diferentes para usuários|Jest|
-| Deploy |Configuração da IDE de deploy|Vs code |
+| Persistência Web | Banco de dados não relacional| MongoDB|
+| Persistência Mobile | Banco de dados não relacional| MongoDB|
+| Interface Web| Frontend Web |React|
+| Interface Mobile| Frontend Mobile |React Native|
+| Regra de Negócio| Backend | NodeJS e Expression|
+| Teste de Software | Framework | Jest|
+| Comunicação| Mensageria | RabbitMQ|
+| Integração| Rest | Heroku|
 
 <a name="modelagem"></a>
 # 3. Modelagem e projeto arquitetural
