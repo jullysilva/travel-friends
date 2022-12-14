@@ -54,6 +54,15 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 ## 3. PONTOS FORTES E PONTOS FRACOS
 
+**3.1 Pontos Fortes:**
+- Domínio das tecnologias
+- Equipe comunicativa
+
+**3.2 Pontos Fracos
+- Desenvolvimento da aplicação em duas modalidades: web e mobile
+- Curto prazo de desenvenvolvimento 
+- Equipe atuou com um membro a menos
+
 ## 4. LIÇÕES APRENDIDAS
 
 ## 5. QUESTÕES EM ABERTO
