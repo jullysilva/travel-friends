@@ -292,21 +292,74 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 ## 4.1. Cenários
 
-_Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos não funcionais sendo satisfeitos. Os requisitos a seguir são apenas exemplos de possíveis requisitos, devendo ser revistos, adequados a cada projeto e complementados de forma a terem uma especificação completa e auto-explicativa._
+**Cenário 1 - Compatibilidade:** A aplicação mobile desenvolvida deve ser compatível com os sistemas Android e IOS. 
 
-**Cenário 1 - Acessibilidade:** Suspendisse consequat consectetur velit. Sed sem risus, dictum dictum facilisis vitae, commodo quis leo. Vivamus nulla sem, cursus a mollis quis, interdum at nulla. Nullam dictum congue mauris. Praesent nec nisi hendrerit, ullamcorper tortor non, rutrum sem. In non lectus tortor. Nulla vel tincidunt eros.
+**Cenário 2 - Adaptabilidade:** O sistema deve estar disponível nas modalidades mobile e web, e a versão web da aplicação deve operar corretamente nos seguintes navegadores: Google Chrome, Edge e Firefox.
 
-**Cenário 2 - Interoperabilidade:** Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut accumsan erat. Pellentesque in enim tempus, iaculis sem in, semper arcu.
+**Cenário 3 - Segurança:** O sistema deve garantir a segurança do usuário, por isso ele deve estar autenticado para utilizar os serviços e a plataforma só pode utilizar os dados do usuário mediante autorização.
 
-**Cenário 3 - Manutenibilidade:** Phasellus magna tellus, consectetur quis scelerisque eget, ultricies eu ligula. Sed rhoncus fermentum nisi, a ullamcorper leo fringilla id. Nulla lacinia sem vel magna ornare, non tincidunt ipsum rhoncus. Nam euismod semper ante id tristique. Mauris vel elit augue.
+**Cenário 4 - Disponibilidade:** O sistema deve estar disponível para interação com o usuário 24 horas e sete dias na semana (24/7).
 
-**Cenário 4 - Segurança:** Suspendisse consectetur porta tortor non convallis. Sed lobortis erat sed dignissim dignissim. Nunc eleifend elit et aliquet imperdiet. Ut eu quam at lacus tincidunt fringilla eget maximus metus. Praesent finibus, sapien eget molestie porta, neque turpis congue risus, vel porttitor sapien tortor ac nulla. Aliquam erat volutpat.
+**Cenário 5 - Acessibilidade:** Os ícones e telas da aplicação devem ser intuitivas para usuários considerados leigos.
 
 ## 4.2. Avaliação
 
-_Apresente as medidas registradas na coleta de dados. O que não for possível quantificar apresente uma justificativa baseada em evidências qualitativas que suportam o atendimento do requisito não-funcional. Apresente uma avaliação geral da arquitetura indicando os pontos fortes e as limitações da arquitetura proposta._
+| **Atributo de Qualidade:** | Compatibilidade|
+| --- | --- |
+| **Requisito de Qualidade** | Compatibilidade as plataformas Android e IOS |
+| **Preocupação:** | A instalação do sistema deve ser suportada nos disositivos móveis com sistemas Android e IOS. |
+| **Cenários(s):** | Cenário 1 |
+| **Ambiente:** | Sistemas operacionais Android e IOS|
+| **Estímulo:** | Emulação da aplicação nos ambientes requiridos . |
+| **Mecanismo:** |  |
+| **Medida de Resposta:** |  |
+
+**Considerações sobre a arquitetura:**
+
+| **Riscos:** | Não existe |
+| --- | --- |
+| **Pontos de Sensibilidade:** | Não existe |
+| _ **Tradeoff** _ **:** | Não existe |
+
+Evidências dos testes realizados
+
+_Apresente imagens, descreva os testes de tal forma que se comprove a realização da avaliação._
+
+| **Atributo de Qualidade:** | Adaptabilidade |
+| --- | --- |
+| **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
+| **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
+| **Cenários(s):** | Cenário 2 |
+| **Ambiente:** | Sistema em operação normal |
+| **Estímulo:** | Acesso do administrador do sistema as funcionalidades de cadastro de novos produtos e exclusão de produtos. |
+| **Mecanismo:** | O servidor de aplicação (Rails) gera um _token_ de acesso para o usuário que se autentica no sistema. Este _token_ é transferido para a camada de visualização (Angular) após a autenticação e o tratamento visual das funcionalidades podem ser tratados neste nível. |
+| **Medida de Resposta:** | As áreas restritas do sistema devem ser disponibilizadas apenas quando há o acesso de usuários credenciados. |
+
+**Considerações sobre a arquitetura:**
+
+| **Riscos:** | Não existe |
+| --- | --- |
+| **Pontos de Sensibilidade:** | Não existe |
+| _ **Tradeoff** _ **:** | Não existe |
 
 | **Atributo de Qualidade:** | Segurança |
+| --- | --- |
+| **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
+| **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
+| **Cenários(s):** | Cenário 3 |
+| **Ambiente:** | Sistema em operação normal |
+| **Estímulo:** | Acesso do administrador do sistema as funcionalidades de cadastro de novos produtos e exclusão de produtos. |
+| **Mecanismo:** | O servidor de aplicação (Rails) gera um _token_ de acesso para o usuário que se autentica no sistema. Este _token_ é transferido para a camada de visualização (Angular) após a autenticação e o tratamento visual das funcionalidades podem ser tratados neste nível. |
+| **Medida de Resposta:** | As áreas restritas do sistema devem ser disponibilizadas apenas quando há o acesso de usuários credenciados. |
+
+**Considerações sobre a arquitetura:**
+
+| **Riscos:** | Não existe |
+| --- | --- |
+| **Pontos de Sensibilidade:** | Não existe |
+| _ **Tradeoff** _ **:** | Não existe |
+
+| **Atributo de Qualidade:** | Disponibilidade |
 | --- | --- |
 | **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
 | **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
@@ -323,9 +376,22 @@ _Apresente as medidas registradas na coleta de dados. O que não for possível q
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
 
-Evidências dos testes realizados
+| **Atributo de Qualidade:** | Acessibilidade |
+| --- | --- |
+| **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
+| **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
+| **Cenários(s):** | Cenário 5 |
+| **Ambiente:** | Sistema em operação normal |
+| **Estímulo:** | Acesso do administrador do sistema as funcionalidades de cadastro de novos produtos e exclusão de produtos. |
+| **Mecanismo:** | O servidor de aplicação (Rails) gera um _token_ de acesso para o usuário que se autentica no sistema. Este _token_ é transferido para a camada de visualização (Angular) após a autenticação e o tratamento visual das funcionalidades podem ser tratados neste nível. |
+| **Medida de Resposta:** | As áreas restritas do sistema devem ser disponibilizadas apenas quando há o acesso de usuários credenciados. |
 
-_Apresente imagens, descreva os testes de tal forma que se comprove a realização da avaliação._
+**Considerações sobre a arquitetura:**
+
+| **Riscos:** | Não existe |
+| --- | --- |
+| **Pontos de Sensibilidade:** | Não existe |
+| _ **Tradeoff** _ **:** | Não existe |
 
 <a name="apendices"></a>
 # 5. APÊNDICES
