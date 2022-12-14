@@ -30,8 +30,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **Resumo**
 
-Atráves da necessidade constante de pessoas que viajam e buscam se conectar com o lugar que visam se estabelecer, seja de forma comunicacional ou no entendimento de informações importandes a despeito de uma localidade.O objetivo deste presente trabalho visa o desenvolvimento de uma aplicação utilitária a viajantes no que tange a criação de roteitos que podem ser comportilhados concomitantemente a criação de eventos e troca de informações atráves de uma comunidade estabelecida com base na distância e localização de membros.Os resultados relevantes obtidos com o trabalho se relaciona...  
-
+Atráves da necessidade constante de pessoas que viajam e buscam se conectar com o lugar que visam se estabelecer, seja de forma comunicacional ou no entendimento de informações importantes a respeito de uma localidade. O objetivo deste presente trabalho visa o desenvolvimento de uma aplicação utilitária a viajantes no que tange a criação de passeios que podem ser comportilhados concomitantemente a criação de eventos e troca de informações atráves de uma comunidade.
 
 ## Histórico de Revisões
 
@@ -249,7 +248,7 @@ Exemplos de Histórias de Usuário:
 
 ### Diagrama de Classes
 
-**Figura 2 – Diagrama de classes. Fonte: Ian Asenjo.**
+**Figura 2 – Diagrama de classes**
 
 O diagrama de classes representa a estrutura e relações das classes que modelam um objeto. Na imagem abaixo temos representada as seguintes classes da aplicação: local, user e roadmap.
 
@@ -258,15 +257,11 @@ O diagrama de classes representa a estrutura e relações das classes que modela
 
 ### Diagrama de componentes
 
-_Apresente o diagrama de componentes da aplicação, indicando, os elementos da arquitetura e as interfaces entre eles. Liste os estilos/padrões arquiteturais utilizados e faça uma descrição sucinta dos componentes indicando o papel de cada um deles dentro da arquitetura/estilo/padrão arquitetural. Indique também quais componentes serão reutilizados (navegadores, SGBDs, middlewares, etc), quais componentes serão adquiridos por serem proprietários e quais componentes precisam ser desenvolvidos._
+**Figura 3 – Diagrama de Componentes**
 
 ![diagrama](https://user-images.githubusercontent.com/55992267/190260891-217a9e1b-bba2-4143-be9a-6288e4a33b79.jpg)
 
-**Figura 3 – Diagrama de Componentes (exemplo). Fonte: o próprio autor.**
-
-_Apresente uma descrição detalhada dos artefatos que constituem o diagrama de implantação._
-
-Ex: conforme diagrama apresentado na Figura X, as entidades participantes da solução são:
+Ex: conforme diagrama apresentado na Figura 3, as entidades participantes da solução são:
 
 - **Componente 1** - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc magna, accumsan eget porta a, tincidunt sed mauris. Suspendisse orci nulla, sagittis a lorem laoreet, tincidunt imperdiet ipsum. Morbi malesuada pretium suscipit.
 - **Componente 2** - Praesent nec nisi hendrerit, ullamcorper tortor non, rutrum sem. In non lectus tortor. Nulla vel tincidunt eros.
@@ -315,6 +310,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 ![image](https://user-images.githubusercontent.com/110981345/207476386-b7c76024-9de0-407a-b6ab-62a96bf7e1a2.png)
 
 
+
 | **Atributo de Qualidade:** | Adaptabilidade |
 | --- | --- |
 | **Requisito de Qualidade** | O sistema deve estar disponível nas modalidades mobile e web |
@@ -333,6 +329,8 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | _ **Tradeoff** _ **:** | Não existe |
 
 ![image](https://user-images.githubusercontent.com/110981345/207475815-5bee1e0b-ad60-42fc-b309-11abb00f1c50.png)
+
+
 
 
 | **Atributo de Qualidade:** | Segurança |
@@ -357,6 +355,9 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 ![image](https://user-images.githubusercontent.com/110981345/207478536-6edf7430-6cf3-4487-8d70-65aab50f8660.png)
 
 
+
+
+
 | **Atributo de Qualidade:** | Disponibilidade |
 | --- | --- |
 | **Requisito de Qualidade** | A aplicação deve estar disponível para acesso do usuário|
@@ -373,6 +374,9 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | --- | --- |
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
+
+
+
 
 | **Atributo de Qualidade:** | Acessibilidade |
 | --- | --- |
