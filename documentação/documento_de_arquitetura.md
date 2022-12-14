@@ -91,11 +91,11 @@ O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar as
 
 *IOS*:  Sistema operacional móvel da Apple Inc
 
-*ReactJS*> Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web
+*ReactJS*: Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web
 
-*RF* Requisito funcional
+*RF*: Requisito funcional
 
-*RFN* Requisito não funcional
+*RFN*: Requisito não funcional
 
 ## 1.4. Protótipo
 https://www.figma.com/file/2X6TUKJbtMx8gNObhrUZUs/Travel-Friends?node-id=0%3A1
@@ -408,5 +408,4 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 <a name="apendices"></a>
 # 5. APÊNDICES
-
-_Inclua o URL do repositório (Github, Bitbucket, etc) onde você armazenou o código da sua prova de conceito/protótipo arquitetural da aplicação como anexos. A inclusão da URL desse repositório de código servirá como base para garantir a autenticidade dos trabalhos._
+https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti5-5104100-travel-friends/tree/master/codigo)
