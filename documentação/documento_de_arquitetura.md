@@ -36,11 +36,12 @@ Atráves da necessidade constante de pessoas que viajam e buscam se conectar com
 
 | **Data** | **Autor** | **Descrição** | **Versão** |
 | --- | --- | --- | --- |
-| 03/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções 1,1.1 e 1.2  | 1.0|
-| 14/09/2022|Lorrayne Reis |Desenvolvimento da apresentação referente as seções  2 e 3 | 1.0|
-| 17/09/2022|Lorrayne Reis |Alterações | 1.1|
-| 25/09/2022|Lorrayne Reis |Alterações | 1.2|
-
+| 03/09/2022|Lorrayne Reis |Desenvolvimento das seções 1, 1.1 e 1.2 | 1.0|
+| 14/09/2022|Lorrayne Reis |Desenvolvimento das seções 2 e 3 | 1.0|
+| 17/09/2022|Lorrayne Reis |Alterações |1.1|
+| 16/11/2022|Laura Lourdes |Alterações nas seções 2, 2.1,2.2 e 3.1 |1.2|
+| 23/11/2022|Laura Lourdes |Alterações nas seções 2, 2.1,2.2 e 3.1 |1.3|
+| 14/12/2022|Laura Lourdes |Alterações e desenvolvimento de todas as seções | 1.4|
 
 ## SUMÁRIO
 
