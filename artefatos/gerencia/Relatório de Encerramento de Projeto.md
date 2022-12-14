@@ -30,7 +30,7 @@ _Curso de Engenharia de Software, Unidade Praça da Liberdade_
 _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Minas Gerais (PUC MINAS), Belo Horizonte – MG – Brasil_
 
 ---
-## 1. Objetivo do projeto 
+## 1. OBJETIVO DO PROJETO
 
 No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
 
@@ -38,7 +38,11 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 **1.1 Objetivos específicos:** 
 
-## 2. Resultados alcançados no projeto 
+- Criação e exbibição de passeios turísticos para os usuários
+- Ambiente de suporte para os usuários
+- Utilização de serviço de geolocalização no aplicativo
+
+## 2. RESULTADOS ALCANÇADOS NO PROJETO
 
 **2.1 Os objetivos do projeto foram atingidos?** 
 
@@ -48,4 +52,17 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 **2.4 O projeto atendeu ao cliente, em termos de escopo?**
 
+## 3. PONTOS FORTES E PONTOS FRACOS
 
+## 4. LIÇÕES APRENDIDAS
+
+## 5. QUESTÕES EM ABERTO
+
+## 6. APROVAÇÕES
+
+| Partcipipante | Papel no projeto | Assinatura |
+| --- | --- | --- |
+| Ian Asenjo Dominguez Cunha | Desenvolvedor | Ian Cunha    |
+| Jully Ketely Alves da Silva | DevOps | Jully Ketely    | 
+| Laura Lourdes Coutinho Rodrigues | Scrum Master | Laura Lourdes   |
+| Warley Leandro dos Anjos | Arquiteto de Software | Warley Leandro  |
