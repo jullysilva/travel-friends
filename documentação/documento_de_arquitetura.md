@@ -321,19 +321,19 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
 
-Evidências dos testes realizados
+
 
 _Apresente imagens, descreva os testes de tal forma que se comprove a realização da avaliação._
 
 | **Atributo de Qualidade:** | Adaptabilidade |
 | --- | --- |
-| **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
-| **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
+| **Requisito de Qualidade** | O sistema deve estar disponível nas modalidades mobile e web |
+| **Preocupação:** | O sistema deve ser acessível nos navegadores Google Chrome, Edge e Firefox |
 | **Cenários(s):** | Cenário 2 |
-| **Ambiente:** | Sistema em operação normal |
-| **Estímulo:** | Acesso do administrador do sistema as funcionalidades de cadastro de novos produtos e exclusão de produtos. |
-| **Mecanismo:** | O servidor de aplicação (Rails) gera um _token_ de acesso para o usuário que se autentica no sistema. Este _token_ é transferido para a camada de visualização (Angular) após a autenticação e o tratamento visual das funcionalidades podem ser tratados neste nível. |
-| **Medida de Resposta:** | As áreas restritas do sistema devem ser disponibilizadas apenas quando há o acesso de usuários credenciados. |
+| **Ambiente:** | Plataforma Mobie e Web |
+| **Estímulo:** | Acessar o sistema em diferentes navegadores. |
+| **Mecanismo:** |  |
+| **Medida de Resposta:** |  |
 
 **Considerações sobre a arquitetura:**
 
@@ -341,6 +341,9 @@ _Apresente imagens, descreva os testes de tal forma que se comprove a realizaç�
 | --- | --- |
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
+
+![image](https://user-images.githubusercontent.com/110981345/207475815-5bee1e0b-ad60-42fc-b309-11abb00f1c50.png)
+
 
 | **Atributo de Qualidade:** | Segurança |
 | --- | --- |
