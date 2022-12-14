@@ -58,7 +58,7 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 - Domínio das tecnologias
 - Equipe comunicativa
 
-**3.2 Pontos Fracos
+**3.2 Pontos Fracos:**
 - Desenvolvimento da aplicação em duas modalidades: web e mobile
 - Curto prazo de desenvenvolvimento 
 - Equipe atuou com um membro a menos
