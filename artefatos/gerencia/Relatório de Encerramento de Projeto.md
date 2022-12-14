@@ -46,11 +46,19 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 **2.1 Os objetivos do projeto foram atingidos?** 
 
+ Os objetivos levantados no planejamento do projeto foram atingidos.
+
 **2.2 O projeto foi entregue dentro do prazo?** 
+
+ O projeto foi entregue dentro do prazo estimado e registado anteriormente.
 
 **2.3 O projeto foi entregue dentro do orçamento?** 
 
+ O projeto foi entregue dentro do orçamento estimado anteriormente.
+
 **2.4 O projeto atendeu ao cliente, em termos de escopo?**
+
+ O projeto atendeu as demandas do cliente, e ao longo do projeto foram feitas algumas alterações e adaptações nos requisitos.
 
 ## 3. PONTOS FORTES E PONTOS FRACOS
 
@@ -64,8 +72,13 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 - Equipe atuou com um membro a menos
 
 ## 4. LIÇÕES APRENDIDAS
+ 
+  - A comunicação da equipe foi um ponto crucial para a finalização do projeto
+  - Ao longo do projeto é necessário adaptar, e nesse caso planejamento é fundamental.
 
 ## 5. QUESTÕES EM ABERTO
+
+ As funcionalidades do projeto foram entregues e a equipe está com um membro a menos que no começo do projeto.
 
 ## 6. APROVAÇÕES
 
