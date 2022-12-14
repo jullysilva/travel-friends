@@ -71,13 +71,13 @@ Atráves da necessidade constante de pessoas que viajam e buscam se conectar com
 # 1. Apresentação
 
 No atual cenário pós pandemia é perceptível um aumento de viagens dentro do território nacional brasileiro. Essas viagens são caracterizadas por serem curtas e locais com fácil acesso, principalmente para automóveis, por isso os viajantes optam por conhecer lugares classificados como pontos turísticos, museus, parques, bares e que oferecem outras atividades culturais.
-<br/>
+<br />
 Desejando conforto e praticidade, é necessário realizar o planejamento da viagem e muitas vezes as pessoas optam por consumir conteúdos disponíveis na internet em sites de acomodação, transportes e guias. Isso demonstra uma mudança de paradigma do turista brasileiro no intuito de maior planejamento e na opção por explorar lugares de maneiras mais efetivas e em curto prazo.
 
 ## 1.1. Problema
 
 Um dos principais problemas enfrentados por viajantes, turistas e exploradores é o planejamento de suas atividades a serem realizadas durante o passeio, uma vez que desejam conhecer muitos pontos que na maioria das vezes não se encontram em uma distância próxima ou falta informações sobre a localidade.
-<br/>
+<br />
 No caso dos turistas, a maioria não possui conhecimento de eventos ocorridos na cidade em comparação a um nativo que conhece páginas de entretenimentos específicas de sua cidade, e muitas vezes, não encontram uma fonte confiável de troca de informações entre pessoas.
 
 ## 1.2. Objetivos do trabalho
@@ -92,6 +92,10 @@ O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar as
 *IOS*:  Sistema operacional móvel da Apple Inc
 
 *ReactJS*> Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web
+
+*RF* Requisito funcional
+
+*RFN* Requisito não funcional
 
 ## 1.4. Protótipo
 https://www.figma.com/file/2X6TUKJbtMx8gNObhrUZUs/Travel-Friends?node-id=0%3A1
@@ -289,7 +293,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 **Cenário 3 - Segurança:** O sistema deve garantir a segurança do usuário, por isso ele deve estar autenticado para utilizar os serviços e a plataforma só pode utilizar os dados do usuário mediante autorização.
 
-**Cenário 4 - Disponibilidade:** O sistema deve estar disponível para interação com o usuário 24 horas e sete dias na semana (24/7).
+**Cenário 4 - Disponibilidade:** O sistema deve estar disponível para interação com o usuário 24 horas e sete dias na semana.
 
 **Cenário 5 - Acessibilidade:** Os ícones e telas da aplicação devem ser intuitivas para usuários considerados leigos.
 
