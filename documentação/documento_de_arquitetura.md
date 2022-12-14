@@ -308,7 +308,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | _ **Tradeoff** _ **:** | Não existe |
 
 ![image](https://user-images.githubusercontent.com/110981345/207476386-b7c76024-9de0-407a-b6ab-62a96bf7e1a2.png)
-
+<br />
 
 
 | **Atributo de Qualidade:** | Adaptabilidade |
@@ -329,7 +329,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | _ **Tradeoff** _ **:** | Não existe |
 
 ![image](https://user-images.githubusercontent.com/110981345/207475815-5bee1e0b-ad60-42fc-b309-11abb00f1c50.png)
-
+<br />
 
 
 
@@ -352,9 +352,8 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 ![image](https://user-images.githubusercontent.com/110981345/207478340-769b25cc-2d44-413e-a02e-4e7bc1814243.png)
 ![image](https://user-images.githubusercontent.com/110981345/207478415-ed3a3593-ac7c-4f91-b96f-0b22256117b1.png)
-![image](https://user-images.githubusercontent.com/110981345/207478536-6edf7430-6cf3-4487-8d70-65aab50f8660.png)
-
-
+![image](https://user-images.githubusercontent.com/110981345/207478536-6edf7430-6cf3-4487-8d70-65aab50f8660.png)  
+<br />
 
 
 
@@ -374,7 +373,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | --- | --- |
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
-
+<br />
 
 
 
