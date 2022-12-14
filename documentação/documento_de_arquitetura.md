@@ -86,8 +86,11 @@ O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar as
 
 ## 1.3. Definições e Abreviaturas
 *MVC* (Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas
+
 *API* (Application Programming Interface): Conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas por meio de comunicações.
+
 *IOS*:  Sistema operacional móvel da Apple Inc
+
 *ReactJS*> Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web
 
 ## 1.4. Protótipo
