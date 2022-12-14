@@ -258,7 +258,7 @@ _Apresente os artefatos que serão utilizados descrevendo em linhas gerais as mo
 
 ### Diagrama de Classes
 
-![TIS_Diagram-Class](https://user-images.githubusercontent.com/42702863/193717317-9ba5996b-a59f-44b0-a0c9-a49bbd152bc5.png)
+![image](https://user-images.githubusercontent.com/110981345/207605881-c215b224-3dbf-4ab2-a79f-6c8c2c64263d.png)
 
 
 **Figura 2 – Diagrama de classes (exemplo). Fonte: o próprio autor.**
