@@ -351,7 +351,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Cenários(s):** | Cenário 3 |
 | **Ambiente:** | Sistema em operação normal de acesso |
 | **Estímulo:** | Acessar as rotas sem autorização |
-| **Mecanismo:** | Utilização de rotas autenticadas |
+| **Mecanismo:** | Configuração de segurança de rotas usando react-router-dom |
 | **Medida de Resposta:** | Possibilidade de acesso as funcionalidades mediante login do usuário, recebendo token e usando como verificador nas rotas privadas|
 
 **Considerações sobre a arquitetura:**
@@ -368,13 +368,13 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 | **Atributo de Qualidade:** | Disponibilidade |
 | --- | --- |
-| **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
-| **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
+| **Requisito de Qualidade** | A aplicação deve estar disponível para acesso do usuário|
+| **Preocupação:** | Desde que tenha acesso a internet, o usuário deve acessar a aplicação a qualquer momento |
 | **Cenários(s):** | Cenário 4 |
 | **Ambiente:** | Sistema em operação normal |
-| **Estímulo:** | Acesso do administrador do sistema as funcionalidades de cadastro de novos produtos e exclusão de produtos. |
-| **Mecanismo:** | O servidor de aplicação (Rails) gera um _token_ de acesso para o usuário que se autentica no sistema. Este _token_ é transferido para a camada de visualização (Angular) após a autenticação e o tratamento visual das funcionalidades podem ser tratados neste nível. |
-| **Medida de Resposta:** | As áreas restritas do sistema devem ser disponibilizadas apenas quando há o acesso de usuários credenciados. |
+| **Estímulo:** | Ao utilizar a aplicação a percepção do usuário é um sistema funcionando sem interrupções|
+| **Mecanismo:** | O |
+| **Medida de Resposta:** |  |
 
 **Considerações sobre a arquitetura:**
 
