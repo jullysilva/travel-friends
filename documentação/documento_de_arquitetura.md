@@ -307,11 +307,11 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Atributo de Qualidade:** | Compatibilidade|
 | --- | --- |
 | **Requisito de Qualidade** | Compatibilidade as plataformas Android e IOS |
-| **Preocupação:** | A instalação do sistema deve ser suportada nos disositivos móveis com sistemas Android e IOS. |
+| **Preocupação:** | A instalação do sistema deve ser suportada nos disositivos móveis com sistemas Android e IOS |
 | **Cenários(s):** | Cenário 1 |
 | **Ambiente:** | Sistemas operacionais Android e IOS|
-| **Estímulo:** | Emulação da aplicação nos ambientes requiridos . |
-| **Mecanismo:** |  |
+| **Estímulo:** | Emulação da aplicação nos ambientes requiridos |
+| **Mecanismo:** | O sistema web e mobile devem ser desenvolvidos em Javascript. E o React Native já dá suporte para plataforma Android e IOS |
 | **Medida de Resposta:** |  |
 
 **Considerações sobre a arquitetura:**
@@ -321,19 +321,18 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
 
+![image](https://user-images.githubusercontent.com/110981345/207476386-b7c76024-9de0-407a-b6ab-62a96bf7e1a2.png)
 
-
-_Apresente imagens, descreva os testes de tal forma que se comprove a realização da avaliação._
 
 | **Atributo de Qualidade:** | Adaptabilidade |
 | --- | --- |
 | **Requisito de Qualidade** | O sistema deve estar disponível nas modalidades mobile e web |
 | **Preocupação:** | O sistema deve ser acessível nos navegadores Google Chrome, Edge e Firefox |
 | **Cenários(s):** | Cenário 2 |
-| **Ambiente:** | Plataforma Mobie e Web |
-| **Estímulo:** | Acessar o sistema em diferentes navegadores. |
-| **Mecanismo:** |  |
-| **Medida de Resposta:** |  |
+| **Ambiente:** | Plataforma Mobile e Web |
+| **Estímulo:** | Acessar o sistema em diferentes navegadores |
+| **Mecanismo:** | Cadastro de locais e passeios na plataforma web e visualização da mesma informação, tanto na versão web quanto mobile. |
+| **Medida de Resposta:** | O passeio cadastrado no Web pode ser visualizado no mobile  |
 
 **Considerações sobre a arquitetura:**
 
