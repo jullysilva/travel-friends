@@ -85,9 +85,10 @@ No caso dos turistas, a maioria não possui conhecimento de eventos ocorridos na
 O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar as atividades turísticas em diferentes localidades e conectar pessoas interessadas em trocar experiências. Para isso, os usuários vão poder criar encontros em pontos selecionados e disponibilizar para outras pessoas. 
 
 ## 1.3. Definições e Abreviaturas
-*MVC*(Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas.
-
-*API*(Application Programming Interface):Conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas por meio de comunicações.
+*MVC* (Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas
+*API* (Application Programming Interface): Conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas por meio de comunicações.
+*IOS*:  Sistema operacional móvel da Apple Inc
+*ReactJS*> Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web
 
 ## 1.4. Protótipo
 https://www.figma.com/file/2X6TUKJbtMx8gNObhrUZUs/Travel-Friends?node-id=0%3A1
