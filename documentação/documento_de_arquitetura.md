@@ -270,8 +270,6 @@ O diagrama de classes representa a estrutura e relações das classes que modela
 
 ![diagrama](https://user-images.githubusercontent.com/55992267/190260891-217a9e1b-bba2-4143-be9a-6288e4a33b79.jpg)
 
-Ex: conforme diagrama apresentado na Figura 3, as entidades participantes da solução são:
-
 <a name="avaliacao"></a>
 # 4. Avaliação da Arquitetura
 
