@@ -42,7 +42,6 @@ Atráves da necessidade constante de pessoas que viajam e buscam se conectar com
 | 17/09/2022|Lorrayne Reis |Alterações | 1.1|
 | 25/09/2022|Lorrayne Reis |Alterações | 1.2|
 
-| | | | |
 
 ## SUMÁRIO
 
@@ -60,7 +59,6 @@ Atráves da necessidade constante de pessoas que viajam e buscam se conectar com
 3. [Modelagem](#modelagem "Modelagem e projeto arquitetural") <br />
 	3.1. Visão de Negócio <br />
 	3.2. Visão Lógica <br />
-	3.3. Modelo de dados (opcional) <br />
 
 4. [Avaliação](#avaliacao "Avaliação da Arquitetura") <br />
 	4.1. Cenários <br />
@@ -164,18 +162,17 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 <a name="modelagem"></a>
 # 3. Modelagem e projeto arquitetural
 
-
-Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação.Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
-
-![image](https://user-images.githubusercontent.com/110981345/207483124-ea2e7f78-9bf1-4e2c-88de-f25a49ac6a53.png)
+Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação. Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
 
 **Figura 1 - Visão Geral da Solução**
+![image](https://user-images.githubusercontent.com/110981345/207483124-ea2e7f78-9bf1-4e2c-88de-f25a49ac6a53.png)
+
 
 ## 3.1. Visão de Negócio (Funcionalidades)
 
 
-1. O sistema deve realizar a autenticação do usuário na plataforma Web e Mobile
-2. O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o local onde será realizado o passeio
+1.  O sistema deve realizar a autenticação do usuário na plataforma Web e Mobile
+2.  O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o local onde será realizado o passeio
 3.  O sistema deve permitir que o usuário utilize a plataforma Web para cadastrar o passeio com as informações necessárias
 4.  O sistema deve exibir para o usuário os locais e passeios registrados
 5.  O sistema deve perimitir que o usuário favorite seus passeios
@@ -244,26 +241,20 @@ Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual
 
 Exemplos de Histórias de Usuário:
 
-- Como Camila eu quero criar roteiros para compartilhar informações de viagens com outras pessoas.
-
-- Como João eu quero vizualizar uma lista de roteiros para escolher o que mais combina com o meu estilo de viagem.
-
-- Como Priscila eu quero vizualizar a minha localização para me referenciar dentro das ocorrências de eventos próximas.
-
-- Como Pedro eu quero logar em uma aplicação que seja mobile e app para ampliar meu repertório de possibilidades de acesso.
+- Como uma turista em uma cidade que não conhece, Camila gostaria de ter acesso as informações dos principais pontos turísticos e conhecer os moradores locais.
+- Como residente de uma cidade, Paulo gostaria de sair com os amigos para um lugar legal mas precisa de ideias.
+- Como explorador da sua cidade natal, Eduardo quer criar passeios e compartilhar com as pessoas interessadas em se aventurar pela cidade. 
 
 ## 3.2. Visão Lógica
 
-_Apresente os artefatos que serão utilizados descrevendo em linhas gerais as motivações que levaram a equipe a utilizar estes diagramas._
-
 ### Diagrama de Classes
+
+**Figura 2 – Diagrama de classes. Fonte: Ian Asenjo.**
+
+O diagrama de classes representa a estrutura e relações das classes que modelam um objeto. Na imagem abaixo temos representada as seguintes classes da aplicação: local, user e roadmap.
 
 ![image](https://user-images.githubusercontent.com/110981345/207605881-c215b224-3dbf-4ab2-a79f-6c8c2c64263d.png)
 
-
-**Figura 2 – Diagrama de classes (exemplo). Fonte: o próprio autor.**
-
-Obs: Acrescente uma breve descrição sobre o diagrama apresentado na Figura 3.
 
 ### Diagrama de componentes
 
@@ -347,7 +338,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Atributo de Qualidade:** | Segurança |
 | --- | --- |
 | **Requisito de Qualidade** | Acesso aos recursos deve ser permitido apenas se o usuário tiver autenticado |
-| **Preocupação:** | Para acessar o sistema o usuário deve aceitar os termos e acessar o sistema com uma senha (criptografada)|
+| **Preocupação:** | O usuário só deve acessar o sistema se aceitar os termos e  digitar uma senha (criptografada)|
 | **Cenários(s):** | Cenário 3 |
 | **Ambiente:** | Sistema em operação normal de acesso |
 | **Estímulo:** | Acessar as rotas sem autorização |
@@ -373,8 +364,8 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Cenários(s):** | Cenário 4 |
 | **Ambiente:** | Sistema em operação normal |
 | **Estímulo:** | Ao utilizar a aplicação a percepção do usuário é um sistema funcionando sem interrupções|
-| **Mecanismo:** | O |
-| **Medida de Resposta:** |  |
+| **Mecanismo:** | Solicitação de uma requisição ao servidor |
+| **Medida de Resposta:** | A aplicação deve responder a solicitação do usuário imediatamente |
 
 **Considerações sobre a arquitetura:**
 
@@ -385,13 +376,13 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 | **Atributo de Qualidade:** | Acessibilidade |
 | --- | --- |
-| **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
-| **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
+| **Requisito de Qualidade** | Os ícones e telas da aplicação devem ser intuitivas para usuários considerados leigos|
+| **Preocupação:** | Os usuários precisam navegar em uma plataforma organizada |
 | **Cenários(s):** | Cenário 5 |
-| **Ambiente:** | Sistema em operação normal |
-| **Estímulo:** | Acesso do administrador do sistema as funcionalidades de cadastro de novos produtos e exclusão de produtos. |
-| **Mecanismo:** | O servidor de aplicação (Rails) gera um _token_ de acesso para o usuário que se autentica no sistema. Este _token_ é transferido para a camada de visualização (Angular) após a autenticação e o tratamento visual das funcionalidades podem ser tratados neste nível. |
-| **Medida de Resposta:** | As áreas restritas do sistema devem ser disponibilizadas apenas quando há o acesso de usuários credenciados. |
+| **Ambiente:** | Telas do sistema |
+| **Estímulo:** | Navegação nos principais fluxos do sistema |
+| **Mecanismo:** | Um usuário sem vícios utiliza a aplicação nos seus pricipais fluxos sem auxílio |
+| **Medida de Resposta:** | O usuário deve coseguir ingressar em um passeio e favoritar sem dificuldades |
 
 **Considerações sobre a arquitetura:**
 
@@ -399,6 +390,9 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | --- | --- |
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
+
+![image](https://user-images.githubusercontent.com/110981345/207606978-bbc1f7bc-c6a5-4c65-b718-5f2f844701b0.png)
+![image](https://user-images.githubusercontent.com/110981345/207607129-3c92ee14-e2a4-4970-b3b1-080d101f8798.png)
 
 <a name="apendices"></a>
 # 5. APÊNDICES
