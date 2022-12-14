@@ -167,7 +167,7 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação.Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
 
-![Visão Geral da Solução](imagens/modelo_arquitetura_tis5.png "Visão Geral da Solução")
+![image](https://user-images.githubusercontent.com/110981345/207483124-ea2e7f78-9bf1-4e2c-88de-f25a49ac6a53.png)
 
 **Figura 1 - Visão Geral da Solução**
 
