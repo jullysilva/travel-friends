@@ -64,9 +64,7 @@ Atráves da necessidade constante de pessoas que viajam e buscam se conectar com
 	4.1. Cenários <br />
 	4.2. Avaliação <br />
 
-5. [Referências](#referencias "REFERÊNCIAS")<br />
-
-6. [Apêndices](#apendices "APÊNDICES")<br />
+5. [Apêndices](#apendices "APÊNDICES")<br />
 
 
 <a name="apresentacao"></a>
