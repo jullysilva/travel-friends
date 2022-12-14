@@ -30,8 +30,22 @@ _Curso de Engenharia de Software, Unidade Praça da Liberdade_
 _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Minas Gerais (PUC MINAS), Belo Horizonte – MG – Brasil_
 
 ---
-## 1 Objetivo do projeto 
+## 1. Objetivo do projeto 
 
 No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
 
 Nesse contexto de crescente mercado turistico, os viajantes estão em busca de particidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar passeios turísticos e realizar conexão com pessoas.
+
+**1.1 Objetivos específicos:** 
+
+## 2. Resultados alcançados no projeto 
+
+**2.1 Os objetivos do projeto foram atingidos?** 
+
+**2.2 O projeto foi entregue dentro do prazo?** 
+
+**2.3 O projeto foi entregue dentro do orçamento?** 
+
+**2.4 O projeto atendeu ao cliente, em termos de escopo?**
+
+
