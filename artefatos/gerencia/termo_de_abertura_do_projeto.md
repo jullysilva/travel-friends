@@ -65,9 +65,9 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
-- Criação de roteiros turísticos para os usuários
-- Ambiente de socialização para os usuários compartilharem suas experiências de viagens e passeio
-- Utilização de serviço de geolocalização no aplicativo
+- Criação e exbibição de passeios turísticos para os usuários
+- Ambiente de suporte para os usuários
+- Utilização de serviço de localização no aplicativo
 
 **2.2 O que não será feito no projeto (contra-escopo)**
 - Realização de pagamentos
@@ -80,9 +80,9 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 | Aplicativo Mobile | Sistema Web |
 | --- | --- |
 | Autenticação no sistema | Cadastro e Adesão dos termos de Uso|
-| Exibição de roteiros de viagem | Criação de roteiros turisticos|
-| Exibição de estabecimentos| Cadastro de estabelecimentos|
-| Ambiente de interação dos usuários| Ambiente de interação dos usuários|
+| Exibição de passeios | Criação de passeios turisticos|
+| Exibição de locais| Cadastro de locais|
+| Suporte para os usuários| Suporte para os usuários|
 
 **2.4 Condições para início do projeto**
 - Registro da Declaração de Escopo
