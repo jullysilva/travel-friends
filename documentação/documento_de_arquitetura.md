@@ -312,7 +312,7 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Ambiente:** | Sistemas operacionais Android e IOS|
 | **Estímulo:** | Emulação da aplicação nos ambientes requiridos |
 | **Mecanismo:** | O sistema web e mobile devem ser desenvolvidos em Javascript. E o React Native já dá suporte para plataforma Android e IOS |
-| **Medida de Resposta:** |  |
+| **Medida de Resposta:** | A aplicação mobile será desenvolvida usando React Native, que é uma linguagem multi-plataforma, devendo, assim ser possível utilizar a aplicação em dispositivo IOS e Android  |
 
 **Considerações sobre a arquitetura:**
 
@@ -346,13 +346,13 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 | **Atributo de Qualidade:** | Segurança |
 | --- | --- |
-| **Requisito de Qualidade** | Acesso aos recursos restritos deve ser controlado |
-| **Preocupação:** | Os acessos de usuários devem ser controlados de forma que cada um tenha acesso apenas aos recursos condizentes as suas credenciais. |
+| **Requisito de Qualidade** | Acesso aos recursos deve ser permitido apenas se o usuário tiver autenticado |
+| **Preocupação:** | Para acessar o sistema o usuário deve aceitar os termos e acessar o sistema com uma senha (criptografada)|
 | **Cenários(s):** | Cenário 3 |
-| **Ambiente:** | Sistema em operação normal |
-| **Estímulo:** | Acesso do administrador do sistema as funcionalidades de cadastro de novos produtos e exclusão de produtos. |
-| **Mecanismo:** | O servidor de aplicação (Rails) gera um _token_ de acesso para o usuário que se autentica no sistema. Este _token_ é transferido para a camada de visualização (Angular) após a autenticação e o tratamento visual das funcionalidades podem ser tratados neste nível. |
-| **Medida de Resposta:** | As áreas restritas do sistema devem ser disponibilizadas apenas quando há o acesso de usuários credenciados. |
+| **Ambiente:** | Sistema em operação normal de acesso |
+| **Estímulo:** | Acessar as rotas sem autorização |
+| **Mecanismo:** | Utilização de rotas autenticadas |
+| **Medida de Resposta:** | Possibilidade de acesso as funcionalidades mediante login do usuário, recebendo token e usando como verificador nas rotas privadas|
 
 **Considerações sobre a arquitetura:**
 
@@ -360,6 +360,11 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | --- | --- |
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
+
+![image](https://user-images.githubusercontent.com/110981345/207478340-769b25cc-2d44-413e-a02e-4e7bc1814243.png)
+![image](https://user-images.githubusercontent.com/110981345/207478415-ed3a3593-ac7c-4f91-b96f-0b22256117b1.png)
+![image](https://user-images.githubusercontent.com/110981345/207478536-6edf7430-6cf3-4487-8d70-65aab50f8660.png)
+
 
 | **Atributo de Qualidade:** | Disponibilidade |
 | --- | --- |
