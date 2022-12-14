@@ -18,6 +18,17 @@ Conectando pessoas a lugares e experiências incríveis! Com a Travel Friends vo
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
+## Tecnologias
+
+| Banco de dados não relacional| MongoDB|
+| Frontend Web |React|
+| Frontend Mobile |React Native|
+| Backend | NodeJS e Expression|
+| Teste de Software| Jest|
+| Mensageria| RabbitMQ|
+| Integração| Heroku|
+
+
 ## Histórico de versões
 
 * 0.1.1
