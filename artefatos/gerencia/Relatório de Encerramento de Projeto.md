@@ -40,7 +40,7 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 - Criação e exbibição de passeios turísticos para os usuários
 - Ambiente de suporte para os usuários
-- Utilização de serviço de geolocalização no aplicativo
+- Utilização de serviço de localização no aplicativo
 
 ## 2. RESULTADOS ALCANÇADOS NO PROJETO
 
