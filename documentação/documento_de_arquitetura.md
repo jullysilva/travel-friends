@@ -272,14 +272,6 @@ O diagrama de classes representa a estrutura e relações das classes que modela
 
 Ex: conforme diagrama apresentado na Figura 3, as entidades participantes da solução são:
 
-- **Componente 1** - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc magna, accumsan eget porta a, tincidunt sed mauris. Suspendisse orci nulla, sagittis a lorem laoreet, tincidunt imperdiet ipsum. Morbi malesuada pretium suscipit.
-- **Componente 2** - Praesent nec nisi hendrerit, ullamcorper tortor non, rutrum sem. In non lectus tortor. Nulla vel tincidunt eros.
-
-
-**Figura 4 – Diagrama de Entidade Relacionamento (ER) - exemplo. Fonte: o próprio autor.**
-
-Obs: Acrescente uma breve descrição sobre o diagrama apresentado na Figura 3.
-
 <a name="avaliacao"></a>
 # 4. Avaliação da Arquitetura
 
@@ -383,7 +375,6 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 | **Pontos de Sensibilidade:** | Não existe |
 | _ **Tradeoff** _ **:** | Não existe |
 <br />
-
 
 
 | **Atributo de Qualidade:** | Acessibilidade |
