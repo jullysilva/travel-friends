@@ -33,24 +33,23 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 
 ## Descrição do Escopo
-O projeto Travel Friends será realizado no segundo semestre de 2022 na disciplina Trabalho Interdisciplinar de Software V, com o objetivo de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e conexão com pessoas.
+O projeto Travel Friends será realizado no segundo semestre de 2022 na disciplina Trabalho Interdisciplinar de Software V, com o objetivo de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar passeios turísticos e conexão com pessoas.
 Para implementação serão necessários a alocação de um gerente de projetos, um designer, um arquiteto de softwares e dois desenvolvedores.
 
 
 ## Requisitos (do produto e/ou do projeto) |
 - Autenticação do usuário ( Web e Mobile)
 - Termo de Uso e Aceite
-- Cadastro de roteiros
-- Cadastro de estabelecimentos
-- Exibição de roteiros
-- Exibição de estabelecimentos
-- Implementação de ambiente de interação entre os usuários
+- Cadastro de passeios
+- Cadastro de locais
+- Exibição de passeios
+- Exibição de locais
 - Implementação de um serviço de notificações
 - Implementação de um serviço de geolocalização
 
 ## Entregáveis
-- Criação de roteiros turísticos para os usuários
-- Ambiente de interação para os usuários compartilharem suas experiências de viagens e passeio
+- Criação de passeios turísticos para os usuários
+- Suporte para os usuários da aplicação
 - Utilização de serviço de geolocalização no aplicativo
 
 ## Limites
@@ -66,7 +65,7 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 
 
 ## Premissas
-- Adesão dos usuários interessados em roteiros turísticos.
+- Adesão dos usuários interessados em passeios turísticos.
 - Excelência nos serviços, agregando valor para os usuários
 - Bom desempenho e funcionalidades em acordo com a Lei Geral de Proteção de Dados
 
@@ -76,7 +75,7 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 | --- | --- |
 |Sprint 1  |Planejamento geral do projeto, Definição do projeto.|
 |Sprint 2  |Declaração de Escopo, Registro das Partes Interessadas, Termo de Abertura do Projeto, Estrutura Analítica do projeto, Documento de Arquitetura. |
-|Sprint 3  |Protótipo das Interfaces, Autenticação do Usuário ( Web e Mobile), Termo de Uso e Aceite, Integração com a API do Google Maps, Atas de reunião semanais. |
+|Sprint 3  |Protótipo das Interfaces, Autenticação do Usuário ( Web e Mobile), Termo de Uso e Aceite, Atas de reunião semanais. |
 |Sprint 4  |Atas de reunião semanais, Realese das funcionalidades anteriores, Implementação de ambiente de interação entre os usuários, Aplicação de serviço de Geolocalização.|
-|Sprint 5  |Atas de reunião semanais, Realese das funcionalidades anteriores, Cadastro de roteiros, Cadastro de estabelecimentos, Exibição de roteiros, Exibição de estabelecimentos.|
+|Sprint 5  |Atas de reunião semanais, Realese das funcionalidades anteriores, Cadastro de passeios, Cadastro de locais, Exibição de passeios, Exibição de locais, Suporte para o cliente, Favoritar passeios.|
 |Sprint 6  |Atas de reunião semanais, Realese das funcionalidades, Avaliação da Arquitetura, Relatório de Encerramento do Projeto, Vídeo de apresentação do projeto, Autoavaliação e avaliação por pares, Feedback da Autoavaliação e Avaliação por pares.|

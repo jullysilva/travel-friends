@@ -6,15 +6,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn`
+
+### `yarn dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+![image](https://user-images.githubusercontent.com/42702863/207668069-5be65427-a646-485b-b7ce-c1ef2c5f3284.png)
+
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `npm test`
+
+![WhatsApp Image 2022-12-08 at 23 01 41](https://user-images.githubusercontent.com/42702863/207667935-59e755b6-9ff7-41f6-b8ea-66b9a7e12ef8.jpeg)
+
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
