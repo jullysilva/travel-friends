@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -20,6 +16,9 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `yarn test`
+
+![WhatsApp Image 2022-12-08 at 23 01 41](https://user-images.githubusercontent.com/42702863/207667935-59e755b6-9ff7-41f6-b8ea-66b9a7e12ef8.jpeg)
+
 
 ![WhatsApp Image 2022-12-08 at 23 01 41](https://user-images.githubusercontent.com/42702863/207667935-59e755b6-9ff7-41f6-b8ea-66b9a7e12ef8.jpeg)
 
@@ -52,4 +51,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-

@@ -32,9 +32,11 @@ export default function AppTabsRoutes() {
           let iconName;
           if (route.name === "HomeScreens") {
             iconName = focused ? "home" : "home";
-          } else if (route.name === "ListScreens") {
-            iconName = focused ? "book" : "book";
-          } else if (route.name === "MapsScreens") {
+          }
+          // else if (route.name === "ListScreens") {
+          //   iconName = focused ? "book" : "book";
+          // }
+          else if (route.name === "MapsScreens") {
             iconName = focused ? "map" : "map-o";
           }
           if (route.name === "FavoriteScreens") {
@@ -57,7 +59,7 @@ export default function AppTabsRoutes() {
           }
         }
       />
-      <Screen name="ListScreens" component={ListRoutes} />
+      {/* <Screen name="ListScreens" component={ListRoutes} /> */}
       <Screen name="MapsScreens" component={MapsRoutes} />
       <Screen name="FavoriteScreens" component={FavoriteRoutes} />
       <Screen name="ProfileScreens" component={ProfileRoutes} />
