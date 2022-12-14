@@ -20,13 +20,13 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 ## Tecnologias
 
-| Banco de dados não relacional| MongoDB|
-| Frontend Web |React|
-| Frontend Mobile |React Native|
-| Backend | NodeJS e Expression|
-| Teste de Software| Jest|
-| Mensageria| RabbitMQ|
-| Integração| Heroku|
+- Banco de dados não relacional: MongoDB
+- Frontend Web: React
+- Frontend Mobile: React Native
+- Backend: NodeJS e Expression
+- Teste de Software: Jest
+- Mensageria: RabbitMQ
+- Integração: Heroku
 
 
 ## Histórico de versões
