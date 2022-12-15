@@ -17,8 +17,6 @@ Conectando pessoas a lugares e experiências incríveis! Com a Travel Friends vo
 
 ## Utilização
 
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `yarn`
