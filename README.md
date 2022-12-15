@@ -14,9 +14,6 @@ Conectando pessoas a lugares e experiências incríveis! Com a Travel Friends vo
 * Cleiton Silva Tavares
 * Jose Laerte Pires Xavier Junior
 
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
 ## Tecnologias
 
