@@ -36,35 +36,35 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 
 
 ## Requisitos (do produto e/ou do projeto) |
-- Autenticação do usuário ( Web e Mobile)
-- Termo de Uso e Aceite
-- Cadastro de passeios
-- Cadastro de locais
-- Exibição de passeios
-- Exibição de locais
-- Implementação de um serviço de notificações
-- Implementação de um serviço de geolocalização
+- Autenticação do usuário ( Web e Mobile);
+- Termo de Uso e Aceite;
+- Cadastro de passeios;
+- Cadastro de locais;
+- Exibição de passeios;
+- Exibição de locais;
+- Implementação de um serviço de notificações;
+- Implementação de um serviço de geolocalização.
 
 ## Entregáveis
-- Criação de passeios turísticos para os usuários
-- Suporte para os usuários da aplicação
-- Utilização de serviço de geolocalização no aplicativo
+- Criação de passeios turísticos para os usuários;
+- Suporte para os usuários da aplicação;
+- Utilização de serviço de geolocalização no aplicativo.
 
 ## Limites
-- Realização de pagamentos.
-- Parceria com empresas de turismos.
-- Fornecimento de transportes para os usuários.
+- Realização de pagamentos;
+- Parceria com empresas de turismos;
+- Fornecimento de transportes para os usuários;
 - Parceria com estabelecimentos de hotelaria.
 
 ## Restrições
-- Curto prazo para o desenvolvimento nos impossibilita de aprofundar os requisitos a longo prazo.
-- Orçamento limitado.
+- Curto prazo para o desenvolvimento nos impossibilita de aprofundar os requisitos a longo prazo;
+- Orçamento limitado;
 - Recurso limitado de pessoas.
 
 
 ## Premissas
-- Adesão dos usuários interessados em passeios turísticos.
-- Excelência nos serviços, agregando valor para os usuários.
+- Adesão dos usuários interessados em passeios turísticos;
+- Excelência nos serviços, agregando valor para os usuários;
 - Bom desempenho e funcionalidades em acordo com a Lei Geral de Proteção de Dados.
 
 ## Marcos agendados
