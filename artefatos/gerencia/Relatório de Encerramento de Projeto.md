@@ -7,6 +7,7 @@
 **Data:** 14/12/2022
 
 **Integrantes:**
+
 Ian Asenjo Dominguez Cunha, iadcunha@sga.pucminas.br
 
 Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
