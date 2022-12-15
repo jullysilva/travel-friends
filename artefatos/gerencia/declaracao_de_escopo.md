@@ -51,10 +51,10 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 - Utilização de serviço de geolocalização no aplicativo
 
 ## Limites
-- Realização de pagamentos
-- Parceria com empresas de turismos
-- Fornecimento de transpotres para os usuários
-- Parceria com estabelecimentos de hotelaria
+- Realização de pagamentos.
+- Parceria com empresas de turismos.
+- Fornecimento de transportes para os usuários.
+- Parceria com estabelecimentos de hotelaria.
 
 ## Restrições
 - Curto prazo para o desenvolvimento nos impossibilita de aprofundar os requisitos a longo prazo.
@@ -64,8 +64,8 @@ Para implementação serão necessários a alocação de um gerente de projetos,
 
 ## Premissas
 - Adesão dos usuários interessados em passeios turísticos.
-- Excelência nos serviços, agregando valor para os usuários
-- Bom desempenho e funcionalidades em acordo com a Lei Geral de Proteção de Dados
+- Excelência nos serviços, agregando valor para os usuários.
+- Bom desempenho e funcionalidades em acordo com a Lei Geral de Proteção de Dados.
 
 ## Marcos agendados
 
