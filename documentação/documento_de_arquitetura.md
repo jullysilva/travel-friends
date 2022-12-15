@@ -30,7 +30,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **Resumo**
 
-A necessidade constante de pessoas que viajam e buscam se conectar com o lugar, adquirir novas experiências e estabelecer novos contatos, contribuiu com o desenvolvimento de uma aplicação utilitária a viajantes que abrange funcionalidades voltadas para suprir as demandas desse público.
+_A necessidade constante de pessoas que viajam e buscam se conectar com o lugar, adquirir novas experiências e estabelecer novos contatos, contribuiu com o desenvolvimento de uma aplicação utilitária a viajantes que abrange funcionalidades voltadas para suprir as demandas desse público._
 
 ## Histórico de Revisões
 
@@ -85,17 +85,17 @@ No caso dos turistas, a maioria não possui conhecimento de eventos ocorridos na
 O objetivo geral do trabalho é apresentar uma aplicação que possa fomentar as atividades turísticas em diferentes localidades e conectar pessoas interessadas em trocar experiências. Para isso, os usuários vão poder criar encontros em pontos selecionados e disponibilizar para outras pessoas. 
 
 ## 1.3. Definições e Abreviaturas
-*MVC* (Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas
+*MVC* (Model-View-Controlle): Padrão de projeto de software que visa a separação de responsabilidades entre camadas.
 
 *API* (Application Programming Interface): Conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas por meio de comunicações.
 
-*IOS*:  Sistema operacional móvel da Apple Inc
+*IOS*:  Sistema operacional móvel da Apple Inc.
 
-*ReactJS*: Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web
+*ReactJS*: Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
 
-*RF*: Requisito funcional
+*RF*: Requisito funcional.
 
-*RFN*: Requisito não funcional
+*RFN*: Requisito não funcional.
 
 ## 1.4. Protótipo
 https://www.figma.com/file/2X6TUKJbtMx8gNObhrUZUs/Travel-Friends?node-id=0%3A1
@@ -170,7 +170,7 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 <a name="modelagem"></a>
 # 3. Modelagem e projeto arquitetural
 
-Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model,socilitando de forma não direta ações na view ou seja o front-end da aplicação. Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
+Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model, socilitando de forma não direta ações na view ou seja o front-end da aplicação. Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
 
 **Figura 1 - Visão Geral da Solução**
 ![image](https://user-images.githubusercontent.com/110981345/207483124-ea2e7f78-9bf1-4e2c-88de-f25a49ac6a53.png)
@@ -259,10 +259,7 @@ Exemplos de Histórias de Usuário:
 
 **Figura 2 – Diagrama de classes**
 
-O diagrama de classes representa a estrutura e relações das classes que modelam um objeto. Na imagem abaixo temos representada as seguintes classes da aplicação: local, user e roadmap.
-
 ![image](https://user-images.githubusercontent.com/110981345/207605881-c215b224-3dbf-4ab2-a79f-6c8c2c64263d.png)
-
 
 ### Diagrama de componentes
 
