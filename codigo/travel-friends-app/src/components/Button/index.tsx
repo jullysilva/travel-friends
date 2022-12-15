@@ -7,6 +7,7 @@ type ButtonProps = TouchableOpacityProps & {
   title: string;
   size?: "small" | "large";
   transparent?: boolean;
+
   onPress(): void;
 };
 

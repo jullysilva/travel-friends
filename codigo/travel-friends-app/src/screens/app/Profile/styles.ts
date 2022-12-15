@@ -2,52 +2,55 @@ import { StyleSheet, Dimensions } from "react-native";
 
 import theme from "../../../utils/theme";
 const { height, width } = Dimensions.get("window");
-export const style = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "flex-end",
+
     alignItems: "center",
     backgroundColor: theme.colors.shape,
   },
-  logo: {
-    flex: 1,
+  headerProfile: {
+    justifyContent: "space-around",
+    alignItems: "center",
+
+    paddingVertical: 10,
+    height: "40%",
     width: width,
+    borderBottomRightRadius: 8,
+    borderBottomLeftRadius: 8,
+    borderTopRightRadius: 0,
+    borderTopLeftRadius: 0,
+  },
+  nickName: {
+    alignItems: "center",
     justifyContent: "center",
+    paddingTop: 6,
+    borderRadius: 100,
+    backgroundColor: theme.colors.primary,
+    height: 100,
+    width: 100,
+  },
+  underlineProfile: {
     alignItems: "center",
-    padding: 30,
-  },
-  content: {
-    padding: 30,
-    alignItems: "center",
-    backgroundColor: theme.colors.secundary,
-    width: width,
-    height: "50%",
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-  },
-  title: {
-    color: theme.colors.shape,
-    fontWeight: "600",
-    fontSize: 24,
-  },
-  text: {
-    paddingTop: 20,
-    fontSize: 14,
-    textAlign: "justify",
-    color: theme.colors.shape,
-  },
-  button: {
-    borderRadius: 6,
-    backgroundColor: theme.colors.yellow,
+    borderBottomWidth: 0.5,
     width: "80%",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 100,
   },
-  buttonTitle: {
-    color: theme.colors.title,
-    padding: 16,
-    fontWeight: "600",
-    fontSize: 20,
+  underlineButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    marginTop: 30,
+
+    width: "100%",
+  },
+  bodyProfile: {
+    alignItems: "center",
+    height: "50%",
+  },
+  menuProfile: {
+    height: "100%",
+    width: width * 0.8,
+    paddingTop: 20,
+    marginHorizontal: 20,
   },
 });
