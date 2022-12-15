@@ -11,8 +11,6 @@ Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
 
 Laura Lourdes Coutinho Rodrigues, laura.rodrigues.1199007@sga.pucminas.br
 
-Lorrayne Reis Silva, lorrayne.silva.1220819@sga.pucminas.br
-
 Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br
 
 
@@ -40,7 +38,6 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 | Ian Asenjo Dominguez Cunha | Desenvolvedor| Desenvolvimento do back-end da aplicação | iadcunha@sga.pucminas.br | 995153805 |
 | Jully Ketely Alves da Silva | DevOps | Acompanhamento das ferramentas de versionamento e apoio ao desenvolvimento | jkasilva@sga.pucminas.br | 996866196|
 | Laura Lourdes Coutinho Rodrigues |Scrum Master| Gerenciamneto da equipe, documentações e apoio ao desenvolvimento|laura.rodrigues.1199007@sga.pucminas.br|995062899 |
-| Lorrayne Reis Silva | Desenvolvedor | Desenvolvimento front-end da aplicação | lorrayne.silva.1220819@sga.pucminas.br | 975209457 |
 | Warley Leandro dos Anjos | Arquiteto de Software e Dev Mobile | Organização do projeto e apoio ao desenvolvimento mobile | warley.anjos@sga.pucminas.br | 988540359 |
 
 ## Avaliação
@@ -51,5 +48,4 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 | Jully Ketely Alves da Silva | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Alta | Alta | Apoiador |
 | Ian Asenjo Dominguez Cunha | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Média | Média | Apoiador |
 | Warley Leandro dos Anjos | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Alta | Alta | Apoiador |
-| Lorrayne Reis Silva | Software implementado como um aplicativo móvel com arquitetura distribuída e funcionalidades de tempo real | Média | Média | Apoiador |
 | Laura Lourdes Coutinho Rodrigues | Artefatos de gerenciamento de projeto e Software implantando nos computadores do estabelecimento com os requisitos solicitados implementados | Alta | Alta | Apoiador |
