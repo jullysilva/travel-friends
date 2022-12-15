@@ -11,8 +11,6 @@ Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
 
 Laura Lourdes Coutinho Rodrigues, laura.rodrigues.1199007@sga.pucminas.br
 
-Lorrayne Reis Silva, lorrayne.silva.1220819@sga.pucminas.br
-
 Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br
 
 ---
@@ -49,31 +47,31 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **1.5 Objetivo do projeto:** 
 
-No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
+No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagens em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiências de amigos e conhecidos, tanto nacional quanto internacinal.
 
-Nesse contexto de crescente mercado turistico, os viajantes estão em busca de particidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
+Nesse contexto de crescente mercado turístico, os viajantes estão em busca de praticidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e Web capaz de fornecer aos seus usuários uma experiência única ao utilizar roteiros turísticos e realizar conexão com pessoas.
 
 **1.6 Benefícios que justificam o projeto:**
-- Mercado de turismo crescente
-- Facilitar a experiência de viagens, beneficiando os usários com praticidade
+- Mercado de turismo crescente;
+- Facilitar a experiência de viagens, beneficiando os usários com praticidade.
 
 **1.7 Qualidade esperada do produto final (requisitos de qualidade):**
-- Bom desempenho
-- Excelência nos serviços, agregando valor para os usuários
-- Funcionalidades em acordo com a Lei Geral de Proteção de Dados
+- Bom desempenho;
+- Excelência nos serviços, agregando valor para os usuários;
+- Funcionalidades em acordo com a Lei Geral de Proteção de Dados.
 
 ## **2. ESCOPO PRELIMINAR E PREMISSAS** |
 
 **2.1 O que será feito (escopo do projeto)**
-- Criação e exbibição de passeios turísticos para os usuários
-- Ambiente de suporte para os usuários
-- Utilização de serviço de localização no aplicativo
+- Criação e exbibição de passeios turísticos para os usuários;
+- Ambiente de suporte para os usuários;
+- Utilização de serviço de localização no aplicativo.
 
 **2.2 O que não será feito no projeto (contra-escopo)**
-- Realização de pagamentos
-- Parceria com empresas de turismos
-- Fornecimento de transpotres para os usuários 
-- Parceria com estabelecimentos de hotelaria
+- Realização de pagamentos;
+- Parceria com empresas de turismos;
+- Fornecimento de transpotres para os usuários; 
+- Parceria com estabelecimentos de hotelaria.
 
 **2.3 Resultados / serviços / produtos a serem entregues**
 
@@ -85,10 +83,10 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 | Suporte para os usuários| Suporte para os usuários|
 
 **2.4 Condições para início do projeto**
-- Registro da Declaração de Escopo
-- Registro Estrutura analítica do projeto
-- Especificação dos requisitos
-- Distribuição das tarefa conforme cronograma
+- Registro da Declaração de Escopo;
+- Registro Estrutura analítica do projeto;
+- Especificação dos requisitos;
+- Distribuição das tarefa conforme cronograma;
 
 ## 3. ESTIMATIVA DE PRAZO
 
@@ -118,7 +116,6 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 | Ian Asenjo Dominguez Cunha | Desenvolvedor | Ian Cunha    |
 | Jully Ketely Alves da Silva | DevOps | Jully Ketely    | 
 | Laura Lourdes Coutinho Rodrigues | Scrum Master | Laura Lourdes   |
-| Lorrayne Reis Silva | Desenvolvedor | Lorrayne Reis    |
 | Warley Leandro dos Anjos | Arquiteto de Software | Warley Leandro  |
 
 **Observações:**
