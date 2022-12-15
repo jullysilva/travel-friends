@@ -1,7 +1,7 @@
 # Declaração de Escopo - Travel Friends
 
 
-**Gerentes de Projeto:** Laura Lourdes Coutinho Rodrigues
+**Gerente de Projeto:** Laura Lourdes Coutinho Rodrigues
 
 **Membros:**
 
