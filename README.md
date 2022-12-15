@@ -19,8 +19,6 @@ Conectando pessoas a lugares e experiências incríveis! Com a Travel Friends vo
 
 In the project directory, you can run:
 
-### `yarn`
-
 ### `yarn dev`
 
 Runs the app in the development mode.\
