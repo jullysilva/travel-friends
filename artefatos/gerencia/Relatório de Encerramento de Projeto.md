@@ -2,6 +2,8 @@
 
 **Nome da empresa:** Travel Friends
 
+**Gerente de projeto:** Laura Lourdes coutinho Rodrigues
+
 **Data:** 14/12/2022
 
 **Integrantes:**
@@ -10,8 +12,6 @@ Ian Asenjo Dominguez Cunha, iadcunha@sga.pucminas.br
 Jully Ketely Alves da Silva, jkasilva@sga.pucminas.br
 
 Laura Lourdes Coutinho Rodrigues, laura.rodrigues.1199007@sga.pucminas.br
-
-Lorrayne Reis Silva, lorrayne.silva.1220819@sga.pucminas.br
 
 Warley Leandro dos Anjos, warley.anjos@sga.pucminas.br
 
@@ -46,11 +46,11 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 **2.1 Os objetivos do projeto foram atingidos?** 
 
- Os objetivos levantados no planejamento do projeto foram atingidos.
+ Os objetivos levantados no planejamento do projeto foram atingidos, mas tivemos alguns fatores referentes a implementação da mensageria.
 
 **2.2 O projeto foi entregue dentro do prazo?** 
 
- O projeto foi entregue dentro do prazo estimado e registado anteriormente.
+ A equipe soube gerenciar e estimar o esforço das tarefas, por isso o projeto foi entregue dentro do prazo estimado e registado anteriormente.
 
 **2.3 O projeto foi entregue dentro do orçamento?** 
 
@@ -64,22 +64,23 @@ Nesse contexto de crescente mercado turistico, os viajantes estão em busca de p
 
 **3.1 Pontos Fortes:**
 - Domínio das tecnologias
-- Equipe comunicativa
+- Equipe comunicativa e determinada
+- Apoio dos orientadores
 
 **3.2 Pontos Fracos:**
 - Desenvolvimento da aplicação em duas modalidades: web e mobile
 - Curto prazo de desenvenvolvimento 
-- Equipe atuou com um membro a menos
+- Equipe teve um desfalque no decorrer do projeto
 
 ## 4. LIÇÕES APRENDIDAS
  
   - A comunicação da equipe foi um ponto crucial para a finalização do projeto
-  - Ao longo do projeto é necessário adaptar, e nesse caso planejamento é fundamental.
+  - Ao longo do projeto é necessário reavaliar o esforço por conta de fatores externos
+  - Organização de código é fundamental e poupa tempo
 
 ## 5. QUESTÕES EM ABERTO
 
- As funcionalidades do projeto foram entregues e a equipe está com um membro a menos que no começo do projeto.
-
+Por uma questõ de priorização a funcionalidade de Agenda não foi implementada, e ao longo do projeto alguns requisitos foram adaptados. Além disso, a equipe ficou com  um membro a menos ao longo do projeto, sendo necessária uma reavaliação do esforço e das estimativas.
 ## 6. APROVAÇÕES
 
 | Partcipipante | Papel no projeto | Assinatura |
