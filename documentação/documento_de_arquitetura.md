@@ -30,7 +30,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **Resumo**
 
-Atráves da necessidade constante de pessoas que viajam e buscam se conectar com o lugar que visam se estabelecer, seja de forma comunicacional ou no entendimento de informações importantes a respeito de uma localidade. O objetivo deste presente trabalho visa o desenvolvimento de uma aplicação utilitária a viajantes no que tange a criação de passeios que podem ser comportilhados concomitantemente a criação de eventos e troca de informações atráves de uma comunidade.
+A necessidade constante de pessoas que viajam e buscam se conectar com o lugar, adquirir novas experiências e estabelecer novos contatos, contribuiu com o desenvolvimento de uma aplicação utilitária a viajantes que abrange funcionalidades voltadas para suprir as demandas desse público.
 
 ## Histórico de Revisões
 
