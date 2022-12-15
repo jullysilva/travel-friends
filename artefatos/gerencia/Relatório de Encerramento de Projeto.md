@@ -2,7 +2,7 @@
 
 **Nome da empresa:** Travel Friends
 
-**Gerente de projeto:** Laura Lourdes coutinho Rodrigues
+**Gerente de projeto:** Laura Lourdes Coutinho Rodrigues
 
 **Data:** 14/12/2022
 
