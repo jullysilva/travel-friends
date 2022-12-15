@@ -33,9 +33,9 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 ---
 ## 1. OBJETIVO DO PROJETO
 
-No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagnes em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiencias de amigos e conhecidos, tanto nacional quanto internacinal.
+No atual cenário de pós pandemia, pesquisas recentes apontaram que as pessoas estão planejando viagens em curto prazo. Entre os destinos que se destacam são aqueles indicados por experiências de amigos e conhecidos, tanto nacional quanto internacinal.
 
-Nesse contexto de crescente mercado turistico, os viajantes estão em busca de particidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e web capaz de fornecer aos seus usuários uma experiência única ao utilizar passeios turísticos e realizar conexão com pessoas.
+Nesse contexto de crescente mercado turístico, os viajantes estão em busca de praticidade e conforto, focando nisso o objetivo do projeto Travel Friends é de desenvolver uma aplicação móvel e Web capaz de fornecer aos seus usuários uma experiência única ao utilizar passeios turísticos e realizar conexão com pessoas.
 
 **1.1 Objetivos específicos:** 
 
