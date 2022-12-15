@@ -39,9 +39,9 @@ Nesse contexto de crescente mercado turístico, os viajantes estão em busca de 
 
 **1.1 Objetivos específicos:** 
 
-- Criação e exbibição de passeios turísticos para os usuários
-- Ambiente de suporte para os usuários
-- Utilização de serviço de localização no aplicativo
+- Criação e exbibição de passeios turísticos para os usuários;
+- Ambiente de suporte para os usuários;
+- Utilização de serviço de localização no aplicativo.
 
 ## 2. RESULTADOS ALCANÇADOS NO PROJETO
 
@@ -64,20 +64,20 @@ Nesse contexto de crescente mercado turístico, os viajantes estão em busca de 
 ## 3. PONTOS FORTES E PONTOS FRACOS
 
 **3.1 Pontos Fortes:**
-- Domínio das tecnologias
-- Equipe comunicativa e determinada
-- Apoio dos orientadores
+- Domínio das tecnologias;
+- Equipe comunicativa e determinada;
+- Apoio dos orientadores.
 
 **3.2 Pontos Fracos:**
-- Desenvolvimento da aplicação em duas modalidades: web e mobile
-- Curto prazo de desenvenvolvimento 
-- Equipe teve um desfalque no decorrer do projeto
+- Desenvolvimento da aplicação em duas modalidades: web e mobile;
+- Curto prazo de desenvenvolvimento;
+- Equipe teve um desfalque no decorrer do projeto.
 
 ## 4. LIÇÕES APRENDIDAS
  
-  - A comunicação da equipe foi um ponto crucial para a finalização do projeto
-  - Ao longo do projeto é necessário reavaliar o esforço por conta de fatores externos
-  - Organização de código é fundamental e poupa tempo
+  - A comunicação da equipe foi um ponto crucial para a finalização do projeto;
+  - Ao longo do projeto é necessário reavaliar o esforço por conta de fatores externos;
+  - Organização de código é fundamental e poupa tempo.
 
 ## 5. QUESTÕES EM ABERTO
 
