@@ -8,12 +8,12 @@ authors:
     given-names: Jully
   - family-names: Lourdes Coutinho Rodrigues
     given-names: Laura
-    - family-names: Leandro dos Anjos
+  - family-names: Leandro dos Anjos
     given-names: Warley
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: Laerte Pires Xavier Junior
-    given-names: Jose
+    family-names: Pires Xavier Júnior
+    given-names: José Laerte
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Silva Tavares
@@ -21,7 +21,7 @@ authors:
 keywords:
   - Turísticos
   - Conexões
-repository-code: 
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti5-5104100-travel-friends
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2022-12-14
