@@ -4,10 +4,11 @@ orbs:
 
 jobs:
   build_and_test:
-    working_directory: ~/travel-friends-web
+    working_directory: ~/travel-friends/travel-friends-web
     executor: node/default
     steps:
-      - checkout
+      - checkout:
+          path: ~/travel-friends
       - node/install-packages:
           pkg-manager: npm
       - run:
