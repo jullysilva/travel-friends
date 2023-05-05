@@ -1,5 +1,5 @@
 # Use the official Node.js runtime as the parent image
-FROM node:14.16.1-alpine3.13 as build
+FROM node:latest AS build
 
 # Set the working directory to /app
 WORKDIR /app
@@ -11,13 +11,13 @@ COPY package*.json ./
 RUN npm install --force
 
 # Copy the rest of the application code to the container
-COPY . .
+COPY . /app
 
 # Build the application
 RUN npm run build
 
 # Use an nginx image as the final image
-FROM nginx:1.21.0-alpine
+FROM nginx:latest
 
 # Copy the build directory from the previous stage to the nginx image
 COPY --from=build /app/build /usr/share/nginx/html
