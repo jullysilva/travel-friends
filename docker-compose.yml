@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  frontend:
+    image: web
+    build:
+      context: travel-friends-web
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+
+  backend:
+    image: api
+    build:
+      context: server
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
