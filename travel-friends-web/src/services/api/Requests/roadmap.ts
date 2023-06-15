@@ -1,28 +1,33 @@
-import api from "..";
-import { IResponse } from "../../../@types/models.interface";
+import api from '..';
+import { IResponse } from '../../../@types/models.interface';
 
-export const getAllRoadmap = async() => {
+export const getAllRoadmap = async () => {
   try {
-    const response = await api.get("/roadmap");
+    const response = await api.get('/roadmap');
 
     return response.data;
   } catch (error) {
-    console.log("---> Roteiro error: ");
+    console.log('---> Roteiro error: ');
   }
 };
 
 export const createRoadmap = async (data: any) => {
-
-  const response = await api.post("/roadmap", data);
+  const response = await api.post('/roadmap', data);
   const res = {
     data: response.data,
-    status: response.status
-  }
+    status: response.status,
+  };
   return res;
 };
 
 export const deleteRoadmap = async (id: string) => {
   const url = `/roadmap/${id}`;
   const response = await api.delete<IResponse>(url);
+  return response;
+};
+
+export const commentRoadMap = async (id: string, data: any): Promise<IResponse> => {
+  const url = `/roadmap/${id}/comment`;
+  const response: IResponse = await api.post<IResponse>(url, data);
   return response;
 };
