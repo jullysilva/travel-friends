@@ -1,20 +1,20 @@
-# Use the official Node.js runtime as the parent image
+# Use uma imagem base com o Node.js instalado
 FROM node:latest
 
-# Set the working directory to /app
+# Defina o diretório de trabalho dentro do contêiner
 WORKDIR /app
 
-# Copy the package.json and package-lock.json to the container
+# Copie o arquivo package.json e o arquivo package-lock.json (se existir)
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install --force
+# Execute o comando npm install para instalar as dependências da aplicação
+RUN npm install
 
-# Copy the rest of the application code to the container
-COPY . /app
+# Copie todo o código fonte da aplicação para o diretório de trabalho
+COPY . .
 
-# Expose port 3000 to the outside world
+# Defina a porta em que a aplicação irá escutar
 EXPOSE 3000
 
-# Start nginx when the container starts
-CMD ["npm", "start"]
+# Comando para iniciar a aplicação quando o contêiner for iniciado
+CMD ["npm", "dev"]
