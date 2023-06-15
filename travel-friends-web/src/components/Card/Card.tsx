@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Row, Col, Card, Container, Button, Modal, Form } from 'react-bootstrap';
 import BannerDefault from '../../assets/icons/banner-default.svg';
+import museu from '../../assets/images/museu.jpg';
+import shopping from '../../assets/images/shopping.jpg';
+import escola from '../../assets/images/escola.jpg';
+
 import { Divider } from '../Divider/Divider.styled';
 import { Comment, RoadMap } from '../../@types/models.interface';
 import { RiDeleteBin6Line } from '@react-icons/all-files/ri/RiDeleteBin6Line';
@@ -36,6 +40,7 @@ const CardBox: React.FC<Props> = ({ bg, color, children, data, divider, onClick 
   const onClickComment = (roadmap: any) => {
     setSelectedRoadmap(roadmap);
     setShowModal(true);
+    console.log(roadmaps);
   };
 
   const onSubmitComment = async () => {
@@ -78,7 +83,9 @@ const CardBox: React.FC<Props> = ({ bg, color, children, data, divider, onClick 
                   size={20}
                 />
               </Container>
-              <Card.Img className="p-5" variant="top" src={BannerDefault} />
+              {item.type === "museu" && <Card.Img className="p-5" variant="top" src={museu} style={{ height: "-webkit-fill-available" }} />}
+              {item.type === "shopping" && <Card.Img className="p-5" variant="top" src={shopping} />}
+              {item.type === "educacao" && <Card.Img className="p-5" variant="top" src={escola} />}
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 {item.isFree ? (
