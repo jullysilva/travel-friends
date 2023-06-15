@@ -3,7 +3,6 @@ import LogoTipo from '../../assets/icons/logo-web.png';
 import User from '../../assets/icons/user-icon.svg';
 import { userHook } from '../../context/userData';
 import { useNavigate } from 'react-router-dom';
-import Chat from '../Chat/client';
 import React from 'react';
 
 const Navigation = ({ children }: any) => {
@@ -78,7 +77,6 @@ const Navigation = ({ children }: any) => {
               {children}
           </Col>
         </Row>
-        <Chat />
       </Container>
     );
 };
