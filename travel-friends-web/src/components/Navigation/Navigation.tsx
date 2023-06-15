@@ -71,8 +71,9 @@ const Navigation = ({ children }: any) => {
                   </Dropdown>
                 </Nav>
                 <Nav>
-                  <Nav.Link>{userData.name}</Nav.Link>
-                  <Nav.Link>
+                  
+                  <Nav.Link onClick={() => handleNavegate('/perfil')}>
+                  {userData.name}
                     <img src={User} className="d-inline-block align-top" alt="Logo usuário" />
                   </Nav.Link>
                 </Nav>

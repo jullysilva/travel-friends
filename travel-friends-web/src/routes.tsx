@@ -10,6 +10,7 @@ import Place from './pages/Place';
 import FormPlace from './pages/Place/Form/FormPlace';
 import FormRoadmap from './pages/Roadmap/Form/FormRoadmap';
 import EditPlace from './pages/Place/Form/EditPlace';
+import Profile from './pages/Profile';
 
 function AppRoutes() {
   return (
@@ -71,6 +72,14 @@ function AppRoutes() {
           element={
             <PrivateRoute>
               <Roadmap />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/perfil"
+          element={
+            <PrivateRoute>
+              <Profile />
             </PrivateRoute>
           }
         />
