@@ -22,10 +22,10 @@ jobs:
       - checkout:
           path: ~/travel-friends
       - run:
-            command: npm install
+            command: yarn install 
             name: Install dependencies
       - run:
-            command: npm run build
+            command: yarn build
             name: Build application
       - run:
             command: render deploy
