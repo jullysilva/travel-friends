@@ -2,6 +2,10 @@
 
 ## Como utilizar o Web
 
+- Baixe ou clone o projeto
+- Em src/ rode o comando ```npm i``` para instalar as dependências(Tenha certeza de ter o Node instalado em sua máquina).
+- Para iniciar a aplicação, rode o comando ```npm run dev```, dessa forma a aplicação já estará disponível na porta http://localhost:3000.
+
 ## Como utilizar o Mobile
 
 - Baixe ou clone o projeto
@@ -13,7 +17,14 @@
 
 - Baixe ou clone o projeto
 - Em codigo/server rode o comando ```npm i``` para instalar as dependências(Tenha certeza de ter o Node instalado em sua máquina).
-- Para iniciar o servidor, rode o comando ```npm start```, dessa forma o servidor já estará disponível.
+- Para iniciar o servidor, rode o comando ```npm start```, dessa forma o servidor já estará disponível na porta http://localhost:8000.
+
+## Como rodar a aplicação usando Docker
+
+- Baixe ou clone o projeto
+- Na raiz do projeto, rode o comando ```docker-compose up --build -d```, dessa forma o projeto já estará disponível.
+- Front-End: http://localhost:3000
+- Back-End API: http://localhost:8000
 
 # TRAVEL FRIENDS
 
@@ -54,20 +65,18 @@ _A necessidade constante de pessoas que viajam e buscam se conectar com o lugar,
 	1.1. Problema <br />
 	1.2. Objetivos do trabalho <br />
 	1.3. Definições e Abreviaturas <br />
+	1.4. Protótipo<br />
 
 2. [Requisitos](#requisitos "Requisitos") <br />
 	2.1. Requisitos Funcionais <br />
-	2.2. Requisitos Não-Funcionais <br />
-	2.3. Restrições Arquiteturais <br />
-	2.4. Mecanismos Arquiteturais <br />
+	2.2. Restrições Arquiteturais <br />
+	2.3. Mecanismos Arquiteturais <br />
 
 3. [Modelagem](#modelagem "Modelagem e projeto arquitetural") <br />
 	3.1. Visão de Negócio <br />
-	3.2. Visão Lógica <br />
 
 4. [Avaliação](#avaliacao "Avaliação da Arquitetura") <br />
 	4.1. Cenários <br />
-	4.2. Avaliação <br />
 
 <a name="apresentacao"></a>
 # 1. Apresentação
@@ -132,7 +141,7 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 | RF019 | Após acessar a plataforma Web o usuário deve ser capaz de visualizar seus passeios ingressados em uma agenda | Desejável
 
 
-## 2.3. Restrições Arquiteturais
+## 2.2. Restrições Arquiteturais
 
 - O frontend da aplicação deve ser desenvolvido em ReactJS, React Native e TypeScript;
 - A versão web da aplicação deve operar corretamente nos seguintes navegadores: Google Chrome, Edge e Firefox;
@@ -141,7 +150,7 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 - O serviço de autenticação de usuários será fornecido por uma API externa.
 - O serviço de localização no mobile e web serão fornecidos pelas API´s Google Maps e Correios respectivamente.
 
-## 2.4. Mecanismos Arquiteturais
+## 2.3. Mecanismos Arquiteturais
 
 | **Análise** | **Design** | **Implementação** |
 | --- | --- | --- |
@@ -149,10 +158,9 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 | Persistência Mobile | Banco de dados não relacional| MongoDB|
 | Interface Web| Frontend Web |React|
 | Interface Mobile| Frontend Mobile |React Native|
-| Regra de Negócio| Backend | NodeJS e Expression|
+| Regra de Negócio| Backend | NodeJS e Express|
 | Teste de Software | Framework | Jest|
-| Comunicação| Mensageria | RabbitMQ|
-| Integração| Rest | Heroku|
+| Publicação | Rest | Render |
 
 <a name="modelagem"></a>
 # 3. Modelagem e projeto arquitetural
