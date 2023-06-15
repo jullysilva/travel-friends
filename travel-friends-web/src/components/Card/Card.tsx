@@ -147,11 +147,7 @@ const CardBox: React.FC<Props> = ({ bg, color, children, data, divider, onClick 
                 </div>
               ))
             ) : (
-              <Row>
-                <Col>
-                  <p>Nenhum comentário</p>
-                </Col>
-              </Row>
+              <p>Nenhum comentário</p>
             )}
           </div>
         </Modal.Body>

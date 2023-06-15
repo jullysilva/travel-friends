@@ -3,10 +3,10 @@ const mongoose = require('mongoose')
 const RoadMap = mongoose.model('RoadMap', new mongoose.Schema({
     title: String,
     description: String,
-    limitPerson: Number,
+    person: Number,
     sponsor: String,
-    dataStart: Date,
-    dataEnd: Date,
+    start: String,
+    end: String,
     dataImage: [
         {
             0: String,
