@@ -31,6 +31,7 @@ router.post("/", async (req, res) => {
     dataImage,
     guide,
     isFree,
+    comments: [],
   };
 
   try {
@@ -41,6 +42,45 @@ router.post("/", async (req, res) => {
     res.status(500).json({ error: error });
   }
 });
+
+router.post("/:id/comment", async (req, res) => {
+  const id = req.params.id
+
+  const {
+    userId,
+    userName,
+    content,
+    date
+  } = req.body;
+
+  try {
+    const roadmap = await RoadMap.findOne({ _id: id });
+
+    if (!roadmap) {
+      res.status(422).json({ message: "Roteiro não encontrado" });
+      return;
+    } else {
+      const newComment = {
+        userId,
+        userName,
+        content,
+        date
+      }
+
+      const newRoadMap = {
+        ...roadmap._doc,
+        comments: roadmap.comments ? [...roadmap._doc.comments, newComment] : [newComment]
+      }
+
+      console.log(newRoadMap)
+
+      const updatedRoadMap = await RoadMap.updateOne({ _id: id }, newRoadMap);
+      res.status(200).json(updatedRoadMap);
+    }
+  } catch (error) {
+    res.status(500).json({ error: error })
+  }
+})
 
 //leitura de dados
 router.get("/", async (req, res) => {
