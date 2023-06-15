@@ -8,6 +8,7 @@ import logo from '../../assets/icons/logo-app.png';
 import { useNavigate } from 'react-router-dom';
 import { Theme } from '../../utils';
 import { UserRegister } from '../../@types/models.interface';
+import InputMask from 'react-input-mask';
 import React from 'react';
 
 const SignUp = () => {
@@ -73,10 +74,21 @@ const SignUp = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label className='text-white'>CPF</Form.Label>
-                  <Form.Control type="text" name="cpf" value={values.cpf} onChange={(e) => {
-                    values.cpf = e.target.value;
-                    setValues({...values});
-                  }} placeholder="xxx.xxx.xxx-xx" maxLength={11} required/>
+                  <InputMask
+                    mask="999.999.999-99"
+                    type="text"
+                    name="cpf"
+                    value={values.cpf}
+                    placeholder="xxx.xxx.xxx-xx"
+                    required
+                  >
+                    {(inputProps) => (
+                      <Form.Control
+                        {...inputProps}
+                        className="custom-input" // Classe CSS personalizada
+                      />
+                    )}
+                  </InputMask>
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label className='text-white'>Senha</Form.Label>

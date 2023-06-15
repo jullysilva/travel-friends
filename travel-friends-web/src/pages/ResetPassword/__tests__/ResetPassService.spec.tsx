@@ -10,4 +10,9 @@ describe('Teste de API resetar senha', () => {
       expect(data).not.toBeUndefined();
     })
   });
+  it('deve conter o token de acesso', async () => {
+    const data = await resetPassword(USER_MOCK);
+    console.log(data);
+    ;
+  });
 });
