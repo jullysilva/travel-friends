@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col,Form, Figure, Alert } from 'react-bootstrap';
+import { Container, Row, Col,Form, Figure, Alert, Modal } from 'react-bootstrap';
 import { ContainerSC, BoxForm, Title } from './signUp.styled';
 import { registerUser } from '../../services/api/Requests/login';
 import { Button } from '../../components';
@@ -16,6 +16,7 @@ const SignUp = () => {
   const [message, setMessage] = useState(null);
   const [validated, setValidated] = useState(false);
   const [values, setValues] = useState<UserRegister>({} as UserRegister);
+  const [showModal, setShowModal] = useState(false);
 
   const navigate = useNavigate();
 
@@ -99,7 +100,7 @@ const SignUp = () => {
                 </Form.Group>
                 <Form.Group className="mb-3 d-flex" style={{gap: 5}}>
                 <Form.Check type="checkbox" />
-                <p className='text-white'>Ao criar uma conta, tem de concordar com os <a href='#'>Termos e Condições</a>.</p>
+                <p className='text-white'>Ao criar uma conta, tem de concordar com os <a href='#' onClick={()=> setShowModal(true)}>Termos e Condições</a>.</p>
                 </Form.Group>
                 <Button
                   type='submit'
@@ -110,6 +111,40 @@ const SignUp = () => {
               </Container>
         </BoxForm>
       </Row>
+      <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Termos e Condições</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{height:"400px", overflowY:"auto"}}>
+          <h6>Descrição do Serviço</h6>
+          <p>A Travel Friends é uma plataforma online que conecta pessoas a lugares e experiências incríveis. Nosso objetivo é ajudar você a descobrir os melhores rolês próximos a você e possibilitar sua participação em grupos existentes ou criação de grupos próprios. Oferecemos diversas opções temáticas, como baladas, trilhas, eventos familiares, entre outros.</p>
+
+          <h6>Elegibilidade</h6>
+          <p>Para utilizar nossos serviços, você deve ter pelo menos 18 anos de idade ou ser considerado legalmente adulto em sua jurisdição. Ao se cadastrar, você declara e garante que possui a capacidade legal para celebrar um contrato vinculativo.</p>
+
+          <h6>Cadastro e Privacidade</h6>
+          <p>Ao se cadastrar no Travel Friends, você concorda em fornecer informações precisas e atualizadas. Você também concorda em proteger suas credenciais de login e manter sua conta segura. Respeitamos sua privacidade e protegemos seus dados pessoais de acordo com nossa Política de Privacidade.</p>
+
+          <h6>Responsabilidades do Usuário</h6>
+          <p>Você é responsável por suas atividades no Travel Friends. Ao participar de grupos ou criar o seu próprio, você concorda em agir de maneira responsável, respeitando as leis, regulamentos e direitos dos outros usuários. Não toleramos comportamentos ofensivos, discriminatórios, ilegais ou que violem os direitos de terceiros.</p>
+
+          <h6>Propriedade Intelectual</h6>
+          <p>Todo o conteúdo apresentado no Travel Friends, incluindo textos, imagens, logotipos e marcas registradas, são protegidos por direitos autorais e propriedade intelectual. Você não pode copiar, modificar, distribuir ou utilizar o conteúdo sem a autorização prévia por escrito da Travel Friends.</p>
+
+          <h6>Limitação de Responsabilidade</h6>
+          <p>A Travel Friends não assume responsabilidade por quaisquer danos diretos, indiretos, incidentais ou consequenciais decorrentes do uso do site, inclusão em grupos ou participação em atividades relacionadas. Os usuários assumem todos os riscos associados às suas interações com outros membros da comunidade Travel Friends.</p>
+
+          <h6>Modificações e Encerramento</h6>
+          <p>A Travel Friends reserva-se o direito de modificar ou encerrar o site e seus serviços a qualquer momento, por qualquer motivo, sem aviso prévio. Você concorda que não seremos responsáveis perante você ou terceiros por qualquer modificação, suspensão ou encerramento do site.</p>
+
+          <h6>Jurisdição e Lei Aplicável</h6>
+          <p>Estes termos e condições serão regidos pelas leis do país em que a Travel Friends está registrada. Qualquer disputa decorrente destes termos será submetida à jurisdição exclusiva dos tribunais competentes nessa localidade.</p>
+
+          <p>Ao usar o Travel Friends, você concorda em cumprir estes termos e condições. Se você não concorda com algum aspecto desses termos, não utilize nosso site ou serviços. Em caso de dúvidas ou preocupações, entre em contato conosco através dos canais de suporte fornecidos.</p>
+
+          <p>Agradecemos por escolher a Travel Friends para conectar pessoas a lugares e experiências incríveis!</p>
+        </Modal.Body>
+      </Modal>
     </ContainerSC>
   );
 }
