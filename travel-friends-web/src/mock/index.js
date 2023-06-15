@@ -63,6 +63,7 @@ export const UPDATE_ROADMAP_MOCK = {
 export const USER_MOCK = {
     "email": "admin@gmail.com",
     "password": "admin",
+    "token": "bla"
 }
 
 export const CREATE_USER_MOCK = {
