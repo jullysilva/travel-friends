@@ -15,22 +15,21 @@ jobs:
           command: yarn test
           name: Run tests
 
-deploy:
-  working_directory: ~/travel-friends/travel-friends-web
-  executor: node/default
-  steps:
-    - checkout:
-        path: ~/travel-friends
-    - run:
-          command: npm install
-          name: Install dependencies
-    - run:
-          command: npm run build
-          name: Build application
-    - run:
-          command: render deploy
-          name: Deploy to Render
-
+  deploy:
+    working_directory: ~/travel-friends/travel-friends-web
+    executor: node/default
+    steps:
+      - checkout:
+          path: ~/travel-friends
+      - run:
+            command: npm install
+            name: Install dependencies
+      - run:
+            command: npm run build
+            name: Build application
+      - run:
+            command: render deploy
+            name: Deploy to Render
 
 workflows:
   test_and_deploy:
