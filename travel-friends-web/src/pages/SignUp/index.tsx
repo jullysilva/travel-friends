@@ -8,6 +8,8 @@ import logo from '../../assets/icons/logo-app.png';
 import { useNavigate } from 'react-router-dom';
 import { Theme } from '../../utils';
 import { UserRegister } from '../../@types/models.interface';
+import InputMask from 'react-input-mask';
+import { cpf } from 'cpf-cnpj-validator';
 import React from 'react';
 
 const SignUp = () => {
@@ -72,11 +74,11 @@ const SignUp = () => {
                   }} placeholder="Insira seu email" required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Label className='text-white'>CPF</Form.Label>
-                  <Form.Control type="text" name="cpf" value={values.cpf} onChange={(e) => {
+                  <Form.Label className='text-white'>CPF TESTE</Form.Label>
+                  <InputMask mask="999.999.999-99" value={values.cpf} onChange={(e) => {
                     values.cpf = e.target.value;
                     setValues({...values});
-                  }} placeholder="xxx.xxx.xxx-xx" maxLength={11} required/>
+                  }} placeholder="xxx.xxx.xxx-xx" required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label className='text-white'>Senha</Form.Label>
