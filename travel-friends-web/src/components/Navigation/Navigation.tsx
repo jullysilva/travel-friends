@@ -72,7 +72,7 @@ const Navigation = ({ children }: any) => {
                 </Nav>
                 <Nav>
                   
-                  <Nav.Link onClick={() => handleNavegate('/perfil')}>
+                  <Nav.Link onClick={() => handleNavegate('/profile')}>
                   {userData.name}
                     <img src={User} className="d-inline-block align-top" alt="Logo usuário" />
                   </Nav.Link>

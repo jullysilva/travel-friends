@@ -59,7 +59,7 @@ function checkToken(req, res, next) {
 }
 
 app.post("/auth/register", async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, cpf } = req.body;
 
   if (!name) {
     return res.status(422).json({ error: "Por favor, insira seu nome!" });
@@ -83,6 +83,7 @@ app.post("/auth/register", async (req, res) => {
   const user = new User({
     name,
     email,
+    cpf,
     password: passwordHash,
   });
 
@@ -134,6 +135,7 @@ app.post("/auth/login", async (req, res) => {
       id: user._id,
       name: user.name,
       email: user.email,
+      cpf: user.cpf,
     };
 
     res

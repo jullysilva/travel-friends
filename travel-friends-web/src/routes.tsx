@@ -76,7 +76,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/perfil"
+          path="/profile"
           element={
             <PrivateRoute>
               <Profile />
