@@ -1,8 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const app = express();
+const cors = require('cors');
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+
+const app = express();
+
+app.use(cors());
 
 require("dotenv").config();
 
@@ -55,7 +59,7 @@ function checkToken(req, res, next) {
 }
 
 app.post("/auth/register", async (req, res) => {
-  const { name, email, password, confirmPassword } = req.body;
+  const { name, email, password } = req.body;
 
   if (!name) {
     return res.status(422).json({ error: "Por favor, insira seu nome!" });
@@ -65,12 +69,6 @@ app.post("/auth/register", async (req, res) => {
   }
   if (!password) {
     return res.status(422).json({ error: "Por favor, insira sua senha!" });
-  }
-  if (!confirmPassword) {
-    return res.status(422).json({ error: "Por favor, confirme sua senha!" });
-  }
-  if (password !== confirmPassword) {
-    return res.status(422).json({ error: "As senhas não são iguais!" });
   }
 
   const userExists = await User.findOne({ email: email });
@@ -132,9 +130,15 @@ app.post("/auth/login", async (req, res) => {
       secret
     );
 
+    const userData = {
+      id: user._id,
+      name: user.name,
+      email: user.email,
+    };
+
     res
       .status(200)
-      .json({ message: "Autentificação realizada com sucesso!", token });
+      .json({ message: "Autentificação realizada com sucesso!", token, userData });
   } catch (error) {
     console.log(error);
 

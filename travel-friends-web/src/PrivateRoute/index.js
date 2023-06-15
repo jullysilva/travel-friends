@@ -5,8 +5,8 @@ import { userHook } from '../context/userData';
 
 const PrivateRoute = ({ children }) => {
   const { userData } = userHook();
-  
-  return userData.token ? children : <Navigate to='/' />;
+
+  return userData.id ? children : <Navigate to='/' />;
 }
 
 export default PrivateRoute;
