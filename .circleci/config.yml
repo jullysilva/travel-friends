@@ -16,9 +16,6 @@ jobs:
           name: Run tests
 
 workflows:
-  test_and_deploy:
+  test_my_app:
     jobs:
       - test
-      - deploy:
-          requires:
-            - test
