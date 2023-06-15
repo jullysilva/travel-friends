@@ -13,12 +13,12 @@ describe('Teste de API Passeio', () => {
   });
   
   it('deve retornar resposta de erro de requisição', async () => {
-    // expect.assertions(0);
-    // try {
-    //   await getAllRoadmap();
-    // } catch (e) {
-    //   expect(e).toMatch('error');
-    // }
+    expect.assertions(0);
+    try {
+      await getAllRoadmap();
+    } catch (e) {
+      expect(e).toMatch('error');
+    }
   });
 
   it('deve retornar dado de criação', async () => {
@@ -28,14 +28,14 @@ describe('Teste de API Passeio', () => {
     // })
   });
 
-  it('deve retornar resposta de erro de para criação', async () => {
-    // expect.assertions(0);
-    // try {
-    //   await createRoadmap(CREATE_ROADMAP_MOCK);
-    // } catch (e) {
-    //   expect(e).toMatch('error');
-    // }
-  });
+  // it('deve retornar resposta de erro de para criação', async () => {
+  //   expect.assertions(0);
+  //   try {
+  //     await createRoadmap(CREATE_ROADMAP_MOCK);
+  //   } catch (e) {
+  //     expect(e).toMatch('error');
+  //   }
+  // });
 
   // it.skip('deve realizar a atualização do passeio', async () => {
   //   // const data = await updateRoadmap(UPDATE_ROADMAP_MOCK);
