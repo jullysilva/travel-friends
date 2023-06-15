@@ -156,7 +156,7 @@ mongoose
 
   .then(() => {
     console.log("Conectado ao banco de dados");
-    app.listen(3000);
+    app.listen(8000);
   })
 
   .catch((err) => console.log(err));
