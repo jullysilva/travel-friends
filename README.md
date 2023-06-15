@@ -33,10 +33,7 @@
 
 Professores:
 
-**Jo**
-
-**Cleiton Silva Tavares**
-
+**Johnatan Alves de Oliveira - **
 
 ---
 
@@ -71,9 +68,6 @@ _A necessidade constante de pessoas que viajam e buscam se conectar com o lugar,
 4. [Avaliação](#avaliacao "Avaliação da Arquitetura") <br />
 	4.1. Cenários <br />
 	4.2. Avaliação <br />
-
-5. [Apêndices](#apendices "APÊNDICES")<br />
-
 
 <a name="apresentacao"></a>
 # 1. Apresentação
@@ -165,10 +159,6 @@ Esta seção discorre sobre requisitos necessários para a implementação do pr
 
 Por meio do desenvolvimento em seguimento a utilização do padrão MVC, no qual o back-end composto é responsável por acionar uma ação no controller da aplicação, tendo  esse acesso anteriormente ao model, socilitando de forma não direta ações na view ou seja o front-end da aplicação. Não obstante destaque-se a relação entre a parte estrutural de entrada e saída de dados em conexão com o banco de dados.
 
-**Figura 1 - Visão Geral da Solução**
-![image](https://user-images.githubusercontent.com/110981345/207483124-ea2e7f78-9bf1-4e2c-88de-f25a49ac6a53.png)
-
-
 ## 3.1. Visão de Negócio (Funcionalidades)
 
 
@@ -200,13 +190,13 @@ _Esta seção descreve a avaliação da arquitetura apresentada, baseada no mét
 
 ## 5. Acesso as aplicações
 
-| **Análise** | **Design** | **Implementação** |
-| --- | --- | --- |
-| Persistência Web | Banco de dados não relacional| MongoDB|
-| Persistência Mobile | Banco de dados não relacional| MongoDB|
-| Interface Web| Frontend Web |React|
-| Interface Mobile| Frontend Mobile |React Native|
-| Regra de Negócio| Backend | NodeJS e Expression|
-| Teste de Software | Framework | Jest|
-| Comunicação| Mensageria | RabbitMQ|
-| Integração| Rest | Heroku|
+| **Descrição** | **Link** |
+| --- | --- |
+| Banco de dados não relacional | [MongoDB](https://cloud.mongodb.com) |
+| Frontend Web| Acesso: https://travel-friends-web.onrender.com|
+| Backend Web| Acesso: https://travel-friends-api.onrender.com|
+| CD| Acesso: [Render](https://render.com/)|
+| CI| [CircleCI](https://travel-friends-api.onrender.com](https://app.circleci.com/pipelines/github/jullysilva/travel-friends)https://app.circleci.com/pipelines/github/jullysilva/travel-friends)|
+|Ferramenta de teste de qualidade | [SonarQube](https://sonarcloud.io/project/overview?id=jullysilva_travel-friends)|
+
+
