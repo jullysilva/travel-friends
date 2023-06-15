@@ -1,5 +1,5 @@
 # Use uma imagem base com o Node.js instalado
-FROM node:latest
+FROM node:19
 
 # Defina o diretório de trabalho dentro do contêiner
 WORKDIR /app
@@ -8,7 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Execute o comando npm install para instalar as dependências da aplicação
-RUN npm install
+# RUN npm install -g npm@9.7.1
+RUN npm install --force
 
 # Copie todo o código fonte da aplicação para o diretório de trabalho
 COPY . .
@@ -17,4 +18,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para iniciar a aplicação quando o contêiner for iniciado
-CMD ["npm", "dev"]
+CMD ["npm", "run", "dev"]
